@@ -35,6 +35,6 @@
 * NEMO
 
 
-* + practical informations when joining MEOM
+* practical informations when joining MEOM
   * proxy
   * install of tools

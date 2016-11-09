@@ -1,4 +1,17 @@
-# Formation path for all new people joining MEOM group (also a refreshment for actual members ...
+# Formation path for all new people joining MEOM group (also a refreshment for actual members ...)
+
+
+## Unix / software engineering
+
+## Fortran
+
+## Bash
+
+## Python
+
+## Jupyter
+
+## Other useful tools/links
 
 ## For the moment a collection of links to tutorials
 

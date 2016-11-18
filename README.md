@@ -1,29 +1,18 @@
-# Formation path for all new people joining MEOM group (also a refreshment for actual members ...)
+# Software used  in MEOM and how to learn it
+
+
 
 
 ## Unix / software engineering
+* unix : http://swcarpentry.github.io/shell-novice/
+* git version control : http://swcarpentry.github.io/git-novice/
 
 ## Fortran
 
 ## Bash
 
 ## Python
-
-## Jupyter
-
-## Other useful tools/links
-
-## For the moment a collection of links to tutorials
-
-* unix : http://swcarpentry.github.io/shell-novice/
-* fortran basics : 
-* makefile
-* home-tools :
-  * CDFTOOLS : https://github.com/meom-group/CDFTOOLS
-  * DCM : https://servforge.legi.grenoble-inp.fr/projects/DCM
 * python basics : http://swcarpentry.github.io/python-novice-inflammation/
-* environment management, conda, pip :
-* jupyter basics :
 * optimizing python
   * numba
   * cython
@@ -41,11 +30,16 @@
     * cartopy : http://scitools.org.uk/cartopy/docs/latest/index.html
     * holoviews
     * geoviews : https://www.continuum.io/blog/developer-blog/introducing-geoviews
-* git version control : http://swcarpentry.github.io/git-novice/
 * home python tools
   * oocgcm : http://oocgcm.readthedocs.io/en/latest/
 * distribution & packaging of tools : continuous integration, conda, yml, documentation, numpydoc, travis CI : http://katyhuff.github.io/python-testing/
-* NEMO
+
+## Jupyter
+
+## Other useful tools/links
+  * CDFTOOLS : https://github.com/meom-group/CDFTOOLS
+  * DCM : https://servforge.legi.grenoble-inp.fr/projects/DCM
+  
 
 
 * practical informations when joining MEOM

@@ -54,14 +54,16 @@ For people who have never used of python or a refreshment for people that have .
 
 * Distribution & packaging of tools : continuous integration, conda, yml, documentation, numpydoc, travis CI : http://katyhuff.github.io/python-testing/
 
-### Jupyter
+## Jupyter
 
-### Other useful tools/links
+
+
+## Other useful tools/links
   * CDFTOOLS : https://github.com/meom-group/CDFTOOLS
   * DCM : https://servforge.legi.grenoble-inp.fr/projects/DCM
   
 
 
-### practical informations when joining MEOM
+## practical informations when joining MEOM
   * proxy
   * install of tools

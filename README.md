@@ -1,6 +1,9 @@
 # Software used  in MEOM and how to learn it
 
-
+Here are some useful hints on how to process your data in order to produce science.
+The main idea is that we learn a tool more easily with examples.
+Also when you want to do something, someone somewhere faced the same issue and maybe already found an answer to it.
+So before reinventing the wheel, let's have a look at what others came up with.
 
 
 ## Unix / software engineering
@@ -12,15 +15,30 @@
 ## Bash
 
 ## Python
-* python basics : http://swcarpentry.github.io/python-novice-inflammation/
-* optimizing python
+
+### Python basics 
+For people who have never used of python or a refreshment for people that have ...
+
+  * Introduction through examples : http://swcarpentry.github.io/python-novice-inflammation/
+  * Examples from the Python Data Science HandBook : https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings
+
+### Optimizing python
   * numba
   * cython
-* advanced python for geosciences :
+
+### Advanced python for geosciences :
+
   * handling netcdf files
-  * xarray : https://gist.github.com/shoyer/d462cc3b2aeb87bbb78cc6f8207851c6
-  * dask
-* plotting libraries :
+  * xarray : 
+    * official documentation with interesting links to videos and tutorials inside : http://xarray.pydata.org/en/stable/
+    * github repository : https://gist.github.com/shoyer/d462cc3b2aeb87bbb78cc6f8207851c6
+  * dask :
+    * official documentation : http://dask.pydata.org/en/latest/
+    * a good introduction : https://www.youtube.com/watch?v=1kkFZ4P-XHg
+  * combining xarray and dask :
+    * https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python
+
+* Plotting libraries :
   * non geosciences oriented : https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/
     * matplotlib
     * plotly
@@ -30,18 +48,20 @@
     * cartopy : http://scitools.org.uk/cartopy/docs/latest/index.html
     * holoviews
     * geoviews : https://www.continuum.io/blog/developer-blog/introducing-geoviews
-* home python tools
+
+* Home python tools
   * oocgcm : http://oocgcm.readthedocs.io/en/latest/
-* distribution & packaging of tools : continuous integration, conda, yml, documentation, numpydoc, travis CI : http://katyhuff.github.io/python-testing/
 
-## Jupyter
+* Distribution & packaging of tools : continuous integration, conda, yml, documentation, numpydoc, travis CI : http://katyhuff.github.io/python-testing/
 
-## Other useful tools/links
+### Jupyter
+
+### Other useful tools/links
   * CDFTOOLS : https://github.com/meom-group/CDFTOOLS
   * DCM : https://servforge.legi.grenoble-inp.fr/projects/DCM
   
 
 
-* practical informations when joining MEOM
+### practical informations when joining MEOM
   * proxy
   * install of tools

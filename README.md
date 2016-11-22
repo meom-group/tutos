@@ -17,7 +17,7 @@ So before reinventing the wheel, let's have a look at what others came up with.
 ## Python
 
 ### Python basics 
-For people who have never used of python or a refreshment for people that have ...
+For people who have never used python or a refreshment for people that have ...
 
   * Introduction through examples : http://swcarpentry.github.io/python-novice-inflammation/
   * Examples from the Python Data Science HandBook : https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings
@@ -55,8 +55,11 @@ For people who have never used of python or a refreshment for people that have .
 * Distribution & packaging of tools : continuous integration, conda, yml, documentation, numpydoc, travis CI : http://katyhuff.github.io/python-testing/
 
 ## Jupyter
+Useful tool to tell a computational story from your data, or to produce publishable code.
 
-
+  * Official documentation : https://jupyter.readthedocs.io/en/latest/index.html
+  * Some notebooks from the team : https://github.com/lesommer/notebooks
+  * How to install it at MEOM : https://github.com/auraoupa/personnal_tutos/blob/master/jupyter.md
 
 ## Other useful tools/links
   * CDFTOOLS : https://github.com/meom-group/CDFTOOLS

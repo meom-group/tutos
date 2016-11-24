@@ -35,6 +35,7 @@ For people who have never used python or a refreshment for people that have ...
   * dask :
     * official documentation : http://dask.pydata.org/en/latest/
     * a good introduction : https://www.youtube.com/watch?v=1kkFZ4P-XHg
+    * some examples : https://github.com/jorisvandenbossche/SWSC2016-pandas-dask
   * combining xarray and dask :
     * https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python
 

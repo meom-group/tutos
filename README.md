@@ -39,21 +39,24 @@ For people who have never used python or a refreshment for people that have ...
   * combining xarray and dask :
     * https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python
 
-* Plotting libraries :
-  * non geosciences oriented : https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/
-    * matplotlib
-    * plotly
-    * seaborn
-  * geosciences :
-    * basemap : https://basemaptutorial.readthedocs.io/en/latest/
-    * cartopy : http://scitools.org.uk/cartopy/docs/latest/index.html
-    * holoviews
-    * geoviews : https://www.continuum.io/blog/developer-blog/introducing-geoviews
+  * Plotting libraries :
+    * non geosciences oriented : https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/
+      * matplotlib
+      * plotly
+      * seaborn
+    * geosciences :
+      * basemap : https://basemaptutorial.readthedocs.io/en/latest/
+      * cartopy : http://scitools.org.uk/cartopy/docs/latest/index.html
+      * holoviews
+      * geoviews : https://www.continuum.io/blog/developer-blog/introducing-geoviews
 
-* Home python tools
-  * oocgcm : http://oocgcm.readthedocs.io/en/latest/
+  * Other tutorials
+      * http://earthpy.org/
+      
+  * Home python tools
+      * oocgcm : http://oocgcm.readthedocs.io/en/latest/
 
-* Distribution & packaging of tools : continuous integration, conda, yml, documentation, numpydoc, travis CI : http://katyhuff.github.io/python-testing/
+  * Distribution & packaging of tools : continuous integration, conda, yml, documentation, numpydoc, travis CI : http://katyhuff.github.io/python-testing/
 
 ## Jupyter
 Useful tool to tell a computational story from your data, or to produce publishable code.

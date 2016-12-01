@@ -32,6 +32,7 @@ For people who have never used python or a refreshment for people that have ...
   * xarray : 
     * official documentation with interesting links to videos and tutorials inside : http://xarray.pydata.org/en/stable/
     * github repository : https://gist.github.com/shoyer/d462cc3b2aeb87bbb78cc6f8207851c6
+    * helpful tutorial : http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/xray.ipynb
   * dask :
     * official documentation : http://dask.pydata.org/en/latest/
     * a good introduction : https://www.youtube.com/watch?v=1kkFZ4P-XHg

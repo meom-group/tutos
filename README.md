@@ -43,7 +43,10 @@ For people who have never used python or a refreshment for people that have ...
   * Plotting libraries :
     * non geosciences oriented : https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/
       * matplotlib
-      * plotly
+      * plotly :
+         * documentation : https://plot.ly/python/offline/
+         * examples : https://plot.ly/python/
+         * colormaps : https://plot.ly/python/cmocean-colorscales/
       * seaborn
     * geosciences :
       * basemap : https://basemaptutorial.readthedocs.io/en/latest/

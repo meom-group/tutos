@@ -65,6 +65,7 @@ Useful tool to tell a computational story from your data, or to produce publisha
   * Official documentation : https://jupyter.readthedocs.io/en/latest/index.html
   * Some notebooks from the team : https://github.com/lesommer/notebooks
   * How to install it at MEOM : https://github.com/auraoupa/personnal_tutos/blob/master/jupyter.md
+  * Best practices : https://www.youtube.com/watch?v=JI1HWUAyJHE
 
 ## Other useful tools/links
   * CDFTOOLS : https://github.com/meom-group/CDFTOOLS

@@ -41,6 +41,8 @@ Avant de faire les prochaines modifs, pour prendre en compte celles qui on été
 git pull
 ```
 
+Si vous voulez prévisualiser l'effet que vos modifications auront sur le site avant de les "commiter", il suffit d'utiliser l'outil [jekyll](https://jekyllrb.com/) et de lancer la commande jekyll-serve. Vous pourrez alors voir le site web en local.
+
 
 ##Différents types de pages :
 

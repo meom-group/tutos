@@ -4,8 +4,8 @@
 
 Tout d'abord pour pouvoir modifier le site web de l'équipe il faut :
   * avoir un compte github (ça prend 2 sec !)
-  * s'affilier au groupe meom-group (Julien envoie l'invitation)
-  * avoir les droits d'édition sur le dossier https://github.com/meom-group/meom-group.github.io (Julien envoie l'autorisation)
+  * demander à Julien/Jean-Marc de s'affilier au groupe meom-group (Julien envoie l'invitation)
+  * demander à Julien/Jean-Marc d'avoir les droits d'édition sur le dossier https://github.com/meom-group/meom-group.github.io (Julien envoie l'autorisation)
 
 Ces deux dernières étapes sont en fait facultatives, n'importe qui peut proposer des modifications, les éditeurs se réservent ensuite le droit de les accepter (merge) ou non. Mais, pour les gens de l'équipe c'est quand même ùieux si vous faites partie du groupe meom !
  

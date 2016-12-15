@@ -4,13 +4,13 @@
 
 Tout d'abord pour pouvoir modifier le site web de l'équipe il faut :
   * avoir un compte github (ça prend 2 sec !)
-  * demander à Julien/Jean-Marc de s'affilier au groupe meom-group (Julien envoie l'invitation)
-  * demander à Julien/Jean-Marc d'avoir les droits d'édition sur le dossier https://github.com/meom-group/meom-group.github.io (Julien envoie l'autorisation)
+  * demander à Julien/Jean-Marc de s'affilier au groupe meom-group 
+  * demander à Julien/Jean-Marc d'avoir les droits d'édition sur le dossier https://github.com/meom-group/meom-group.github.io
 
-Ces deux dernières étapes sont en fait facultatives, n'importe qui peut proposer des modifications, les éditeurs se réservent ensuite le droit de les accepter (merge) ou non. Mais, pour les gens de l'équipe c'est quand même ùieux si vous faites partie du groupe meom !
+Ces deux dernières étapes sont en fait facultatives, n'importe qui peut proposer des modifications, les éditeurs se réservent ensuite le droit de les accepter (merge) ou non. Mais, pour les gens de l'équipe c'est quand même mieux si vous faites partie du groupe meom !
  
 Ensuite, deux solutions :
-  * soit on modifie en ligne les fichiers présents dans ce repertoire afin de modifier le site (en cliquant sur le nom du fichier en question puis sur l'icone crayon "edit this file") et on fait un "pull request" de cette modif, c'est-à-dire qu'on propose aux propriétaires de la confirmer par la suite
+  * soit on modifie en ligne les fichiers présents dans ce repertoire afin de modifier le site (en cliquant sur le nom du fichier en question puis sur l'icone crayon "edit this file") puis on fait un "pull request" de cette modif, c'est-à-dire qu'on propose aux propriétaires de la confirmer par la suite 
   * soit en téléchargeant une copie de tout le répertoire sur votre ordinateur, en local. Cela permet d'ajouter des fichiers et images plus facilement. (procédure ci-dessous)
 
 

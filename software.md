@@ -1,81 +1,140 @@
-# Software used  in MEOM and how to learn it
+# Data analysis software used in MEOM group and how to learn it.
 
-Here are some useful hints on how to process your data in order to produce science.
-The main idea is that we learn a tool more easily with examples.
-Also when you want to do something, someone somewhere faced the same issue and maybe already found an answer to it.
-So before reinventing the wheel, let's have a look at what others came up with.
+authors : Julien Le Sommer and Aurélie Albert (MEOM group, IGE)
+
+*This page provides a curated list of software used for data analysis in the MEOM group, online resources on how to use it and general advice on how to proceed with ocean data analysis. Please, keep in mind that (i) this list is not exhaustive and that (ii) it may evolve with time.*
+
+## General advice
+
+A nice mental picture for understanding most of our data analysis tasks is the **notion of data analysis pipeline**. Our data analyses generally combine several steps, all corresponding to individual pieces of software. Our data flows through the pipeline and gets transformed at each step by a particular piece of software. Ideally these pipelines shoud be as **automated** as possible so that our work is easily **reproducible**. 
 
 
-## Unix / software engineering
-* unix : http://swcarpentry.github.io/shell-novice/
-* git version control : http://swcarpentry.github.io/git-novice/
+A key principle for building data analysis pipelines is to try to **rely as much as possible on pre-existing software**. In practice, most of the steps in an analysis pipeline are very generic (as eg. reading/writing/plotting data) so that we can just use preexisting code. So a large fraction of our work just involves glueing together existing pieces of code. This is why modern software is now made as modular as possible. 
 
-## Fortran
+If you need to write new code, it should **focus in priority on what is specific** to your analysis. Some building-blocks of your data analysis pipeline are indeed more specific to your needs than others. For these key specific steps, you might have to write a dedicated module, but you should always first wonder if someone has already implemented something close to what you need. 
 
-## Bash
+Knowing what is currently feasible with your sofware environment is therefore key for designing your own analyses. This requires your keeping **a routine curiosity for software**. In practice, this requires your spending time going through online videos and tutorials (because you learn better through examples). This also requires your being aware of minimal [good practices](https://arxiv.org/abs/1609.00037) in scientific computing. 
 
-## Python
+In this page, you will find a **curated list of software**, tutorials and examples that we hope will improve your awareness of your technological environment. Do not hesitate to suggest new links and update to this page.
 
-### Python basics 
-For people who have never used python or a refreshment for people that have ...
 
-  * Introduction through examples : http://swcarpentry.github.io/python-novice-inflammation/
-  * Examples from the Python Data Science HandBook : https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings
+## Recommanded base configuration
+To work with the MEOM group, you will need this minimal software configuration and set-up: 
 
-### Optimizing python
-  * numba
+ -  install [anaconda](https://docs.continuum.io/anaconda/) (python distribution and package manager)
+ - install [git](https://git-scm.com/) (software version control manager)
+ - create a [github](https://github.com/) account and learn how to use it : 
+  - [cloning] (https://help.github.com/articles/importing-a-git-repository-using-the-command-line/) a repository
+  - using [gist](https://help.github.com/articles/creating-gists/)
+  - using [pull requests](https://help.github.com/articles/using-pull-requests/) (**advanced**)
+  
+ - (*to be updated*) ...
+
+Caution : you may need to configure git to work through our network proxy.
+
+
+
+## Software engineering
+Resources on *how to better interact with your computer* (**basic**). 
+
+ * unix operating system: [software carpentry tutorial](http://swcarpentry.github.io/shell-novice/)
+ * automation and make : [software carpentry tutorial](http://swcarpentry.github.io/make-novice/), [SCons](http://scons.org/)
+ * version control with git: [software carpentry tutorial](http://swcarpentry.github.io/git-novice/), [becoming a git guru](https://www.atlassian.com/git/tutorials/)
+
+Resources on *how to build and distribute software* (**advanced**): 
+
+ * packaging and distrubuting python projects : [user guide](https://packaging.python.org/ ), [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html)
+ * testing and continuous integration : [software carpentry tutorial](http://katyhuff.github.io/python-testing/), [travis-ci](https://travis-ci.org/)
+ * documenting your projects : A guide to python documentation with [numpydoc](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt), [readthedocs](https://readthedocs.org/), write the docs [community](http://www.writethedocs.org/)
+
+## Jupyter notebooks
+Jupyter notebooks are great for sharing your work because they allow to mix code, text and visualization in the same document. Because Jupyter notebooks can understand code in different languages, they are also great for building an complex data analysis pipelines.
+**We therefore strongly recommend using Jupyter Notebooks**.
+
+  * official [documentation](https://jupyter.readthedocs.io/en/latest/index.html)
+  * using the [ipython](http://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) kernel
+  * sharing notebooks with [nbviewer](http://nbviewer.jupyter.org/)
+  * recommanded [best practices](https://www.youtube.com/watch?v=JI1HWUAyJHE) with Jupyter notebooks
+  * examples from [the Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks), and from [the group](https://github.com/lesommer/notebooks)
+ * building reproducible analysis pipelines with [nbflow](https://www.youtube.com/watch?v=Fc2W930NJs8) (**advanced**)
+ * diffing and merging notebooks with [nbdime](http://nbdime.readthedocs.io/)
+ 
+## Python language
+
+### Basic scientific python 
+For people who have never used python before : 
+
+  * Introduction through examples : [software carpentry tutorial](http://swcarpentry.github.io/python-novice-inflammation/)
+  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+  * examples :  from the [Python Data Science HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings), from [earthpy website](http://earthpy.org/)
+  
+### Geoscientific data analysis in python :
+
+*We strongly recommand using the following packages.*
+
+  * There are several interfaces for handling  netcdf files in python. Here is a tutorial to [NetCDF4](http://unidata.github.io/netcdf4-python/) interface.
+  * [pandas](http://pandas.pydata.org/pandas-docs/stable/) is a great package for handing time series and labelled data in python, here is a [10min tour](http://vimeo.com/59324550) to pandas. See also this [example](http://earthpy.org/time_series_analysis_with_pandas_part_2.html) 
+  *  [xarray](http://xarray.pydata.org/) implements a N-dimensional variants of the core pandas data structures.  In practice, xarray provides an in-memory representation of the content of a collection of netCDF files.
+    * official [documentation](http://xarray.pydata.org/en/stable/) (with interesting links to videos and tutorials) : 
+    * xarray tutorials [by S. Hoyer](https://gist.github.com/shoyer/d462cc3b2aeb87bbb78cc6f8207851c6#file-xarray-tutorial-with-answers-ipynb) and [by N. Fauchereau](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/xray.ipynb)
+
+  * [Dask](http://dask.pydata.org) is a flexible parallel computing library for analytic computing in python.
+    * official [documentation](http://dask.pydata.org/en/latest/)
+    * a good [introduction](https://www.youtube.com/watch?v=1kkFZ4P-XHg)
+    * a [video](https://youtu.be/EEfI-11itn0?list=PLGVZCDnMOq0qLoYpkeySVtfdbQg1A_GiB) on parallel and distributed computing with dask 
+    * some [examples](https://github.com/jorisvandenbossche/SWSC2016-pandas-dask)
+    * slides on [visualizing parrallel computation](http://matthewrocklin.com/slides/plotcon-2016.html#/)
+    * combining [xarray and dask](https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python)
+      
+  * [oocgcm](http://oocgcm.readthedocs.io/en/latest/) is a project that provides tools for processing and analysing output of general circulation models and gridded satellite data in the field of Earth system science.
+
+### Data visualization with python :
+There are currently too many libraries for visualizing data with python (see this [python data vizualization tour](https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/)), this may seem exciting or overwhelming depending on the point of view... In practice, you should distinguish libraries that focus on *interactive data visualization* (great for investigating your datasets in Jupyter notebooks) and libraries that focus on *static data visualization* (needed for writing papers and reports). Several of the more recent visualization libraries in python
+implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/book/9780387245447). 
+
+   * **General purpose visualization:** 
+ 	 
+ 	 * *static visualization* : 
+      * [matplotlib](http://www.matplotlib.org/) is the standard 2D and 3D plotting library for python. See this [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
+      * [seaborn](http://seaborn.pydata.org/) is great for statistical data vizualisation with python (default plots look good with seaborn) : [tutorial](http://seaborn.pydata.org/tutorial.html), [examples](http://seaborn.pydata.org/examples/index.html)
+      * [ggplot](http://ggplot.yhathq.com/) is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. see also this [video](www.youtube.com/watch?v=pHrwqLhAaMw)
+      * [altair](https://github.com/ellisonbg/altair) is a new declarative statistical visualization library : [documentation](https://github.com/ellisonbg/altair), [tutorial notebook](https://github.com/ellisonbg/altair/blob/master/altair/notebooks/01-Index.ipynb)
+
+    * *interactive vizualization (within Jupyter notebooks)*
+      * [HoloViews](http://holoviews.org/)  lets you store your data in an annotated format that is instantly visualizable, with immediate access to both the numeric data and its visualization : [video demo](https://www.youtube.com/watch?v=0jhUivliNSo), [video demo](https://www.youtube.com/watch?v=hNsR2H7Lrg0), [example notebooks](https://github.com/ioam/holoviews-contrib)
+      * [Bokeh](http://bokeh.pydata.org/en/latest/) is an interactive data visualization library that implements the grammar of graphics : [example gallery](http://bokeh.pydata.org/en/latest/docs/gallery.html#gallery), [notebook gallery](http://nbviewer.jupyter.org/github/bokeh/bokeh-notebooks/blob/master/index.ipynb), [video demo](https://www.youtube.com/watch?v=c9CgHHz_iYk) [](http://www.pyvideo.org/video/1224/bokeh-an-extensible-implementation-of-the-gramma)
+      * [bqplot](https://github.com/bloomberg/bqplot) is a Grammar of Graphics-based interactive plotting framework for the Jupyter notebook. 
+      * plotly is another interactive visualization library, probably more oriented to making charts and dashboard for companies: [documentation](https://plot.ly/python/offline/), [examples](https://plot.ly/python/)
+
+   
+  * **Visualizing geographical data** :
+ 	 * *static visualization* : 
+      * [Basemap](http://matplotlib.org/basemap/) is an extension to matplotlib that allows to plot geographical data:  [documentation](https://basemaptutorial.readthedocs.io/en/latest/)
+      * [Cartopy](http://scitools.org.uk/cartopy/) provides cartographic tools for python (developped by the MetOffice) : [documentation](http://scitools.org.uk/cartopy/docs/latest/index.html)
+    * *interactive vizualization (within Jupyter notebooks)* :
+      * [GeoViews](http://geo.holoviews.org/)  (*recommended*) is built on HoloViews. It allows to explore and visualize geographical  data interactively. Works nicely with xarray : [demo](https://www.continuum.io/blog/developer-blog/introducing-geoviews),  [examples](http://geo.holoviews.org/index.html) 
+
+  * **How to choose a colorbar**: 
+  
+  (*section under construction*)
+      * [cmoceans](https://plot.ly/python/cmocean-colorscales/)
+
+
+
+
+### Optimizing python codes
+(*section under construction*)
+
+  * numba [video](https://www.youtube.com/watch?v=eYIPEDnp5C4)
   * cython
 
-### Advanced python for geosciences :
 
-  * handling netcdf files
-  * xarray : 
-    * official documentation with interesting links to videos and tutorials inside : http://xarray.pydata.org/en/stable/
-    * github repository : https://gist.github.com/shoyer/d462cc3b2aeb87bbb78cc6f8207851c6
-    * helpful tutorial : http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/xray.ipynb
-  * dask :
-    * official documentation : http://dask.pydata.org/en/latest/
-    * a good introduction : https://www.youtube.com/watch?v=1kkFZ4P-XHg
-    * some examples : https://github.com/jorisvandenbossche/SWSC2016-pandas-dask
-  * combining xarray and dask :
-    * https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python
+## Other useful software
+(*section under construction*)
 
-  * Plotting libraries :
-    * non geosciences oriented : https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/
-      * matplotlib
-      * plotly :
-         * documentation : https://plot.ly/python/offline/
-         * examples : https://plot.ly/python/
-         * colormaps : https://plot.ly/python/cmocean-colorscales/
-      * seaborn
-    * geosciences :
-      * basemap : https://basemaptutorial.readthedocs.io/en/latest/
-      * cartopy : http://scitools.org.uk/cartopy/docs/latest/index.html
-      * holoviews
-      * geoviews : https://www.continuum.io/blog/developer-blog/introducing-geoviews
-
-  * Other tutorials
-      * http://earthpy.org/
-      
-  * Home python tools
-      * oocgcm : http://oocgcm.readthedocs.io/en/latest/
-
-  * Distribution & packaging of tools : continuous integration, conda, yml, documentation, numpydoc, travis CI : http://katyhuff.github.io/python-testing/
-
-## Jupyter
-Useful tool to tell a computational story from your data, or to produce publishable code.
-
-  * Official documentation : https://jupyter.readthedocs.io/en/latest/index.html
-  * Some notebooks from the team : https://github.com/lesommer/notebooks
-  * How to install it at MEOM : https://github.com/auraoupa/personnal_tutos/blob/master/jupyter.md
-  * Best practices : https://www.youtube.com/watch?v=JI1HWUAyJHE
-
-## Other useful tools/links
   * CDFTOOLS : https://github.com/meom-group/CDFTOOLS
   * DCM : https://servforge.legi.grenoble-inp.fr/projects/DCM
+  * mkmov
   
 
 
-## practical informations when joining MEOM
-  * proxy
-  * install of tools

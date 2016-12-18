@@ -86,15 +86,15 @@ For people who have never used python before :
     * slides on [visualizing parrallel computation](http://matthewrocklin.com/slides/plotcon-2016.html#/)
     * combining [xarray and dask](https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python)
       
-  * [oocgcm](http://oocgcm.readthedocs.io/en/latest/) is a project that provides tools for processing and analysing output of general circulation models and gridded satellite data in the field of Earth system science.
+  * [oocgcm](http://oocgcm.readthedocs.io/en/latest/) builds on xarray and dask and provides tools for processing and analysing output of general circulation models and gridded satellite data in the field of Earth system science.
 
 ### Data visualization with python :
 There are currently too many libraries for visualizing data with python (see this [python data vizualization tour](https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/)), this may seem exciting or overwhelming depending on the point of view... In practice, you should distinguish libraries that focus on *interactive data visualization* (great for investigating your datasets in Jupyter notebooks) and libraries that focus on *static data visualization* (needed for writing papers and reports). Several of the more recent visualization libraries in python
 implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/book/9780387245447). 
 
-   * **General purpose visualization:** 
- 	 
- 	 * *static visualization* : 
+  * **General purpose visualization:** 
+	 
+    * *static visualization* : 
       * [matplotlib](http://www.matplotlib.org/) is the standard 2D and 3D plotting library for python. See this [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
       * [seaborn](http://seaborn.pydata.org/) is great for statistical data vizualisation with python (default plots look good with seaborn) : [tutorial](http://seaborn.pydata.org/tutorial.html), [examples](http://seaborn.pydata.org/examples/index.html)
       * [ggplot](http://ggplot.yhathq.com/) is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. see also this [video](www.youtube.com/watch?v=pHrwqLhAaMw)
@@ -108,7 +108,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
 
    
   * **Visualizing geographical data** :
- 	 * *static visualization* : 
+    * *static visualization* : 
       * [Basemap](http://matplotlib.org/basemap/) is an extension to matplotlib that allows to plot geographical data:  [documentation](https://basemaptutorial.readthedocs.io/en/latest/)
       * [Cartopy](http://scitools.org.uk/cartopy/) provides cartographic tools for python (developped by the MetOffice) : [documentation](http://scitools.org.uk/cartopy/docs/latest/index.html)
     * *interactive vizualization (within Jupyter notebooks)* :

@@ -64,16 +64,19 @@ Jupyter notebooks are great for sharing your work because they allow to mix code
 ### Basic scientific python 
 For people who have never used python before : 
 
-  * Introduction through examples : [software carpentry tutorial](http://swcarpentry.github.io/python-novice-inflammation/)
-  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
-  * examples :  from the [Python Data Science HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings), from [earthpy website](http://earthpy.org/)
+  * Introduction to python through examples : 
+    * [software carpentry tutorial](http://swcarpentry.github.io/python-novice-inflammation/)
+    * [mode analytics lessons](https://community.modeanalytics.com/python/)
+  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/numpy/) on numpy.
+  * [scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/index.html)  is a Python library used for scientific computing and statistical analysis. Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/scipy/) on scipy.
+  * more python examples :  from the [Python Data Science HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings), from [earthpy website](http://earthpy.org/)
   
 ### Geoscientific data analysis in python :
 
 *We strongly recommand using the following packages.*
 
   * There are several interfaces for handling  netcdf files in python. Here is a tutorial to [NetCDF4](http://unidata.github.io/netcdf4-python/) interface.
-  * [pandas](http://pandas.pydata.org/pandas-docs/stable/) is a great package for handing time series and labelled data in python, here is a [10min tour](http://vimeo.com/59324550) to pandas. See also this [example](http://earthpy.org/time_series_analysis_with_pandas_part_2.html) 
+  * [pandas](http://pandas.pydata.org/pandas-docs/stable/) is a great package for handing time series and labelled data in python, here is a [10min tour](http://vimeo.com/59324550) to pandas. See also this [example](http://earthpy.org/time_series_analysis_with_pandas_part_2.html) . Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/pandas/) on pandas.
   *  [xarray](http://xarray.pydata.org/) implements a N-dimensional variants of the core pandas data structures.  In practice, xarray provides an in-memory representation of the content of a collection of netCDF files.
     * official [documentation](http://xarray.pydata.org/en/stable/) (with interesting links to videos and tutorials) : 
     * xarray tutorials [by S. Hoyer](https://gist.github.com/shoyer/d462cc3b2aeb87bbb78cc6f8207851c6#file-xarray-tutorial-with-answers-ipynb) and [by N. Fauchereau](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/xray.ipynb)
@@ -86,17 +89,16 @@ For people who have never used python before :
     * slides on [visualizing parrallel computation](http://matthewrocklin.com/slides/plotcon-2016.html#/)
     * combining [xarray and dask](https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python)
       
-  * [oocgcm](http://oocgcm.readthedocs.io/en/latest/) builds on xarray and dask and provides tools for processing and analysing output of general circulation models and gridded satellite data in the field of Earth system science.
+  * [oocgcm](http://oocgcm.readthedocs.io/en/latest/) is a project that provides tools for processing and analysing output of general circulation models and gridded satellite data in the field of Earth system science.
 
 ### Data visualization with python :
 There are currently too many libraries for visualizing data with python (see this [python data vizualization tour](https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/)), this may seem exciting or overwhelming depending on the point of view... In practice, you should distinguish libraries that focus on *interactive data visualization* (great for investigating your datasets in Jupyter notebooks) and libraries that focus on *static data visualization* (needed for writing papers and reports). Several of the more recent visualization libraries in python
 implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/book/9780387245447). 
 
   * **General purpose visualization:** 
-	 
-    * *static visualization* : 
+ 	 * *static visualization* : 
       * [matplotlib](http://www.matplotlib.org/) is the standard 2D and 3D plotting library for python. See this [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
-      * [seaborn](http://seaborn.pydata.org/) is great for statistical data vizualisation with python (default plots look good with seaborn) : [tutorial](http://seaborn.pydata.org/tutorial.html), [examples](http://seaborn.pydata.org/examples/index.html)
+      * [seaborn](http://seaborn.pydata.org/) is a great to matplotlib for statistical data vizualisation with python (default plots look good with seaborn) : [tutorial](http://seaborn.pydata.org/tutorial.html), [examples](http://seaborn.pydata.org/examples/index.html), here is a nice [collection of ressources](https://community.modeanalytics.com/python/libraries/seaborn/)
       * [ggplot](http://ggplot.yhathq.com/) is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. see also this [video](www.youtube.com/watch?v=pHrwqLhAaMw)
       * [altair](https://github.com/ellisonbg/altair) is a new declarative statistical visualization library : [documentation](https://github.com/ellisonbg/altair), [tutorial notebook](https://github.com/ellisonbg/altair/blob/master/altair/notebooks/01-Index.ipynb)
 
@@ -106,9 +108,8 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
       * [bqplot](https://github.com/bloomberg/bqplot) is a Grammar of Graphics-based interactive plotting framework for the Jupyter notebook. 
       * plotly is another interactive visualization library, probably more oriented to making charts and dashboard for companies: [documentation](https://plot.ly/python/offline/), [examples](https://plot.ly/python/)
 
-   
   * **Visualizing geographical data** :
-    * *static visualization* : 
+ 	 * *static visualization* : 
       * [Basemap](http://matplotlib.org/basemap/) is an extension to matplotlib that allows to plot geographical data:  [documentation](https://basemaptutorial.readthedocs.io/en/latest/)
       * [Cartopy](http://scitools.org.uk/cartopy/) provides cartographic tools for python (developped by the MetOffice) : [documentation](http://scitools.org.uk/cartopy/docs/latest/index.html)
     * *interactive vizualization (within Jupyter notebooks)* :
@@ -117,8 +118,8 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
   * **How to choose a colorbar**: 
   
   (*section under construction*)
-      * [cmoceans](https://plot.ly/python/cmocean-colorscales/)
-
+  
+    * [cmoceans](https://plot.ly/python/cmocean-colorscales/)
 
 
 
@@ -128,8 +129,11 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
   * numba [video](https://www.youtube.com/watch?v=eYIPEDnp5C4)
   * cython
 
+### Other useful resources on python
+  * a tutorial on [image processing](http://www.scipy-lectures.org/advanced/image_processing/) with python
+  
 
-## Other useful software
+## Other software used in MEOM group
 (*section under construction*)
 
   * CDFTOOLS : https://github.com/meom-group/CDFTOOLS

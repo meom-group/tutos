@@ -130,9 +130,10 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
   * cython
 
 ### Other useful resources on python
-  * a tutorial on [image processing](http://www.scipy-lectures.org/advanced/image_processing/) with python
-  
-
+  * [Image processing with python](http://www.scipy-lectures.org/advanced/image_processing/)
+  * [Python for probability, statistics and machine learning](http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/)
+ * [Python for signal processing](http://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
+ * 
 ## Other software used in MEOM group
 (*section under construction*)
 

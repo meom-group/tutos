@@ -116,7 +116,6 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
       * [GeoViews](http://geo.holoviews.org/)  (*recommended*) is built on HoloViews. It allows to explore and visualize geographical  data interactively. Works nicely with xarray : [demo](https://www.continuum.io/blog/developer-blog/introducing-geoviews),  [examples](http://geo.holoviews.org/index.html) 
 
   * **How to choose a colorbar**: 
-  
   (*section under construction*)
   
     * [cmoceans](https://plot.ly/python/cmocean-colorscales/)
@@ -132,7 +131,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
 ### Other useful resources on python
   * [Image processing with python](http://www.scipy-lectures.org/advanced/image_processing/)
   * [Python for probability, statistics and machine learning](http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/)
- * [Python for signal processing](http://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
+  * [Python for signal processing](http://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
  
  
 ## Other software used in MEOM group

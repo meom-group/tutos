@@ -112,7 +112,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
  	 * *static visualization* : 
       * [Basemap](http://matplotlib.org/basemap/) is an extension to matplotlib that allows to plot geographical data:  [documentation](https://basemaptutorial.readthedocs.io/en/latest/)
       * [Cartopy](http://scitools.org.uk/cartopy/) provides cartographic tools for python (developped by the MetOffice) : [documentation](http://scitools.org.uk/cartopy/docs/latest/index.html)
-    * *interactive vizualization (within Jupyter notebooks)* :
+   * *interactive vizualization (within Jupyter notebooks)* :
       * [GeoViews](http://geo.holoviews.org/)  (*recommended*) is built on HoloViews. It allows to explore and visualize geographical  data interactively. Works nicely with xarray : [demo](https://www.continuum.io/blog/developer-blog/introducing-geoviews),  [examples](http://geo.holoviews.org/index.html) 
 
   * **How to choose a colorbar**: 
@@ -132,6 +132,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
   * [Image processing with python](http://www.scipy-lectures.org/advanced/image_processing/)
   * [Python for probability, statistics and machine learning](http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/)
   * [Python for signal processing](http://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
+  * [Machine learning with TensorFlow](https://github.com/BinRoot/TensorFlow-Book)
  
  
 ## Other software used in MEOM group

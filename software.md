@@ -76,7 +76,7 @@ For people who have never used python before :
 *We strongly recommand using the following packages.*
 
   * There are several interfaces for handling  netcdf files in python. Here is a tutorial to [NetCDF4](http://unidata.github.io/netcdf4-python/) interface.
-  * [pandas](http://pandas.pydata.org/pandas-docs/stable/) is a great package for handing time series and labelled data in python, here is a [10min tour](http://vimeo.com/59324550) to pandas. See also this [example](http://earthpy.org/time_series_analysis_with_pandas_part_2.html) . Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/pandas/) on pandas.
+  * [pandas](http://pandas.pydata.org/pandas-docs/stable/) is a great package for handing time series and labelled data in python, here is a [10min tour](http://vimeo.com/59324550) to pandas. See also this [example](http://earthpy.org/time_series_analysis_with_pandas_part_2.html) . Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/pandas/) on pandas. See also this [brief introduction](https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python)
   *  [xarray](http://xarray.pydata.org/) implements a N-dimensional variants of the core pandas data structures.  In practice, xarray provides an in-memory representation of the content of a collection of netCDF files.
     * official [documentation](http://xarray.pydata.org/en/stable/) (with interesting links to videos and tutorials) : 
     * xarray tutorials [by S. Hoyer](https://gist.github.com/shoyer/d462cc3b2aeb87bbb78cc6f8207851c6#file-xarray-tutorial-with-answers-ipynb) and [by N. Fauchereau](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/xray.ipynb)

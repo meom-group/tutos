@@ -129,12 +129,13 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
   * numba [video](https://www.youtube.com/watch?v=eYIPEDnp5C4)
   * cython
 
-### Other useful resources on python
+### Other useful python packages and jupyter notebooks
   * [Image processing with python](http://www.scipy-lectures.org/advanced/image_processing/)
+  * [Filtering and time series analysis with scipy.signal](https://docs.scipy.org/doc/scipy/reference/tutorial/signal.html)
   * [Python for probability, statistics and machine learning](http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/)
   * [Python for signal processing](http://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
   * [Machine learning with TensorFlow](https://github.com/BinRoot/TensorFlow-Book)
- 
+  * managing dates and time intervals [arrow](https://arrow.readthedocs.io/en/latest/).
  
 ## Other software used in MEOM group
 (*section under construction*)

@@ -113,7 +113,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
       * [Cartopy](http://scitools.org.uk/cartopy/) provides cartographic tools for python (developped by the MetOffice) : [documentation](http://scitools.org.uk/cartopy/docs/latest/index.html)
 
    * *interactive vizualization (within Jupyter notebooks)* :
-      * [GeoViews](http://geo.holoviews.org/)  (*recommended*) is built on HoloViews. It allows to explore and visualize geographical  data interactively. Works nicely with xarray : [demo](https://www.continuum.io/blog/developer-blog/introducing-geoviews),  [examples](http://geo.holoviews.org/index.html) 
+      * [GeoViews](http://geo.holoviews.org/)  (*recommended*) is built on HoloViews. It allows to explore and visualize geographical  data interactively. Works nicely with xarray : [demo](https://www.continuum.io/blog/developer-blog/introducing-geoviews),  [examples](http://geo.holoviews.org/index.html), see also how to work with gridded data with geoviews [part 1](http://geo.holoviews.org/Gridded_Datasets_I.html) and [part 2](http://geo.holoviews.org/Gridded_Datasets_II.html)
 
   * **How to choose a colorbar**: 
   (*section under construction*)

@@ -22,7 +22,7 @@ In this page, you will find a **curated list of software**, tutorials and exampl
 To work with the MEOM group, you will need this minimal software configuration and set-up: 
 
  -  install [anaconda](https://docs.continuum.io/anaconda/) (python distribution and package manager)
- - learn how to manage [conda environmenyts](http://conda.pydata.org/docs/using/envs.html)
+ - learn how to manage [conda environments](http://conda.pydata.org/docs/using/envs.html)
  - install [git](https://git-scm.com/) (software version control manager)
  - create a [github](https://github.com/) account and learn how to use it : 
   - [cloning] (https://help.github.com/articles/importing-a-git-repository-using-the-command-line/) a repository

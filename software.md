@@ -21,10 +21,9 @@ In this page, you will find a **curated list of software**, tutorials and exampl
 ## Recommanded base configuration
 To work with the MEOM group, you will need this minimal software configuration and set-up: 
 
- -  install [anaconda](https://docs.continuum.io/anaconda/) (python distribution and package manager)
- - learn how to manage [conda environments](http://conda.pydata.org/docs/using/envs.html)
- - install [git](https://git-scm.com/) (software version control manager)
- - create a [github](https://github.com/) account and learn how to use it : 
+ -  install [anaconda](https://docs.continuum.io/anaconda/) (python distribution and package manager) and learn how to use it
+   - learn how to manage [conda environments](http://conda.pydata.org/docs/using/envs.html)
+ - install [git](https://git-scm.com/) (software version control manager), create a [github](https://github.com/) account and learn how to use it : 
   - [cloning] (https://help.github.com/articles/importing-a-git-repository-using-the-command-line/) a repository
   - using [gist](https://help.github.com/articles/creating-gists/)
   - using [pull requests](https://help.github.com/articles/using-pull-requests/) (**advanced**)
@@ -98,12 +97,12 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
   * **General purpose visualization:** 
  	 * *static visualization* : 
       * [matplotlib](http://www.matplotlib.org/) is the standard 2D and 3D plotting library for python. See this [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
-      * [seaborn](http://seaborn.pydata.org/) is a great to matplotlib for statistical data vizualisation with python (default plots look good with seaborn) : [tutorial](http://seaborn.pydata.org/tutorial.html), [examples](http://seaborn.pydata.org/examples/index.html), here is a nice [collection of ressources](https://community.modeanalytics.com/python/libraries/seaborn/)
+      * [seaborn](http://seaborn.pydata.org/) is a great to matplotlib for statistical data vizualisation with python (default plots look good with seaborn) : [tutorial](http://seaborn.pydata.org/tutorial.html), [examples](http://seaborn.pydata.org/examples/index.html), here is a nice [collection of ressources](https://community.modeanalytics.com/python/libraries/seaborn/). (note that seaborn is well integrated in holoviews)
       * [ggplot](http://ggplot.yhathq.com/) is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. see also this [video](www.youtube.com/watch?v=pHrwqLhAaMw)
       * [altair](https://github.com/ellisonbg/altair) is a new declarative statistical visualization library : [documentation](https://github.com/ellisonbg/altair), [tutorial notebook](https://github.com/ellisonbg/altair/blob/master/altair/notebooks/01-Index.ipynb)
 
-    * *interactive vizualization (within Jupyter notebooks)*
-      * [HoloViews](http://holoviews.org/)  lets you store your data in an annotated format that is instantly visualizable, with immediate access to both the numeric data and its visualization : [video demo](https://www.youtube.com/watch?v=0jhUivliNSo), [video demo](https://www.youtube.com/watch?v=hNsR2H7Lrg0), [example notebooks](https://github.com/ioam/holoviews-contrib), list [holoviews elements](http://holoviews.org/Tutorials/Elements.html)
+    * *interactive visualization (within Jupyter notebooks)*
+      * [HoloViews](http://holoviews.org/)  lets you store your data in an annotated format that is instantly visualizable, with immediate access to both the numeric data and its visualization : [video demo](https://www.youtube.com/watch?v=0jhUivliNSo), [video demo](https://www.youtube.com/watch?v=hNsR2H7Lrg0), [example notebooks](https://github.com/ioam/holoviews-contrib), list [holoviews elements](http://holoviews.org/Tutorials/Elements.html), holoview for visualizing [distribution data](http://holoviews.org/Tutorials/Pandas_Seaborn.html).
       * [Bokeh](http://bokeh.pydata.org/en/latest/) is an interactive data visualization library that implements the grammar of graphics : [example gallery](http://bokeh.pydata.org/en/latest/docs/gallery.html#gallery), [notebook gallery](http://nbviewer.jupyter.org/github/bokeh/bokeh-notebooks/blob/master/index.ipynb), [video demo](https://www.youtube.com/watch?v=c9CgHHz_iYk) [](http://www.pyvideo.org/video/1224/bokeh-an-extensible-implementation-of-the-gramma)
       * [bqplot](https://github.com/bloomberg/bqplot) is a Grammar of Graphics-based interactive plotting framework for the Jupyter notebook. 
       * plotly is another interactive visualization library, probably more oriented to making charts and dashboard for companies: [documentation](https://plot.ly/python/offline/), [examples](https://plot.ly/python/)

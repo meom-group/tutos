@@ -45,6 +45,7 @@ Resources on *how to build and distribute software* (**advanced**):
  * packaging and distrubuting python projects : [user guide](https://packaging.python.org/ ), [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html)
  * testing and continuous integration : [software carpentry tutorial](http://katyhuff.github.io/python-testing/), [travis-ci](https://travis-ci.org/)
  * documenting your projects : A guide to python documentation with [numpydoc](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt), [readthedocs](https://readthedocs.org/), write the docs [community](http://www.writethedocs.org/)
+ * a blog post of [templates for python command line scripts](https://zduey.github.io/tips/the-funnel-method/)
 
 ## Jupyter notebooks
 Jupyter notebooks are great for sharing your work because they allow to mix code, text and visualization in the same document. Because Jupyter notebooks can understand code in different languages, they are also great for building an complex data analysis pipelines.

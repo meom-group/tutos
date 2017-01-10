@@ -69,7 +69,9 @@ For people who have never used python before :
     * [mode analytics lessons](https://community.modeanalytics.com/python/)
   * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/numpy/) on numpy.
   * [scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/index.html)  is a Python library used for scientific computing and statistical analysis. Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/scipy/) on scipy.
-  * more python examples :  from the [Python Data Science HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings), from [earthpy website](http://earthpy.org/), see also the [scipy lecture notes](http://www.scipy-lectures.org/) 
+  * more python examples :  from the [Python Data Science HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings), from [earthpy website](http://earthpy.org/), see also the [scipy lecture notes](http://www.scipy-lectures.org/)
+
+
 ### Geoscientific data analysis in python :
 
 *We strongly recommand using the following packages.*

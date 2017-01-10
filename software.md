@@ -28,7 +28,6 @@ To work with the MEOM group, you will need this minimal software configuration a
   - using [gist](https://help.github.com/articles/creating-gists/)
   - using [pull requests](https://help.github.com/articles/using-pull-requests/) (**advanced**)
   
- - (*to be updated*) ...
 
 Caution : you may need to configure git to work through our network proxy.
 
@@ -117,18 +116,23 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
    * *interactive vizualization (within Jupyter notebooks)* :
       * [GeoViews](http://geo.holoviews.org/)  (*recommended*) is built on HoloViews. It allows to explore and visualize geographical  data interactively. Works nicely with xarray : [demo](https://www.continuum.io/blog/developer-blog/introducing-geoviews),  [examples](http://geo.holoviews.org/index.html), see also how to work with gridded data with geoviews [part 1](http://geo.holoviews.org/Gridded_Datasets_I.html) and [part 2](http://geo.holoviews.org/Gridded_Datasets_II.html)
 
-  * **How to choose a colorbar**: 
-  (*section under construction*)
-  
-    * [cmoceans](https://plot.ly/python/cmocean-colorscales/)
+  * **How to choose a colormap**: 
+   * see this resourtce on [perceptually uniform colormaps](http://peterkovesi.com/projects/colourmaps/), 
+   * see this discussion for a [better default colormap for matplotlib](http://bids.github.io/colormap/)
+   * check out these useful colormaps : [colorcet](https://github.com/bokeh/colorcet), [cmoceans](https://plot.ly/python/cmocean-colorscales/)
+   * see also this discussion colorbar manipulation for [bathymetry](http://pyhogs.github.io/colormap-bathymetry.html)
 
 
 
 ### Optimizing python codes
-(*section under construction*)
+Python is great for fast prototyping of production code. It also has the reputation of being rather slow as compared to other languages (as for instance Fortran, C or C++). There are therefore a lot of options for accelerating python code, with classical solutions generally involving  interfacing python code with faster languages. This is the general idea behind [f2py](http://www.f2py.com/), [Weave](https://docs.scipy.org/doc/scipy/reference/tutorial/weave.html), [Cython](http://cython.org/).  Although some of theses solutions can be very helpful for interfacing pre-existing legacy code, we here promote the use of [numba](http://numba.pydata.org/). Numba indeed gives you the power to speed up your applications with a few annotations  without having to switch languages or Python interpreters.
 
-  * numba [video](https://www.youtube.com/watch?v=eYIPEDnp5C4)
-  * cython
+
+  * see this discussion on how to [optimize python code with numba, cython and fortran in jupyter notebooks with magics](https://ocefpaf.github.io/python4oceanographers/blog/2015/10/05/isosurfaces/)
+  * see this blog post on the [optimization of non-uniform fourier transforms](https://jakevdp.github.io/blog/2015/02/24/optimizing-python-with-numpy-and-numba/)
+  * see this blog post on [accelerating python code with numba](https://www.continuum.io/blog/developer/accelerating-python-libraries-numba-part-1)
+  * and this series of videos on numba  : [video1](https://www.youtube.com/watch?v=QpaapVaL8Fw), [video2](https://www.youtube.com/watch?v=eYIPEDnp5C4), [video3](https://www.youtube.com/watch?v=COglHpt7KSs)
+
 
 ### Other useful python packages and jupyter notebooks
   * [Image processing with python](http://www.scipy-lectures.org/advanced/image_processing/)

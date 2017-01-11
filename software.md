@@ -141,6 +141,7 @@ Python is great for fast prototyping of production code. It also has the reputat
   * [Python for probability, statistics and machine learning](http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/)
   * [Python for signal processing](http://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
   * [Machine learning with TensorFlow](https://github.com/BinRoot/TensorFlow-Book)
+  * [PyMC3](https://github.com/pymc-devs/pymc3) Probabilistic modelling in python 
   * managing dates and time intervals [arrow](https://arrow.readthedocs.io/en/latest/).
  
 ## Other software used in MEOM group

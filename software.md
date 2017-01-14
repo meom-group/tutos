@@ -55,6 +55,7 @@ Jupyter notebooks are great for sharing your work because they allow to mix code
   * using the [ipython](http://nbviewer.jupyter.org/github/ipython/ipython/blob/4.0.x/examples/IPython%20Kernel/Index.ipynb) kernel
   * sharing notebooks with [nbviewer](http://nbviewer.jupyter.org/)
   * recommanded [best practices](https://www.youtube.com/watch?v=JI1HWUAyJHE) with Jupyter notebooks
+  * Jupyter notebooks [tips, tricks and shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
   * examples from [the Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks), and from [the group](https://github.com/lesommer/notebooks)
  * building reproducible analysis pipelines with [nbflow](https://www.youtube.com/watch?v=Fc2W930NJs8) (**advanced**)
  * diffing and merging notebooks with [nbdime](http://nbdime.readthedocs.io/)

@@ -90,7 +90,8 @@ For people who have never used python before :
     * some [examples](https://github.com/jorisvandenbossche/SWSC2016-pandas-dask)
     * slides on [visualizing parrallel computation](http://matthewrocklin.com/slides/plotcon-2016.html#/)
     * combining [xarray and dask](https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python)
-      
+    * QuickStart with [Dask.distributed](https://distributed.readthedocs.io/en/latest/)
+
   * [oocgcm](http://oocgcm.readthedocs.io/en/latest/) is a project that provides tools for processing and analysing output of general circulation models and gridded satellite data in the field of Earth system science.
 
 ### Data visualization with python :

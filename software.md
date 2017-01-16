@@ -124,7 +124,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
    * see this discussion for a [better default colormap for matplotlib](http://bids.github.io/colormap/)
    * check out these useful colormaps : [colorcet](https://github.com/bokeh/colorcet), [cmoceans](https://plot.ly/python/cmocean-colorscales/)
    * see also this discussion colorbar manipulation for [bathymetry](http://pyhogs.github.io/colormap-bathymetry.html)
-
+   * seaborn [color palette tutorial](http://seaborn.pydata.org/tutorial/color_palettes.html#palette-tutorial)
 
 
 ### Optimizing python codes

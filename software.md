@@ -138,6 +138,7 @@ Python is great for fast prototyping of production code. It also has the reputat
 
 
 ### Other useful python packages and jupyter notebooks
+  * Statistics in python with [statmodels](https://github.com/statsmodels/statsmodels) : [documentation](http://statsmodels.sourceforge.net/stable/), [examples](http://www.statsmodels.org/stable/examples/index.html) 
   * [Image processing with python](http://www.scipy-lectures.org/advanced/image_processing/)
   * [Filtering and time series analysis with scipy.signal](https://docs.scipy.org/doc/scipy/reference/tutorial/signal.html)
   * [Python for probability, statistics and machine learning](http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/)

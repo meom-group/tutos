@@ -68,7 +68,7 @@ For people who have never used python before :
   * Introduction to python through examples : 
     * [software carpentry tutorial](http://swcarpentry.github.io/python-novice-inflammation/)
     * [mode analytics lessons](https://community.modeanalytics.com/python/)
-  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/numpy/) on numpy.
+  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/numpy/) on numpy. [From python to numpy](http://www.labri.fr/perso/nrougier/from-python-to-numpy/) includes a lot of examples [codes](https://github.com/ocefpaf/from-python-to-numpy/blob/master/README.md) and links to [tutorials](http://www.labri.fr/perso/nrougier/from-python-to-numpy/#tutorials)
   * [scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/index.html)  is a Python library used for scientific computing and statistical analysis. Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/scipy/) on scipy.
   * more python examples :  from the [Python Data Science HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings), from [earthpy website](http://earthpy.org/), see also the [scipy lecture notes](http://www.scipy-lectures.org/)
 

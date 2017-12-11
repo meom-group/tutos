@@ -1,6 +1,6 @@
 # Data analysis software used in MEOM group and how to learn it.
 
-authors : Julien Le Sommer and Aurélie Albert (MEOM group, IGE)
+authors : Julien Le Sommer, Aurélie Albert and Redouane Lguensat (MEOM group, IGE)
 
 *This page provides a curated list of software used for data analysis in the MEOM group, online resources on how to use it and general advice on how to proceed with ocean data analysis. Please, keep in mind that (i) this list is not exhaustive and that (ii) it may evolve with time.*
 
@@ -94,6 +94,26 @@ For people who have never used python before :
 
   * [oocgcm](http://oocgcm.readthedocs.io/en/latest/) is a project that provides tools for processing and analysing output of general circulation models and gridded satellite data in the field of Earth system science.
 
+### Machine Learning with python :
+Recently, machine learning (ML) methods are leading to impressive performances in signal/image/vision fields, in particular, neural networks made a strong come-back thanks to a technique called deep learning (DL) [(Nature paper)](https://www.nature.com/articles/nature14539). Maybe you heard about AlphaGo the algorithm that beat the world champion in the game Go [(story)](https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol), or you heard about the Microsoft team that developed an algorithm able to surpass Human-Level performance on classification of ImageNet a popular image dataset [(paper)](https://arxiv.org/abs/1502.01852). These are just a glimpse of what DL is doing right now, for more information, you can take a look at these excellent articles [1](https://www.technologyreview.com/s/513696/deep-learning/),[2](http://fortune.com/ai-artificial-intelligence-deep-machine-learning/). In our group we are starting to investigate the possibility of transferring the knowledge gained in the machine learning community to tackle ocean related inverse problems.
+
+For newcomers into ML we strongly recommend Andrew Ng's ML [course](https://www.coursera.org/learn/machine-learning) (It's an old course so it still uses Matlab). Then the DL specialization suggested by Andrew Ng (again) is a great introduction to DL [(course)](https://www.coursera.org/specializations/deep-learning) (2017, so it's Python time!).
+
+The following packages are mainly used by our team for ML:
+  * [scikit-learn](http://scikit-learn.org/stable/): Built on top of NumPy, SciPy, and matplotlib, scikit-learn is the standard package used by industry and education for machine learning with Python. [Tutorials](http://scikit-learn.org/stable/tutorial/index.html) (FYI: It's first released version was done by INRIA researchers)
+  * [Tensorflow](https://www.tensorflow.org): Developed by Google, TF is currently the most used Python library for DL according to Github pull requests history and Google trends and other metrics. Other libraries for DL in Python exist like [*Theano*](http://deeplearning.net/software/theano/) (historical library developed by MILA lab but stopped this year, R.I.P), [*Caffe*](http://caffe.berkeleyvision.org), [*CNTK*](https://docs.microsoft.com/fr-fr/cognitive-toolkit/) (developed by Microsoft), [*MXNET*](https://mxnet.incubator.apache.org) (Amazon) and finally [*PyTorch*](http://pytorch.org) (developed by Facebook) which is gaining ground and can be considered as a strong concurrent to TF.
+  * [Keras](https://keras.io): Keras is a high-level neural networks API, that can run on top of TensorFlow. That means that's it's more "user friendly" than Tensorflow (allows easier prototyping, basically classical layers are ready-to-use with minimum code). In our group we rely on Keras since our work is about using existing techniques and adapting them to our applications. Some tutorials could be found [here](https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/).
+  
+Some other useful links and material for further reading:
+  * Course materials for the Data Science at Scale Specialization at Coursera https://github.com/AlessandroMozzato/datasci_course_materials
+  * (French) Stéphane Mallat - Apprentissage par invariants en grande dimension https://www.youtube.com/watch?v=kgicutzlq50
+  * Machine learning with sklearn, lecture https://www.youtube.com/watch?v=Cte8FYCpylk
+  * Machine learning for time series data in Python https://www.youtube.com/watch?v=ZgHGCfwExw0
+  * Machine Learning for Analyzing Complex Time Series https://www.youtube.com/watch?v=8lv3rf1zWkQ
+  * Jupyter notebooks for the code samples of the book "Deep Learning with Python" https://github.com/fchollet/deep-learning-with-python-notebooks
+  * Python for probability, statistics and machine learning http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/
+  * Machine learning with TensorFlow https://github.com/BinRoot/TensorFlow-Book
+
 ### Data visualization with python :
 There are currently too many libraries for visualizing data with python (see this [python data vizualization tour](https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/)), this may seem exciting or overwhelming depending on the point of view... In practice, you should distinguish libraries that focus on *interactive data visualization* (great for investigating your datasets in Jupyter notebooks) and libraries that focus on *static data visualization* (needed for writing papers and reports). Several of the more recent visualization libraries in python
 implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/book/9780387245447). 
@@ -141,9 +161,7 @@ Python is great for fast prototyping of production code. It also has the reputat
   * Statistics in python with [statsmodels](https://github.com/statsmodels/statsmodels) : [documentation](http://statsmodels.sourceforge.net/stable/), [examples](http://www.statsmodels.org/stable/examples/index.html) 
   * [Image processing with python](http://www.scipy-lectures.org/advanced/image_processing/)
   * [Filtering and time series analysis with scipy.signal](https://docs.scipy.org/doc/scipy/reference/tutorial/signal.html)
-  * [Python for probability, statistics and machine learning](http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/)
   * [Python for signal processing](http://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
-  * [Machine learning with TensorFlow](https://github.com/BinRoot/TensorFlow-Book)
   * [PyMC3](https://github.com/pymc-devs/pymc3) Probabilistic modelling in python 
   * managing dates and time intervals [arrow](https://arrow.readthedocs.io/en/latest/).
  

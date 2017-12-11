@@ -109,8 +109,10 @@ Some other useful links and material for further reading:
   * (French) Stéphane Mallat - Apprentissage par invariants en grande dimension https://www.youtube.com/watch?v=kgicutzlq50
   * Machine learning with sklearn, lecture https://www.youtube.com/watch?v=Cte8FYCpylk
   * Machine learning for time series data in Python https://www.youtube.com/watch?v=ZgHGCfwExw0
-  * Machine Learning for Analyzing Complex Time Series https://www.youtube.com/watch?v=UxJB_5PyKTI
+  * Machine Learning for Analyzing Complex Time Series https://www.youtube.com/watch?v=8lv3rf1zWkQ
   * Jupyter notebooks for the code samples of the book "Deep Learning with Python" https://github.com/fchollet/deep-learning-with-python-notebooks
+  * Python for probability, statistics and machine learning http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/
+  * Machine learning with TensorFlow https://github.com/BinRoot/TensorFlow-Book
 
 ### Data visualization with python :
 There are currently too many libraries for visualizing data with python (see this [python data vizualization tour](https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/)), this may seem exciting or overwhelming depending on the point of view... In practice, you should distinguish libraries that focus on *interactive data visualization* (great for investigating your datasets in Jupyter notebooks) and libraries that focus on *static data visualization* (needed for writing papers and reports). Several of the more recent visualization libraries in python
@@ -159,9 +161,7 @@ Python is great for fast prototyping of production code. It also has the reputat
   * Statistics in python with [statsmodels](https://github.com/statsmodels/statsmodels) : [documentation](http://statsmodels.sourceforge.net/stable/), [examples](http://www.statsmodels.org/stable/examples/index.html) 
   * [Image processing with python](http://www.scipy-lectures.org/advanced/image_processing/)
   * [Filtering and time series analysis with scipy.signal](https://docs.scipy.org/doc/scipy/reference/tutorial/signal.html)
-  * [Python for probability, statistics and machine learning](http://nbviewer.jupyter.org/github/unpingco/Python-for-Probability-Statistics-and-Machine-Learning/tree/master/)
   * [Python for signal processing](http://nbviewer.jupyter.org/github/unpingco/Python-for-Signal-Processing/tree/master/)
-  * [Machine learning with TensorFlow](https://github.com/BinRoot/TensorFlow-Book)
   * [PyMC3](https://github.com/pymc-devs/pymc3) Probabilistic modelling in python 
   * managing dates and time intervals [arrow](https://arrow.readthedocs.io/en/latest/).
  

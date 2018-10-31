@@ -120,7 +120,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
 
   * **General purpose visualization:** 
  	 * *static visualization* : 
-      * [matplotlib](http://www.matplotlib.org/) is the standard 2D and 3D plotting library for python. See this [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
+      * [matplotlib](http://www.matplotlib.org/) is the standard 2D and 3D plotting library for python. See this [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb) and some explanations on how plots work (https://dev.to/skotaro/artist-in-matplotlib---something-i-wanted-to-know-before-spending-tremendous-hours-on-googling-how-tos--31oo)
       * [seaborn](http://seaborn.pydata.org/) is a great to matplotlib for statistical data vizualisation with python (default plots look good with seaborn) : [tutorial](http://seaborn.pydata.org/tutorial.html), [examples](http://seaborn.pydata.org/examples/index.html), here is a nice [collection of ressources](https://community.modeanalytics.com/python/libraries/seaborn/). (note that seaborn is well integrated in holoviews)
       * [ggplot](http://ggplot.yhathq.com/) is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. see also this [video](www.youtube.com/watch?v=pHrwqLhAaMw)
       * [altair](https://github.com/ellisonbg/altair) is a new declarative statistical visualization library : [documentation](https://github.com/ellisonbg/altair), [tutorial notebook](https://github.com/ellisonbg/altair/blob/master/altair/notebooks/01-Index.ipynb)

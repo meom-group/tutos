@@ -1,6 +1,6 @@
-#Le fonctionnement du site
+# Le fonctionnement du site
 
-##Prérequis
+## Prérequis
 
 Tout d'abord pour pouvoir modifier le site web de l'équipe il faut :
   * avoir un compte github (ça prend 2 sec !)
@@ -14,7 +14,7 @@ Ensuite, deux solutions :
   * soit en téléchargeant une copie de tout le répertoire sur votre ordinateur, en local. Cela permet d'ajouter des fichiers et images plus facilement. (procédure ci-dessous)
 
 
-##Modifications en local
+## Modifications en local
 
 La première fois, il faut d'abord "cloner" le répertoire, c'est-à-dire le télécharger en local :
 
@@ -44,14 +44,14 @@ git pull
 Si vous voulez prévisualiser l'effet que vos modifications auront sur le site avant de les "commiter", il suffit d'utiliser l'outil [jekyll](https://jekyllrb.com/) et de lancer la commande jekyll-serve. Vous pourrez alors voir le site web en local.
 
 
-##Différents types de pages :
+## Différents types de pages :
 
   * page en html (ex: index.html)
   * page en markdown : c'est du html simplifié, (ex: nemo.md) pour pas s'ennuyer avec toutes les balises et syntaxes rébarbatives, la mise en page est faite dans un fichier à part, le layout (ex _layout/default.html)
   * les includes : ce sont des éléments qui se répetent dans toutes ou quelques pages comme l'en-tête, le menu de navigation ou le bas de page, on les trouve dans le répertoire _includes (ex: footer.html)
   * les fichiers en .yml : ils permettent de séparer encore une fois le contenu de la forme. Ils sont appellés dans les fichiers html par l'intermédiaire d'une boucle. A chaque fois qu'on rajoute des informations dans ce fichier yml, cela rajoute du contenu dans la page html
 
-##Architecture du site :
+## Architecture du site :
 
 Voici la correspondance entre les pages du site et les fichiers dans le dossier meom-group.github.io :
 
@@ -72,9 +72,9 @@ Voici la correspondance entre les pages du site et les fichiers dans le dossier 
     * climate.md
     
 
-#Quelques actions de mises à jour qui risquent de revenir régulièrement
+# Quelques actions de mises à jour qui risquent de revenir régulièrement
 
-##Rajouter une image dans le carousel :
+## Rajouter une image dans le carousel :
 
   * dans _includes/carousel.html :  rajouter ou modifier le nombre d'images
 
@@ -103,7 +103,7 @@ dans lequel il faut donner le nom des 4 images (tailles 2052x340, 1000x340, 500x
 
   * dans assets/img/carousel : déposer les images 
   
-##Rajouter une nouvelle page scientifique à laquelle on accède via une image du carousel
+## Rajouter une nouvelle page scientifique à laquelle on accède via une image du carousel
 
   * faire les étapes du paragraphe précédent
   * créer une page markdown comme :
@@ -137,7 +137,7 @@ en indiquant le titre de la nouvelle page, le lien déjà indiqué dans le carou
 
 en modifiant le titre et le lien de la nouvelle page.
 
-##Rajouter une personne dans la page people :
+## Rajouter une personne dans la page people :
 
  * si membre permanent :
 
@@ -163,7 +163,7 @@ dans lequel on indique le nom, si besoin le titre, le nom de l'image qui montre 
   * si membre non-permanent : mêmes manips mais dans le fichier _data/nonperm.yml
 
 
-##Rajouter un projet dans la liste des projets :
+## Rajouter un projet dans la liste des projets :
 
   - dans _data/projects.yml : rajouter un paragraphe
 
@@ -198,7 +198,7 @@ permet d'accéder à la page du projet, ou rajouter la ligne
 
 pour accéder dans la page all projects au paragraphe correspondant au nouveau projet.
 
-##Créer une page projet indépendante (type page SOBUMS) :
+## Créer une page projet indépendante (type page SOBUMS) :
 
   - dans le dossier projects, rajouter un document markdown :
 
@@ -219,7 +219,7 @@ The Southern Ocean (oceans south of 30°S) plays a key role in global biogeochem
 
 en indiquant le titre du projet, l'adresse de la page et le texte en markdown.
 
-##Rajouter une offre d'emploi :
+## Rajouter une offre d'emploi :
 
   - dans jobs.md, ajouter un paragraphe du type :
 
@@ -232,7 +232,7 @@ en indiquant le titre du projet, l'adresse de la page et le texte en markdown.
 
 
 
-##Rajouter une news :
+## Rajouter une news :
 
   - dans le dossier _posts, créer un fichier dont le nom commence par la date : year-month-day-title-of-the-news.md et le remplir comme suit : 
 

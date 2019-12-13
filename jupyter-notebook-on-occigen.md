@@ -16,22 +16,5 @@
   
 - If you want to use dask-jobqueue (you submit a job to get ressources)
   - you need to install the dask-jobqueue library
-  - create a file like /home/albert7a/.config/dask/jobqueue.yaml where you write :
-  
- ``` jobqueue:
-   slurm:
-     name: dask-worker
-#     # Dask worker options
-     cores: 28                 # Total number of cores per job
-     memory: 20GB                # Total amount of memory per job
-     processes: 28                # Number of Python processes per job
-     interface: ib0             # Network interface to use like eth0 or ib0
-     death-timeout: 60           # Number of seconds to wait if a worker can not find a scheduler
-     local-directory: $SCRATCHDIR/daskjobqueue       # Location of fast local storage like /scratch or $TMPDIR
-#     # SLURM resource manager options
-     walltime: ‘00:30:00’
-     job-extra: [--constraint=BDW28',--exclusive’] ```
-     
-     
-
+  - copy the file /home/albert7a/.config/dask/jobqueue.yaml in your account
   - The syntaxe of the commands to put in the notebook is described here : https://github.com/auraoupa/Toolbox/blob/master/dask_ressources.ipynb

@@ -30,7 +30,7 @@
      local-directory: $SCRATCHDIR/daskjobqueue       # Location of fast local storage like /scratch or $TMPDIR
 #     # SLURM resource manager options
      walltime: ‘00:30:00’
-     job-extra: [--constraint=BDW28',--exclusive’]```
+     job-extra: [--constraint=BDW28',--exclusive’] ```
      
      
 

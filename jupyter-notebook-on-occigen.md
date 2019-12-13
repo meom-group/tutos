@@ -6,7 +6,7 @@
 
 - When you are on occigen, you must know that `conda install` is not possible (the http server is blocked) only `pip install` is available. There are 2 solutions :
   - you ask svp@cines.fr to install you a conda environment with a list of libraries, and each time you want a new library (make sure to ask for jupyter !)
-  - you use `conda-pack to prepare you environment on your local machine and then export it on occigen via ssh
+  - you use `conda-pack` to prepare you environment on your local machine and then export it on occigen via ssh
   
 - You need firefox to render your jupyter notebook : so in your .bashrc put the line `module load firefox`
 

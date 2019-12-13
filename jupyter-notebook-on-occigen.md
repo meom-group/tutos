@@ -31,5 +31,7 @@
 #     # SLURM resource manager options
      walltime: ‘00:30:00’
      job-extra: [--constraint=BDW28',--exclusive’]```
+     
+     
 
   - The syntaxe of the commands to put in the notebook is described here : https://github.com/auraoupa/Toolbox/blob/master/dask_ressources.ipynb

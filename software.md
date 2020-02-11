@@ -68,7 +68,7 @@ For people who have never used python before :
   * Introduction to python through examples : 
     * [software carpentry tutorial](http://swcarpentry.github.io/python-novice-inflammation/)
     * [mode analytics lessons](https://community.modeanalytics.com/python/)
-  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/numpy/) on numpy. [From python to numpy](http://www.labri.fr/perso/nrougier/from-python-to-numpy/) includes a lot of examples [codes](https://github.com/ocefpaf/from-python-to-numpy/blob/master/README.md) and links to [tutorials](http://www.labri.fr/perso/nrougier/from-python-to-numpy/#tutorials)
+  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/numpy/) on numpy. [From python to numpy](http://www.labri.fr/perso/nrougier/from-python-to-numpy/) includes a lot of examples [codes](https://github.com/ocefpaf/from-python-to-numpy/blob/master/README.md) and links to [tutorials](http://www.labri.fr/perso/nrougier/from-python-to-numpy/#tutorials). A useful [tutorial](https://github.com/leriomaggio/numpy-euroscipy) from Euroscipy 2019. 
   * [scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/index.html)  is a Python library used for scientific computing and statistical analysis. Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/scipy/) on scipy.
   * more python examples :  from the [Python Data Science HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings), from [earthpy website](http://earthpy.org/), see also the [scipy lecture notes](http://www.scipy-lectures.org/)
 
@@ -124,7 +124,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
 
   * **General purpose visualization:** 
  	 * *static visualization* : 
-      * [matplotlib](http://www.matplotlib.org/) is the standard 2D and 3D plotting library for python. See this [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb) and some [explanations](https://dev.to/skotaro/artist-in-matplotlib---something-i-wanted-to-know-before-spending-tremendous-hours-on-googling-how-tos--31oo) on how plots work 
+      * [matplotlib](http://www.matplotlib.org/) is the standard 2D and 3D plotting library for python. See this [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb) and some [explanations](https://dev.to/skotaro/artist-in-matplotlib---something-i-wanted-to-know-before-spending-tremendous-hours-on-googling-how-tos--31oo) on how plots work, the euroscipy 2019 [tutorial](https://github.com/timhoffm/euroscipy2019-using-matplotlib)
       * [seaborn](http://seaborn.pydata.org/) is a great to matplotlib for statistical data vizualisation with python (default plots look good with seaborn) : [tutorial](http://seaborn.pydata.org/tutorial.html), [examples](http://seaborn.pydata.org/examples/index.html), here is a nice [collection of ressources](https://community.modeanalytics.com/python/libraries/seaborn/). (note that seaborn is well integrated in holoviews)
       * [ggplot](http://ggplot.yhathq.com/) is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. see also this [video](www.youtube.com/watch?v=pHrwqLhAaMw)
       * [altair](https://github.com/ellisonbg/altair) is a new declarative statistical visualization library : [documentation](https://github.com/ellisonbg/altair), [tutorial notebook](https://github.com/ellisonbg/altair/blob/master/altair/notebooks/01-Index.ipynb)
@@ -137,7 +137,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
 
   * **Visualizing geographical data** :
  	 * *static visualization* : 
-      * [Basemap](http://matplotlib.org/basemap/) is an extension to matplotlib that allows to plot geographical data:  [documentation](https://basemaptutorial.readthedocs.io/en/latest/)
+     ~~ * [Basemap](http://matplotlib.org/basemap/) is an extension to matplotlib that allows to plot geographical data:  [documentation](https://basemaptutorial.readthedocs.io/en/latest/) ~~
       * [Cartopy](http://scitools.org.uk/cartopy/) provides cartographic tools for python (developped by the MetOffice) : [documentation](http://scitools.org.uk/cartopy/docs/latest/index.html)
 
    * *interactive vizualization (within Jupyter notebooks)* :

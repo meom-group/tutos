@@ -137,7 +137,7 @@ implement concepts from the [*Grammar of graphics*](http://www.springer.com/us/b
 
   * **Visualizing geographical data** :
  	 * *static visualization* : 
-     ~~ * [Basemap](http://matplotlib.org/basemap/) is an extension to matplotlib that allows to plot geographical data:  [documentation](https://basemaptutorial.readthedocs.io/en/latest/) ~~
+      * ~~[Basemap](http://matplotlib.org/basemap/) is an extension to matplotlib that allows to plot geographical data:  [documentation](https://basemaptutorial.readthedocs.io/en/latest/) ~~
       * [Cartopy](http://scitools.org.uk/cartopy/) provides cartographic tools for python (developped by the MetOffice) : [documentation](http://scitools.org.uk/cartopy/docs/latest/index.html)
 
    * *interactive vizualization (within Jupyter notebooks)* :

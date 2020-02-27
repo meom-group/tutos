@@ -28,6 +28,7 @@ To work with the MEOM group, you will need this minimal software configuration a
   - using [gist](https://help.github.com/articles/creating-gists/)
   - using [pull requests](https://help.github.com/articles/using-pull-requests/) (**advanced**)
   
+A small (and old) presentation about basic git : https://drive.google.com/file/d/13CBG1wGUQJpawkAM0zHzLJQivtwx_t3w/view?usp=sharing
 
 Caution : you may need to configure git to work through our network proxy.
 

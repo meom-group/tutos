@@ -6,7 +6,7 @@
    - create a conda environment for jupyter : 
       - conda create --name env-jup
       - conda activate env-jup
-      - conda install python=3.6 jupyter jupyterlab ipykernel nodejs xarray dask netcdf4 scipy
+      - conda install python=3.6 jupyter jupyterlab ipykernel nodejs xarray dask netcdf4 matplotlib
    - install the kernel in jupyter relative to the conda environment
       - python -m ipykernel install --user --name env-jup --display-name env-jup
    - extra step to get the dask dashboard running in the jupyterlab :

@@ -11,13 +11,13 @@
       - python -m ipykernel install --user --name env-jup --display-name env-jup
    - extra step to get the dask dashboard running in the jupyterlab :
       - pip install dask_labextension
-      - jupyter labextension install dask_labextension
-      - jupyter serverextension enable -py -sys-prefix dask_labextension
+      - jupyter labextension install dask-labextension
+      - jupyter serverextension enable --py --sys-prefix dask_labextension
    - launch jupyter :
-      - jupyter notebook --no-browser --port 8888
+      - jupyter notebook --no-browser --port 1234
  - on your local machine :
-   - make a tunnel to cal1 : ssh -NL 8888:localhost:8888 alberta@ige-meom-cal1.u-ga.fr
-   - open your browser and look for : localhost:8888
+   - make a tunnel to cal1 : ssh -NL 1324:localhost:1234 alberta@ige-meom-cal1.u-ga.fr
+   - open your browser and look for : localhost:1234
    - enter the token given in cal1 (or copy paste the address)
    
    

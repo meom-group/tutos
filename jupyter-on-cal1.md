@@ -4,7 +4,7 @@
 
  - on cal1  :
    - create a conda environment for jupyter : 
-      - conda create -name env-jup
+      - conda create --name env-jup
       - conda activate env-jup
       - conda install python=3.6 jupyter jupyterlab ipykernel nodejs xarray dask netcdf4 scipy
    - install the kernel in jupyter relative to the conda environment

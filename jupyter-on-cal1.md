@@ -16,7 +16,7 @@
    - launch jupyter :
       - jupyter notebook --no-browser --port 1234
  - on your local machine :
-   - make a tunnel to cal1 : ssh -NL 1324:localhost:1234 alberta@ige-meom-cal1.u-ga.fr
+   - make a tunnel to cal1 : ssh -NL 1234:localhost:1234 alberta@ige-meom-cal1.u-ga.fr
    - open your browser and look for : localhost:1234
    - enter the token given in cal1 (or copy paste the address)
    

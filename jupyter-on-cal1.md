@@ -36,7 +36,7 @@ As we are several users on cal1, it can happen that the port you request is alre
 
 You can check on cal1 with the command : netstat -tnlp
 
-If you see the line : `tcp        0      0 127.0.0.1:1234          0.0.0.0:*               LISTEN      5854/python3.6`it means that someone else uses 1324 for the his jupyter session and also `tcp        0      0 0.0.0.0:8787            0.0.0.0:*               LISTEN      -` means that the dashboard is already in use also.
+If you see the line : `tcp        0      0 127.0.0.1:1234          0.0.0.0:*               LISTEN      5854/python3.6`it means that someone else uses 1234 for the his jupyter session and also `tcp        0      0 0.0.0.0:8787            0.0.0.0:*               LISTEN      -` means that the dashboard is already in use also.
 
 So you need to choose a number that does not appear for both the notebook and the dash board and change the command `ssh -NL 1234:localhost:1234 -L 8787:localhost:8787 alberta@ige-meom-cal1.u-ga.fr`accordingly.
 

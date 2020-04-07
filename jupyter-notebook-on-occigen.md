@@ -1,3 +1,21 @@
+## How to run a jupyter notebook in the visualization process
+
+CINES offers a visualization tool in order to run for instance jupyter notebooks remotely on a dedicated node.
+
+The steps are described here : https://www.cines.fr/calcul/materiels/visualisation/sessions-interactives-vnc/
+
+Practically for us the steps will be :
+
+  - log in visu.cines.fr (first to cal1 if you are at home)
+  - type the command ```vizalloc -m vnc```, it will launch a job on the VISU nodes (not possible if you already have a job running ...), you can check it with the command vizqueue
+  - a node has been allocated to you for instance visu2.cines.fr:1
+  - log in to this node with ```ssh visu2.cines.fr```for instance, and there navigate to your directories and launch a ```jupyter notebook --no-browser```
+  - in a separate terminal, log to cal1 and launch vncviewer
+  - enter the node you have been granted, for instance visu2.cines.fr:5901, then your login and password, you now have access to a virtual desktop in which you can launch a browser (type firefox in a terminal)
+  - in the browser enter the notebook address you were given when you launched it, no copy-paste allowed so be careful with the syntax of the token !!
+ 
+## How to run a jupyter notebook directly on occigen
+
 - 2 cases :
   - you have a fix PC with a fix IP -> you can connect directly to occigen, jupyter-notebooks will render smoothly
   - you have a portable PC with a variable IP -> you must connect to cal1 first then to occigen

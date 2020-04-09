@@ -2,18 +2,19 @@
 
 CINES offers a visualization tool in order to run for instance jupyter notebooks remotely on a dedicated node.
 
-The steps are described here : https://www.cines.fr/calcul/materiels/visualisation/sessions-interactives-vnc/
+The steps are described [here](https://www.cines.fr/calcul/materiels/visualisation/sessions-interactives-vnc/).
 
 Practically for us the steps will be :
 
-  - log in visu.cines.fr (first to cal1 if you are at home)
-  - type the command ```vizalloc -m vnc```, it will launch a job on the VISU nodes (not possible if you already have a job running ...), you can check it with the command vizqueue
-  - a node has been allocated to you for instance visu2.cines.fr:1
-  - log in to this node with ```ssh visu2.cines.fr```for instance, and there navigate to your directories and launch a ```jupyter notebook --no-browser```
-  - in a separate terminal, log to cal1 and launch vncviewer
-  - enter the node you have been granted, for instance visu2.cines.fr:5901, then your login and password, you now have access to a virtual desktop in which you can launch a browser (type firefox in a terminal)
-  - in the browser enter the notebook address you were given when you launched it, no copy-paste allowed so be careful with the syntax of the token !!
- 
+  - Log into visu: `ssh username@visu.cines.fr` (from cal1 if you are on a private network).
+  - Type the command ```vizalloc -m vnc -t 360```, it will launch a job on the VISU nodes (not possible if you already have a job running...) for 360 minutes (6 hours). You can check your allocation with the command `vizqueue`.
+  - A node has been allocated to you for instance visuX.cines.fr:1 where "X" should be a number between 1-4.
+  - Log into this node with ```ssh username@visuX.cines.fr```for instance from a separate Terminal (via cal1), and there navigate to your directories and launch a ```jupyter notebook --no-browser```.
+  - In a separate Terminal (at this point, this should be your third Terminal window), activate ssh local forwarding: `ssh -L 5901:visuX.cines.fr:5901 username@ige-meom-cal1.u-ga.fr`.
+  - In your local environment, activate [TurboVNC](https://sourceforge.net/projects/turbovnc/files/) and access `localhost:5901` where you will be prompted to enter your Occigen username and password. You now have access to a virtual desktop in which you can launch a browser (type firefox in a terminal).
+  - In the browser, enter the notebook address you were given when you launched it (no copy-paste allowed so be careful with the syntax of the token!!).
+
+
 ## How to run a jupyter notebook directly on occigen
 
 - 2 cases :

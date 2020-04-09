@@ -2,7 +2,7 @@
 
 CINES offers a visualization tool in order to run for instance jupyter notebooks remotely on a dedicated node.
 
-The steps are described here : https://www.cines.fr/calcul/materiels/visualisation/sessions-interactives-vnc/
+The steps are described [here](https://www.cines.fr/calcul/materiels/visualisation/sessions-interactives-vnc/)
 
 Practically for us the steps will be :
 

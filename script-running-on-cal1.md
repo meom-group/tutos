@@ -7,7 +7,7 @@ For a python code, for e.g. code.py, you want to launch, these different options
 - ```python code.py```
   - Launches the python code (your job). You will see the output, for example printing some message, appear below. If you launch it like this, you will not be able to do anything else on this terminal tab until the code finishes running.
 
-- ```python code.py```
+- ```python code.py &```
   - Puts the process in the background, so that you can continue to use the same terminal tab. A number will appear when you do this, allowing you to identify this job when you do top.  If you code has any outputs, they will continue to appear just below.
   
 - ```nohup python code.py```

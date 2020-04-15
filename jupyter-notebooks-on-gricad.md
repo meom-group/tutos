@@ -35,7 +35,7 @@
      - conda activate pangeo
      - jupyter notebook/lab
   - in a second terminal :
-     - ssh -fNL 8888:dahuX:8888  [ -L 8686:dahuX:8686 for the dashboard] dahu.ciment (see the notebook for how to define the cluster )
+     - ssh -fNL 8888:dahuX:8888  [ -L 8686:dahuX:8686 for the dashboard] dahu.ciment (see the notebook https://github.com/meom-group/tutos/blob/master/notebook/2020-04-15-AA-gricad-20-workers.ipynb for how to define the cluster )
   - on your laptop in a browser: http://localhost:8888/?token=... (see the result of the jupyter notebook command)
   - when you're done liberate the listening ports :
      - lsof -ti:8888 and 8686 to get the number of the process then kill it

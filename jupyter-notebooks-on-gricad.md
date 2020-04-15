@@ -35,7 +35,7 @@
      - conda activate pangeo
      - jupyter notebook/lab
   - in a second terminal :
-     - ssh -fNL 8887:dahuX:8888  [ -L 8686:dahuX:8686 for the dashboard] dahu.ciment 
-  - on your laptop in a browser: http://localhost:8888/?token=0707924ea352afc4a19ff086a94266101a57e56754072340
+     - ssh -fNL 8888:dahuX:8888  [ -L 8686:dahuX:8686 for the dashboard] dahu.ciment (see the notebook for how to define the cluster )
+  - on your laptop in a browser: http://localhost:8888/?token=... (see the result of the jupyter notebook command)
   - when you're done liberate the listening ports :
-     - lsof -ti:8887 and 8686 to get the number of the process then kill it
+     - lsof -ti:8888 and 8686 to get the number of the process then kill it

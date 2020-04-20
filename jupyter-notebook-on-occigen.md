@@ -16,11 +16,22 @@ Practically for us the steps will be :
 
 ### Debug
 
-  - when doing the vizalloc command you get : 'Problem during session initialisation. Please contact CINES support team' : it is because you have in your .bashrc the line : 'export PATH="/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:$PATH"', you have to comment it before log in to the VISU machine. Since you need it to run python, ipython and jupyter, put something like this in your .bash_aliases instead :
-     - alias jup=“export PATH=“/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:$PATH”; jupyter-notebook”
-     - alias ipyt=“export PATH=“/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:$PATH”; ipython”
-     - alias pyt=“export PATH=“/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:$PATH”; python”
+  - Vizalloc
+     - When doing the vizalloc command you get : 'Problem during session initialisation. Please contact CINES support team' : it is because you have in your .bashrc the line : 'export PATH="/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:$PATH"', you have to comment it before log in to the VISU machine. Since you need it to run python, ipython and jupyter, put something like this in your .bash_aliases instead :
+        - alias jup=“export PATH=“/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:$PATH”; jupyter-notebook”
+        - alias ipyt=“export PATH=“/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:$PATH”; ipython”
+        - alias pyt=“export PATH=“/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:$PATH”; python”
+     - You can also run `vizalloc` in a session where .bashrc is not activated, which should circumvent the above conflict between your conda environment and VISU commands.
      
+  - Firefox
+     - If a session arises where Firefox did not close properly, you can potentially get issues accessing your localhost IP address where Jupyter is running. In this case, you can:
+        - try removing the `lock` and `.parentlock` files under `~/.mozilla/firefox/random_alphabets.default` and restart your session.
+        - if the above does not solve your issue, you can refresh your local firefox configuration by:
+           - `mv ~/.local/share/applications ~/.local/share/applications.bckup`
+           - `mv ~/.mozilla ~/.mozilla.bckup`
+           - `mv ~/.cache ~/.cache.bckup`
+
+
 ## How to run a jupyter notebook directly on occigen
 
 - 2 cases :

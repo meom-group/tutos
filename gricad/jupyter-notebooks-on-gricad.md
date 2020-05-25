@@ -15,12 +15,15 @@
  - conda info
  - conda create --name pangeo python=3.7
  - conda activate pangeo
- - conda install xarray dask scipy zarr netcdf4 ipython jupyter matplotlib pandas numba ipykernel nodejs (example of librairies for pangeo environment + jupyter kernel + dask extension in jupyterlab)
+ - conda install xarray dask scipy zarr netcdf4 ipython jupyter jupyterlab matplotlib pandas numba ipykernel nodejs (example of librairies for pangeo environment + jupyter kernel + dask extension in jupyterlab)
  - conda install cartopy (separately from the others otherwise it messes up ...)
  - conda install -c conda-forge papermill (running notebooks like scripts)
  - conda install -c conda-forge cmocean (beautiful oceanic colors on your plots)
  - python -m ipykernel install --user --name pangeo --display-name pangeo
+ 
 ### For dask dashboard in jupyter lab
+ - conda install jupyterlab nodejs
+ - pip install dask_labextension
  - jupyter labextension install dask-labextension
  - jupyter serverextension enable --py --sys-prefix dask_labextension
  

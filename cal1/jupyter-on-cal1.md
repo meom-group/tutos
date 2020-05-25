@@ -24,7 +24,7 @@
 ## How to get dask dashboard running
 
   - in the browser address replace tree by lab
-  - run the notebook demo : https://github.com/meom-group/tutos/blob/master/notebook/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb
+  - run the notebook demo : https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb
   - click on the dask icon and copy the address of the dashboard
   - click on the items you want to see : 
   - see your cores working !!

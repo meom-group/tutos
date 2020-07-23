@@ -23,6 +23,7 @@ To work with the MEOM group, you will need this minimal software configuration a
 
  -  install [anaconda](https://docs.continuum.io/anaconda/) (python distribution and package manager) and learn how to use it
    - learn how to manage [conda environments](http://conda.pydata.org/docs/using/envs.html)
+   - [tutorial](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/setup/) and [scipy 2020 presentation](https://www.youtube.com/watch?v=qn5zfdJtcYc&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf&index=6&t=0s) about conda
  - install [git](https://git-scm.com/) (software version control manager), create a [github](https://github.com/) account and learn how to use it : 
   - [cloning] (https://help.github.com/articles/importing-a-git-repository-using-the-command-line/) a repository
   - using [gist](https://help.github.com/articles/creating-gists/)
@@ -43,7 +44,7 @@ Resources on *how to better interact with your computer* (**basic**).
 
 Resources on *how to build and distribute software* (**advanced**): 
 
- * packaging and distrubuting python projects : [user guide](https://packaging.python.org/ ), [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html)
+ * packaging and distributing python projects : [user guide](https://packaging.python.org/ ), [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html)
  * testing and continuous integration : [software carpentry tutorial](http://katyhuff.github.io/python-testing/), [travis-ci](https://travis-ci.org/)
  * documenting your projects : A guide to python documentation with [numpydoc](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt), [readthedocs](https://readthedocs.org/), write the docs [community](http://www.writethedocs.org/)
  * a blog post of [templates for python command line scripts](https://zduey.github.io/tips/the-funnel-method/)
@@ -60,6 +61,7 @@ Jupyter notebooks are great for sharing your work because they allow to mix code
   * examples from [the Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks), and from [the group](https://github.com/lesommer/notebooks)
  * building reproducible analysis pipelines with [nbflow](https://www.youtube.com/watch?v=Fc2W930NJs8) (**advanced**)
  * diffing and merging notebooks with [nbdime](http://nbdime.readthedocs.io/)
+ * Jupyter interactive widget : tutorial from scipy 2020 : [material](https://github.com/jupyter-widgets/tutorial) and [video](https://www.youtube.com/watch?v=8IYbdshUd9c&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf&index=11&t=0s)
  
 ## Python language
 
@@ -69,7 +71,10 @@ For people who have never used python before :
   * Introduction to python through examples : 
     * [software carpentry tutorial](http://swcarpentry.github.io/python-novice-inflammation/)
     * [mode analytics lessons](https://community.modeanalytics.com/python/)
-  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/numpy/) on numpy. [From python to numpy](http://www.labri.fr/perso/nrougier/from-python-to-numpy/) includes a lot of examples [codes](https://github.com/ocefpaf/from-python-to-numpy/blob/master/README.md) and links to [tutorials](http://www.labri.fr/perso/nrougier/from-python-to-numpy/#tutorials). A useful [tutorial](https://github.com/leriomaggio/numpy-euroscipy) from Euroscipy 2019. 
+    * [scipy 2020 tuorial video](https://www.youtube.com/watch?v=Eb8e9Jj6FQQ&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf&index=2&t=3s), [scipy 2020 tutorial material](https://github.com/jiffyclub/scipy-2020-intro-to-python#setup-instructions)
+    
+  * [numpy](http://www.numpy.org/) is the fundamental package for scientific computing with Python : [tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/numpy/) on numpy. [From python to numpy](http://www.labri.fr/perso/nrougier/from-python-to-numpy/) includes a lot of examples [codes](https://github.com/ocefpaf/from-python-to-numpy/blob/master/README.md) and links to [tutorials](http://www.labri.fr/perso/nrougier/from-python-to-numpy/#tutorials). A useful [tutorial](https://github.com/leriomaggio/numpy-euroscipy) from Euroscipy 2019. Another scipy 2020 tutorial : [video](https://www.youtube.com/watch?v=NwYt5FKBsGU&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf&index=4&t=0s) and [material](https://github.com/enthought/Numpy-Tutorial-SciPyConf-2020)
+  
   * [scipy](https://docs.scipy.org/doc/scipy/reference/tutorial/index.html)  is a Python library used for scientific computing and statistical analysis. Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/scipy/) on scipy.
   * more python examples :  from the [Python Data Science HandBook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/code_listings), from [earthpy website](http://earthpy.org/), see also the [scipy lecture notes](http://www.scipy-lectures.org/)
 
@@ -79,10 +84,11 @@ For people who have never used python before :
 *We strongly recommand using the following packages.*
 
   * There are several interfaces for handling  netcdf files in python. Here is a tutorial to [NetCDF4](http://unidata.github.io/netcdf4-python/) interface.
-  * [pandas](http://pandas.pydata.org/pandas-docs/stable/) is a great package for handing time series and labelled data in python, here is a [10min tour](http://vimeo.com/59324550) to pandas. See also this [example](http://earthpy.org/time_series_analysis_with_pandas_part_2.html) . Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/pandas/) on pandas. See also this [brief introduction](https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python). Example of [timeseries analysis with pandas](http://earthpy.org/pandas-basics.html)
-  *  [xarray](http://xarray.pydata.org/) implements a N-dimensional variants of the core pandas data structures.  In practice, xarray provides an in-memory representation of the content of a collection of netCDF files.
+  * [pandas](http://pandas.pydata.org/pandas-docs/stable/) is a great package for handing time series and labelled data in python, here is a [10min tour](http://vimeo.com/59324550) to pandas. See also this [example](http://earthpy.org/time_series_analysis_with_pandas_part_2.html) . Here is a [collection of resources](https://community.modeanalytics.com/python/libraries/pandas/) on pandas. See also this [brief introduction](https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python). Example of [timeseries analysis with pandas](http://earthpy.org/pandas-basics.html). Tutorial from scipy 2020 : [material](https://github.com/chendaniely/scipy-2020-pandas) and [video](https://www.youtube.com/watch?v=ZlJ4NZoj1Lk&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf&index=9&t=0s)
+  *  [xarray](http://xarray.pydata.org/) implements a N-dimensional variants of the core pandas data structures.  In practice, xarray provides an in-memory representation of the content of a collection of netCDF files. 
     * official [documentation](http://xarray.pydata.org/en/stable/) (with interesting links to videos and tutorials) : 
     * xarray tutorials [by S. Hoyer](https://gist.github.com/shoyer/d462cc3b2aeb87bbb78cc6f8207851c6#file-xarray-tutorial-with-answers-ipynb) and [by N. Fauchereau](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/xray.ipynb)
+    * Tutorial from scipy 2020 : [material]() and [video]()
 
   * [Dask](http://dask.pydata.org) is a flexible parallel computing library for analytic computing in python.
     * official [documentation](http://dask.pydata.org/en/latest/)
@@ -92,6 +98,7 @@ For people who have never used python before :
     * slides on [visualizing parrallel computation](http://matthewrocklin.com/slides/plotcon-2016.html#/)
     * combining [xarray and dask](https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python)
     * QuickStart with [Dask.distributed](https://distributed.readthedocs.io/en/latest/)
+    * Tutorial from scipy 2020 : [material]() and [video]()
 
   * [oocgcm](http://oocgcm.readthedocs.io/en/latest/) is a project that provides tools for processing and analysing output of general circulation models and gridded satellite data in the field of Earth system science.
   

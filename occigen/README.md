@@ -126,7 +126,7 @@ Third terminal :
   - a virtual machine is launching, slide up to get to the desktop
 
 
-![](img/vncviewer.png)
+![](https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/img/vncviewer.png)
 
   - click on Applications/Outils Sytem/Terminal
   - `module load firefox; firefox` 
@@ -142,7 +142,7 @@ c
 
 you should get access to the dask dashboard by clicking on the link :
 
-![](img/dask-dashboard-visu.png)
+![](https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/img/dask-dashboard-visu.png)
 
 A complete notebook can be found here : https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/notebooks/visu/2021-02-25-AA-map-yearly-mean-surface-fields-caledo.ipynb
 

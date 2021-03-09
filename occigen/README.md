@@ -132,6 +132,8 @@ Third terminal :
   - `module load firefox; firefox` 
   - copy the adress output for jupyter command in the firefox terminal
 
+![](https://github.com/auraoupa/scripts-occigen-for-Arne/blob/main/img/3terminals.png)
+
 To access the ressources of the visu node with dask, in a cell  :
 ```
 from dask.distributed import Client, LocalCluster

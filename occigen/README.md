@@ -195,6 +195,6 @@ if all(memory):
 print(text)
 ```
 
-  - for this particular example, the answer should be : `Workers= 28, Cores=28, Memory=120.12 GB`
+  - for this particular example, the answer should be : `Workers= 28, Cores=28, Memory=120.12 GB` before you can proceed with your computation
   - for examples with more nodes involved, see https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/notebooks/occigen/2020-12-10-AA-temp-mean-zarr-2node-HSW24-test1.ipynb and other notebooks in https://github.com/AurelieAlbert/perf-pangeo-deployments/blob/master/notebooks/occigen
 

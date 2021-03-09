@@ -52,10 +52,12 @@ There are two types of nodes on which to log in :
 #SBATCH --exclusive
 #SBATCH --constraint=HSW24
 ```
+
+  - you must specify :
     - tasks : the number of proc you actually need, must be lower than number of node x 28 (28 cores per node)
-    - you choose on which nodes (CPU  : HSW24 & BDW28 or VISU) you submit your job to by changing the line `#SBATCH --constraint=HSW24` in your job script.
+    - you choose on which nodes (CPU  : HSW24 & BDW28 or VISU) you submit your job to by changing the line `#SBATCH --constraint=HSW24` 
     - 1 node and 6h max for VISU nodes
-    - less than 24h for CPU nodes 
+    - less than 24h for CPU nodes (<30mn jobs are running almost immediately)
   - You submit the job by typing : `sbatch your_job_script.ksh`
   - You check your job status by typing : `squeue -u your_login`
 

@@ -1,6 +1,6 @@
 # Some informations on the occigen machine
 
-In the following, I call tunnel machine the mahcine from which you connect to occigen (cal1 for MEOM people)
+In the following, I call tunnel machine the machine from which you connect to occigen (cal1 for MEOM people)
 
 ### Different workspaces
 

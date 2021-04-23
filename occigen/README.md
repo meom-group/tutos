@@ -68,7 +68,18 @@ https://www.cines.fr/wp-content/uploads/2020/09/demarrer_sur_occigen.pdf
 
 ### Setting up conda on occigen
 
-Occigen do not allow conda installs directly but you can use pip.
+*Update* :
+You can access conda by loading this module :
+`module load /opt/software/alfred/spack-dev/modules/tools/linux-rhel7-x86_64/miniconda3/4.7.12.1-gcc-4.8.5`
+
+then you install the librairies you need :
+
+```
+mkdir ${SCRATCHDIR}/MY_CONDA
+conda install ipython xarray netcdf4 -p ${SCRATCHDIR}/MY_CONDA
+```
+
+Occigen do not allow conda installs directly but you can use pip.~
 
 You can always ask svp@cines.fr to set up a conda environment for you with the list of libraries you need.
 

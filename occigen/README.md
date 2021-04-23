@@ -80,6 +80,13 @@ mkdir ${SCRATCHDIR}/MY_CONDA
 conda install ipython xarray netcdf4 -p ${SCRATCHDIR}/MY_CONDA
 ```
 
+To avoid home quota issues:
+```
+cd ~
+mv .conda ${SCRATCHDIR}/MY_CONDA
+ln -s -v ${SCRATCHDIR}/MY_CONDA/.conda
+```
+
 ~Occigen do not allow conda installs directly but you can use pip.~
 
 You can always ask svp@cines.fr to set up a conda environment for you with the list of libraries you need.

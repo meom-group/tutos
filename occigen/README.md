@@ -185,18 +185,16 @@ Second terminal :
   - copy the adress output for jupyter command in the firefox terminal
 
 To access the ressources from CPU nodes with dask-jobqueue :
-  - first submit a job inside the notebook (example for one node) :
+  - first submit a job inside the notebook (example for one node, choose XXXXX between 33000 and 47000) :
 ```
-ask_workers=28
-memory='120GB'
 from dask_jobqueue import SLURMCluster 
 from dask.distributed import Client 
   
 cluster = SLURMCluster(cores=28,name='pangeo',walltime='00:30:00',
                        job_extra=['--constraint=HSW24','--exclusive',
-                                  '--nodes=1'],memory=memory,
-                       interface='ib0') 
-cluster.scale(ask_workers)
+                                  '--nodes=1'],memory=120GB,
+                       interface='ib0',scheduler_options={'port': XXXXX }) 
+cluster.scale(jobs=1)
 c= Client(cluster)
 c
 ```

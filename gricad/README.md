@@ -1,11 +1,37 @@
 # GriCad
 
-
+ 
+ 
+---
 ## Perseus account
 
 * First go and create a Perseus account https://perseus.ujf-grenoble.fr
 * Then create a new project or ask to be included in an already existing project (for example data-ocean was created by Julien and myself).
 * contact sos-calcul-gricad@univ-grenoble-alpes.fr for any question
+
+
+### Getting an account (do it once)
+ - read documentation : https://gricad-doc.univ-grenoble-alpes.fr/
+ - account management : https://perseus.univ-grenoble-alpes.fr/
+
+
+---
+# Log in easily (do it once)
+ 
+Follow the procedure described here : https://gricad-doc.univ-grenoble-alpes.fr/hpc/connexion/
+
+**Note**: the rest of the tuto will not work if you don't !
+
+---
+## See availablity of Dahu nodes
+
+https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/drawgantt/drawgantt.php
+
+### More info 
+
+https://ciment.ujf-grenoble.fr/wiki/index.php/Dahu_quickstart (Perseus account needed)
+
+
 
 
 ---
@@ -27,7 +53,7 @@ oarsub -t gpu -I -l /nodes=1/core=32,walltime=12:00:00 --project data-ocean
 ```
 
 ---
-## Use conda 
+## Using Conda 
 
 Conda is already installed. You just need to activate it using the command from the server.
 
@@ -189,57 +215,18 @@ dependencies:
   - lckr-jupyterlab-variableinspector
 ```
 
-</details>
+</details>    
+
+**Tip**: You can make JupyterLab environment "to rule them all". And then just make other conda environments. If you install the packages `nb_conda_kernel` and `ipykernels` then your JupyterLab environment will see everything. That way you don't have to keep installing JupyterLab in every single conda environment.
 
 
 ---
-## See availablity of Dahu nodes
 
-https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/drawgantt/drawgantt.php
+## Run the jupyter notebook with conda environment (everytime)
 
-## More info 
+First, take a look at this tutorial to get familiar: https://gricad-doc.univ-grenoble-alpes.fr/notebook/hpcnb/
 
-https://ciment.ujf-grenoble.fr/wiki/index.php/Dahu_quickstart (Perseus account needed)
-
-
-
----
-# Running jupyter notebooks on gricad
-
-# Get an account (do it once)
- - read documentation : https://gricad-doc.univ-grenoble-alpes.fr/
- - account management : https://perseus.univ-grenoble-alpes.fr/
-
-# Log in easily (do it once)
- - follow the procedure described here : https://gricad-doc.univ-grenoble-alpes.fr/hpc/connexion/, the rest of the tuto will not work if you don't !
- 
-# Conda environment (do it once)
-
- - wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
- - sh Miniconda2-latest-Linux-x86_64.sh
- - . ~/.bashrc
- - conda info
- - conda create --name pangeo python=3.7
- - conda activate pangeo
- - conda install xarray dask scipy zarr netcdf4 ipython jupyter jupyterlab matplotlib pandas numba ipykernel nodejs (example of librairies for pangeo environment + jupyter kernel + dask extension in jupyterlab)
- - conda install cartopy (separately from the others otherwise it messes up ...)
- - conda install -c conda-forge papermill (running notebooks like scripts)
- - conda install -c conda-forge cmocean (beautiful oceanic colors on your plots)
- - python -m ipykernel install --user --name pangeo --display-name pangeo
- 
-### For dask dashboard in jupyter lab
- - conda install jupyterlab nodejs
- - pip install dask_labextension
- - jupyter labextension install dask-labextension
- - jupyter serverextension enable --py --sys-prefix dask_labextension
- 
-# Run the jupyter notebook (on the first time)
- - follow the instructions : https://gricad-doc.univ-grenoble-alpes.fr/notebook/hpcnb/
- 
-
----
-
-### Run the jupyter notebook with conda environment (everytime)
+Below offers a simpler work structure.
  
 **In the First Terminal** - Start the JupyterLab session
 
@@ -306,7 +293,7 @@ Firstly, we need a bash script which can easily be launched. Below is an example
 
 <details>
 <summary>
-oarsub job (CPU)
+jlab_bash.sh
 </summary>
 
 ```bash

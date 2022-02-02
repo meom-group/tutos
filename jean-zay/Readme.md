@@ -19,8 +19,8 @@ All the quotas at once : ```idr_quota_user```and ```idr_quota_project```
 
 see http://www.idris.fr/jean-zay/cpu/jean-zay-cpu-doc_multi_projet.html
 
-- To see your projects : ```idrproj````
-- To change the default project : ```idrproj -d grp1````
+- To see your projects : ```idrproj```
+- To change the default project : ```idrproj -d grp1```
 - To change the active project : ```eval $(idrenv -d grp1)```
 
 Be careful, switching projects will change the env variables $HOME, $SCRATCH, $WORK and $STORE

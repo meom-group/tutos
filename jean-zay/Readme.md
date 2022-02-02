@@ -6,10 +6,10 @@ Most of the informations are gathered [here](http://www.idris.fr/jean-zay)
   
 see http://www.idris.fr/jean-zay/cpu/jean-zay-cpu-calculateurs-disques.html
 
-  - $HOME : personnal home space with back-up, 3Go, check quota with ``ìdrquota -m```
-  - $WORK : mid-term personnal workspace for big data with back-up, accessible from jobs, quota by project check with ``ìdrquota -w -p project```
+  - $HOME : personnal home space with back-up, 3Go, check quota with ```idrquota -m```
+  - $WORK : mid-term personnal workspace for big data with back-up, accessible from jobs, quota by project check with ```idrquota -w -p project```
   - $SCRATCH : faster temporary personnal workspace for big data, no back-up, accessible from jobs, no quota
-  - $STORE : long-term storage of archived data (tar), no back-up, not accessible from jobs, quota by project with ``ìdrquota -s -p project```
+  - $STORE : long-term storage of archived data (tar), no back-up, not accessible from jobs, quota by project with ```idrquota -s -p project```
 
 Workflow should be : storage of inputs and results on $WORK as long as you need, intermediate files stored on $SCRATCH, long-term archives of results on $STORE
 

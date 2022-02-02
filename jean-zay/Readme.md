@@ -24,3 +24,9 @@ see http://www.idris.fr/jean-zay/cpu/jean-zay-cpu-doc_multi_projet.html
 - To change the active project : ```eval $(idrenv -d grp1)```
 
 Be careful, switching projects will change the env variables $HOME, $SCRATCH, $WORK and $STORE
+
+## Computing hours
+
+see http://www.idris.fr/jean-zay/cpu/jean-zay-cpu-doc_account.html
+
+  - to check all your projects consumption : ```idracct```

@@ -40,7 +40,7 @@ Install the kernel in jupyter relative to the conda environment :
 python -m ipykernel install --user --name jupyter --display-name jupyter
 ```
 
-Launch jupyter :
+Go to your python scripts or notebooks repository and launch jupyter :
 
 
 ```
@@ -48,5 +48,19 @@ jupyter notebook
 
 ```
 
+it will open a browser window and you will see the scripts of your repository.
+You can open an existing notebook and select ```Noyau/Changer de noyau``` or ```Kernel/Switch Kernel``` and select jupyter as a kernel.
+
+Now you can execute your notebook.
+
+## Add a personnal library to python scripts or notebooks
 
 
+Add the path to your module :
+
+```
+import sys
+YOUR_MODULE_PATH = '/path/to/your/module'
+sys.path.append(YOUR_MODULE_PATH)
+import yourmodule
+```

@@ -16,7 +16,7 @@ module load xios/xios-2.5_rev1907
 
 You can also compile your own xios version if you prefer, modify XIOS_DIR accordingly.
 
-  - The arch-dahu.fcm :
+  - The arch-dahu.fcm to be put in the arch directory of NEMO:
 
 ```
 %NCDF_HOME           $NETCDF_DIR

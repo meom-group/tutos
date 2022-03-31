@@ -1,6 +1,6 @@
 # Compiling NEMO on Gricad
 
-In your bashrc :
+ - In your bashrc :
 ```
 source /applis/site/nix_nur.sh
 source /home/mchekki/.nix-profile/bin/iccvars.sh -arch intel64
@@ -14,7 +14,10 @@ module load nco/nco-4.7.6_intel18
 module load xios/xios-2.5_rev1907
 ```
 
-The arch-dahu.fcm :
+You can also compile your own xios version if you prefer, modify XIOS_DIR accordingly.
+
+  - The arch-dahu.fcm :
+
 ```
 %NCDF_HOME           $NETCDF_DIR
 %HDF5_HOME           $HDF5_DIR
@@ -44,3 +47,5 @@ The arch-dahu.fcm :
 %CC                  cc
 %CFLAGS              -O0
 ```
+
+  - compile nemo : ``` ./makenemo -m dahu -r SPITZ12 ``` for instance

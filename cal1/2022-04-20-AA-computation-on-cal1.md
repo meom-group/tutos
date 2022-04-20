@@ -13,7 +13,7 @@ Always indicate ```--account=fortran``` or ```--account=python``` depending on y
 Set up a script job.ksh for instance in which the header must have the informations :
 
 ```
-#!b/in/bash
+#!/bin/bash
 #SBATCH -J cdfcurl_medwest
 #SBATCH -n 1                       # nb of nodes, but only one is available on cal1
 #SBATCH --ntasks=3                 # nb of tasks >1 if you have a parallelized script
@@ -26,6 +26,6 @@ Set up a script job.ksh for instance in which the header must have the informati
 Your script
 ```
 
-An example of job is given here.
+An example of sequential job and parallel job.
 
 ## Jupyter notebooks

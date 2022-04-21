@@ -12,8 +12,6 @@ To prevent a user from using all the cores and/or all the memory, a job submissi
     - command ```scontrol show job JOBID``` : JOBID is the first item on squeue, you have all the informations about your job while it is waiting or running
     - command ```scancel JOBID``` : cancel the job
       
-## Job submission on the command line
-
 ## Job submission in a script
 
 Set up a script job.ksh for instance in which the header must have the informations :
@@ -32,6 +30,11 @@ Set up a script job.ksh for instance in which the header must have the informati
 Your script
 ```
 
-An example of sequential job and parallel job.
+An example of [sequential job](https://github.com/meom-group/tutos/blob/master/cal1/jobs/job_seq_compute_vorticity_MEDWEST60.ksh) and [parallel job](https://github.com/meom-group/tutos/blob/master/cal1/jobs/job_par_compute_vorticity_density_MEDWEST60.ksh).
+
+## Job submission on the command line
+
+You can sum up all the infos in the job header into one single line of code : ```srun -n 1 --time=00:10:00 --mem=20000 --account=fortran YOURSCRIPT```
+
 
 ## Jupyter notebooks

@@ -4,8 +4,14 @@ ige-meom-cal1.u-ga.fr is a virtual machine on which you can make small computati
 
 To prevent a user from using all the cores and/or all the memory, a job submission system has recently been set up.
 
-Always indicate ```--account=fortran``` or ```--account=python``` depending on your type of scripts (bash scripts, nco commands are fortran-like ...)
+## Useful commands
 
+ - Always indicate ```--account=fortran``` or ```--account=python``` depending on your type of scripts (bash scripts, nco commands are fortran-like ...)
+ - When your job has been submitted :
+    - command ```squeue```  : you see all the jobs on cal1 running or waiting
+    - command ```scontrol show job JOBID``` : JOBID is the first item on squeue, you have all the informations about your job while it is waiting or running
+    - command ```scancel JOBID``` : cancel the job
+      
 ## Job submission on the command line
 
 ## Job submission in a script

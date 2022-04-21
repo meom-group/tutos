@@ -34,7 +34,18 @@ An example of [sequential job](https://github.com/meom-group/tutos/blob/master/c
 
 ## Job submission on the command line
 
-You can sum up all the infos in the job header into one single line of code : ```srun -n 1 --time=00:10:00 --mem=20000 --account=fortran YOURSCRIPT```
+You can sum up all the infos in the job header into one single line of code : 
+
+```
+srun -n 1 --time=00:10:00 --mem=20000 --account=fortran YOURSCRIPT
+```
 
 
 ## Jupyter notebooks
+
+  - load your conda environment in which jupyter is available (like the one defined [here](https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb)
+  - launch jupyter without browser with a job submission command : ```srun -n 1 --time=00:10:00 --mem=20000 --account=python jupyter notebook --no-browser --port 1234```
+  - in another terminal, make a tunnel to cal1 : ```ssh -NL 1234:localhost:1234 -L 8787:localhost:8787 alberta@ige-meom-cal1.u-ga.fr```
+  - in your local machine, open your browser and look for : localhost:1234
+  - enter the token given in cal1 (or copy paste the address)
+

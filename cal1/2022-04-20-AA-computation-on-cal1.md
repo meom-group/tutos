@@ -44,8 +44,7 @@ srun -n 1 --time=00:10:00 --mem=20000 --account=fortran YOURSCRIPT
 ## Jupyter notebooks
 
   - load your conda environment in which jupyter is available (like the one defined [here](https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb) )
-  - launch jupyter without browser with a job submission command : ```srun -n 1 --time=00:10:00 --mem=20000 --account=python jupyter notebook --no-browser --port 1234```
-  - in another terminal, make a tunnel to cal1 : ```ssh -NL 1234:localhost:1234 -L 8787:localhost:8787 alberta@ige-meom-cal1.u-ga.fr```
-  - in your local machine, open your browser and look for : localhost:1234
-  - enter the token given in cal1 (or copy paste the address)
+  - launch jupyter without browser with a job submission command : ```srun -n 1 --time=00:10:00 --mem=20000 --account=python jupyter notebook --no-browser --port 1234``` (be careful if port 1234 is not available, another one will be attributed)
+  - in another terminal, make a tunnel to cal1 : ```ssh -NL 1234:localhost:1234 alberta@ige-meom-cal1.u-ga.fr``` (replace 1234 by the port given to you at the previous stage)
+  - in your local machine, open your browser and look for : localhost:1234 and enter the token or copy paste the adress from the output of the jupyter notebook command
 

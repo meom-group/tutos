@@ -1,8 +1,12 @@
 # How to compute on cal1
 
+## Description
+
 ige-meom-cal1.u-ga.fr is a virtual machine on which you can make small computations (10 cores, 32.6Gb memory) and store data (300Tb)
 
 If you have an IGE account, please ask Aurélie Albert or Jean-Marc Molines to give you acces to it.
+
+## Access and workspaces
 
 Then, you can access the machine with the command : ```ssh -CX yourlogin@ige-meom-cal1.u-ga.fr```
 
@@ -14,17 +18,19 @@ You can trasnfer data from your computer to cal1 with the command ```scp myfile 
 
 Some data are visible to anyone : ```/mnt/meom/DATA_SET``` and ```/mnt/meom/MODEL_SET```, a catalog will soone details all the datasets available.
 
+## Computation
+
 To prevent a user from using all the cores and/or all the memory, a job submission system has recently been set up.
 
-## Useful commands
-
+### Useful commands
+ - the command ```htop``` will show you some indicators of the workload of the machine
  - Always indicate ```--account=fortran``` or ```--account=python``` depending on your type of scripts (bash scripts, nco commands are fortran-like ...)
  - When your job has been submitted :
     - command ```squeue```  : you see all the jobs on cal1 running or waiting
     - command ```scontrol show job JOBID``` : JOBID is the first item on squeue, you have all the informations about your job while it is waiting or running
     - command ```scancel JOBID``` : cancel the job
       
-## Job submission in a script
+### Job submission in a script
 
 Set up a script job.ksh for instance in which the header must have the informations :
 
@@ -44,7 +50,7 @@ Your script
 
 An example of [sequential job](https://github.com/meom-group/tutos/blob/master/cal1/jobs/job_seq_compute_vorticity_MEDWEST60.ksh) and [parallel job](https://github.com/meom-group/tutos/blob/master/cal1/jobs/job_par_compute_vorticity_density_MEDWEST60.ksh).
 
-## Job submission on the command line
+### Job submission on the command line
 
 You can sum up all the infos in the job header into one single line of code : 
 
@@ -53,7 +59,7 @@ srun -n 1 --time=00:10:00 --mem=20000 --account=fortran YOURSCRIPT
 ```
 
 
-## Jupyter notebooks
+### Jupyter notebooks
 
   - load your conda environment in which jupyter is available (like the one defined [here](https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb) )
   - launch jupyter without browser with a job submission command : ```srun -n 1 --time=00:10:00 --mem=20000 --account=python jupyter notebook --no-browser --port 1234``` (be careful if port 1234 is not available, another one will be attributed)

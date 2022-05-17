@@ -2,6 +2,18 @@
 
 ige-meom-cal1.u-ga.fr is a virtual machine on which you can make small computations (10 cores, 32.6Gb memory) and store data (300Tb)
 
+If you have an IGE account, please ask Aurélie Albert or Jean-Marc Molines to give you acces to it.
+
+Then, you can access the machine with the command : ```ssh -CX yourlogin@ige-meom-cal1.u-ga.fr```
+
+You should have two workspaces automatically created : ```/home/yourlogin``` and ```/mnt/meom/workdir/yourlogin```, the first one is limited in space and you should only put scripts on it, the second is like a scratch where your temporary and results files should be stored.
+
+You can see how much of these spaces are filled with the command ```df -h```
+
+You can trasnfer data from your computer to cal1 with the command ```scp myfile yourlogin@ige-meom-cal1.u-ga.fr:/mnt/meom/workdir/yourlogin/where_you_want_it/myfile```
+
+Some data are visible to anyone : ```/mnt/meom/DATA_SET``` and ```/mnt/meom/MODEL_SET```, a catalog will soone details all the datasets available.
+
 To prevent a user from using all the cores and/or all the memory, a job submission system has recently been set up.
 
 ## Useful commands

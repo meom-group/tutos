@@ -10,13 +10,13 @@ If you have an IGE account, please ask Aurélie Albert or Jean-Marc Molines to g
 
 Then, you can access the machine with the command : ```ssh -CX yourlogin@ige-meom-cal1.u-ga.fr```
 
-You should have two workspaces automatically created : ```/home/yourlogin``` and ```/mnt/meom/workdir/yourlogin```, the first one is limited in space and you should only put scripts on it, the second is like a scratch where your temporary and results files should be stored.
+You will have access to 2 personnal workspaces : ```/home/yourlogin``` (automatically created) and ```/mnt/meom/workdir/yourlogin``` (create it yourself with mkdir in /mnt/meom/workdir), the first one is limited in space and you should only put scripts on it, the second is like a scratch where your temporary and results files should be stored.
 
-You can see how much of these spaces are filled with the command ```df -h```
+You can see how much of these spaces are filled with the command ```df -h``` (look for /home and /mnt/meom to see how much space is left)
 
-You can trasnfer data from your computer to cal1 with the command ```scp myfile yourlogin@ige-meom-cal1.u-ga.fr:/mnt/meom/workdir/yourlogin/where_you_want_it/myfile```
+You can trasnfer data from your computer to cal1 with the command ```scp myfile yourlogin@ige-meom-cal1.u-ga.fr:/mnt/meom/workdir/yourlogin/where_you_want_it/myfile``` and you can download data from cal1 to your computer with the command : ```scp yourlogin@ige-meom-cal1.u-ga.fr:/mnt/meom/workdir/yourlogin/path_to_your_file/myfile .```
 
-Some data are visible to anyone : ```/mnt/meom/DATA_SET``` and ```/mnt/meom/MODEL_SET```, a catalog will soone details all the datasets available.
+Some data are visible to anyone : ```/mnt/meom/DATA_SET``` and ```/mnt/meom/MODEL_SET```, a catalog will soon be available to see the details of all the datasets.
 
 ## Computation
 
@@ -29,7 +29,15 @@ To prevent a user from using all the cores and/or all the memory, a job submissi
     - command ```squeue```  : you see all the jobs on cal1 running or waiting
     - command ```scontrol show job JOBID``` : JOBID is the first item on squeue, you have all the informations about your job while it is waiting or running
     - command ```scancel JOBID``` : cancel the job
-      
+ 
+### Job submission on the command line
+
+You can sum up all the infos in the job header into one single line of code : 
+
+```
+srun -n 1 --time=00:10:00 --mem=20000 --account=fortran YOURSCRIPT
+```
+ 
 ### Job submission in a script
 
 Set up a script job.ksh for instance in which the header must have the informations :
@@ -50,14 +58,7 @@ Your script
 
 An example of [sequential job](https://github.com/meom-group/tutos/blob/master/cal1/jobs/job_seq_compute_vorticity_MEDWEST60.ksh) and [parallel job](https://github.com/meom-group/tutos/blob/master/cal1/jobs/job_par_compute_vorticity_density_MEDWEST60.ksh).
 
-### Job submission on the command line
-
-You can sum up all the infos in the job header into one single line of code : 
-
-```
-srun -n 1 --time=00:10:00 --mem=20000 --account=fortran YOURSCRIPT
-```
-
+You submit this script with the command ```sbatch job.ksh```
 
 ### Jupyter notebooks
 

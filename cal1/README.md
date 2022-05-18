@@ -14,7 +14,7 @@ You will have access to 2 personnal workspaces : ```/home/yourlogin``` (automati
 
 You can see how much of these spaces are filled with the command ```df -h``` (look for /home and /mnt/meom to see how much space is left)
 
-You can trasnfer data from your computer to cal1 with the command ```scp myfile yourlogin@ige-meom-cal1.u-ga.fr:/mnt/meom/workdir/yourlogin/where_you_want_it/myfile``` and you can download data from cal1 to your computer with the command : ```scp yourlogin@ige-meom-cal1.u-ga.fr:/mnt/meom/workdir/yourlogin/path_to_your_file/myfile .```
+You can transfer data from your computer to cal1 with the command ```scp myfile yourlogin@ige-meom-cal1.u-ga.fr:/mnt/meom/workdir/yourlogin/where_you_want_it/myfile``` and you can download data from cal1 to your computer with the command : ```scp yourlogin@ige-meom-cal1.u-ga.fr:/mnt/meom/workdir/yourlogin/path_to_your_file/myfile .```
 
 Some data are visible to anyone : ```/mnt/meom/DATA_SET``` and ```/mnt/meom/MODEL_SET```, a catalog will soon be available to see the details of all the datasets.
 

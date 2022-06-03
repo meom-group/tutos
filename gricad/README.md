@@ -1,57 +1,89 @@
-# GriCad
+# How to compute on GriCad
 
- 
- 
----
-## Perseus account
+--- 
+## First steps (do it once)
 
-* First go and create a Perseus account https://perseus.ujf-grenoble.fr
-* Then create a new project or ask to be included in an already existing project (for example data-ocean was created by Julien and myself).
+### Perseus account
+
+* First go and create a Perseus account https://perseus.ujf-grenoble.fr with your agalan credentials if you are working in Grenoble University, or else create an external account 
+* Once your account is created, you have to join an already existing project (for now MEOM users are all gathered in pr-data-ocean) : log in to perseus, click on join a project and find pr-data-ocean in the list
+* Once you are accepted in the group, you can now proceed to log to the clusters and compute
+
+### Documentation and support
+* go through the documentation : https://gricad-doc.univ-grenoble-alpes.fr
 * contact sos-calcul-gricad@univ-grenoble-alpes.fr for any question
 
 
-### Getting an account (do it once)
- - read documentation : https://gricad-doc.univ-grenoble-alpes.fr/
- - account management : https://perseus.univ-grenoble-alpes.fr/
+### Log in easily
 
+The connections to the clusters go through a bastion, so if you want to access dahu (for CPU) or bigfoot (for GPU) you first have to connect to rotule or trinity :
+ - first ```ssh yourlogin@rotule.univ-grenoble-alpes.fr or ssh yourlogin@trinity.univ-grenoble-alpes.fr```
+ - then ```ssh dahu or ssh bigfoot```
+
+To avoid doing these steps each time you want to connect, a procedure is described here : https://gricad-doc.univ-grenoble-alpes.fr/hpc/connexion/
+
+Repeat it on every machine you will need to work on, especially cal1 if you want to transfer data from there for instance
+
+**Note**: the rest of the tuto will not work if you don't follow this procedure !
 
 ---
-# Log in easily (do it once)
+## Compute on dahu
+
+### Connection
+
+ * Now that you are all set up, you just have to type ```ssh dahu``` 
+ * If you need to transfer some data yo can do a simple ```scp mydata dahu:/path/to/data/.```
+ * If the data you want to transfer is big, go through the cargo server : ```scp mydata yourlogin@cargo.univ-grenoble-alpes.fr:/path/to/data/.```
+
+
+### Submitting jobs
+
+  * You are actually sitting on login nodes, to do some compuation you will need to request some computing nodes
+  * You do that by either launching your script inside a job or ask for interactive access to a computing node :
+
+<details>
+<summary>An example for interactive computing</summary>
  
-Follow the procedure described here : https://gricad-doc.univ-grenoble-alpes.fr/hpc/connexion/
+ ```oarsub -l /nodes=1/core=16,walltime=03:30:00 --project pr-data-ocean -I```
+ 
+</details>
 
-**Note**: the rest of the tuto will not work if you don't !
-
----
-## See availablity of Dahu nodes
-
-https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/drawgantt/drawgantt.php
-
-### More info 
-
-https://ciment.ujf-grenoble.fr/wiki/index.php/Dahu_quickstart (Perseus account needed)
+When your request is granted you will be connected to a specific dahu node and you will be able to compute there.
+Maximum time limit is 12 hours
 
 
+<details>
+<summary>An example job</summary>
+ 
+ ```
+ #!/bin/bash
 
+#OAR -n jobname
+#OAR -l /nodes=2/core=1,walltime=00:01:30
+#OAR --stdout jobname.out
+#OAR --stderr jobname.err
+#OAR --project data-ocean
 
----
-## Access to Dahu (for CPU and GPU use)
-
+yourscript
 ```
-ssh username@access-rr-ciment.imag.fr
-ssh f-dahu
-```
+ 
+</details
 
+Make sure your job script is executable ```chmod +x job.ksh``` and then launch it with ```oarsub job.ksh```
 
-Then you can start a job.
+You can check the status of your job with ```oarstat -u yourlogin``` and kill your job if needed with ```oardel jobid``` with jobid being the first number in the result of oarsat
 
+Maximum time limit on dahu is 2 days
+ 
+If your code is not in the production phase yet, you can ask to test it first on a development queue by adding the option ```-t devel``` to your oarsub command or in your job with a maximum time limit of 30 minutes 
+ 
+For more informations about jobs read https://gricad-doc.univ-grenoble-alpes.fr/en/hpc/joblaunch/
 
-Example interactive GPU Job:
+### See availability of Dahu nodes : 
 
-```
-oarsub -t gpu -I -l /nodes=1/core=32,walltime=12:00:00 --project data-ocean
-```
+ Command ```chandler``` in the terminal or go to the website : https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/monika for instaneous availablity or https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/drawgantt/drawgantt.php for availability over time (history and forecast)
 
+ 
 ---
 ## Using Conda 
 

@@ -16,13 +16,13 @@
 
 ### Log in easily
 
-The connections to the clusters go through a bastion, so if you want to access dahu (for CPU) or bigfoot (for GPU) you first have to connect to rotule or trinity :
- - first ```ssh yourlogin@rotule.univ-grenoble-alpes.fr or ssh yourlogin@trinity.univ-grenoble-alpes.fr```
+* The connections to the clusters go through a bastion, so if you want to access dahu (for CPU) or bigfoot (for GPU) you first have to connect to rotule or trinity :
+ - first ```ssh yourlogin@rotule.univ-grenoble-alpes.fr```  or ```ssh yourlogin@trinity.univ-grenoble-alpes.fr```
  - then ```ssh dahu or ssh bigfoot```
 
-To avoid doing these steps each time you want to connect, a procedure is described here : https://gricad-doc.univ-grenoble-alpes.fr/hpc/connexion/
+* To avoid doing these steps each time you want to connect, a procedure is described here : https://gricad-doc.univ-grenoble-alpes.fr/hpc/connexion/
 
-Repeat it on every machine you will need to work on, especially cal1 if you want to transfer data from there for instance
+* Repeat it on every machine you will need to work on, especially cal1 if you want to transfer data from there for instance
 
 **Note**: the rest of the tuto will not work if you don't follow this procedure !
 
@@ -48,8 +48,8 @@ Repeat it on every machine you will need to work on, especially cal1 if you want
  
 </details>
 
-When your request is granted you will be connected to a specific dahu node and you will be able to compute there.
-Maximum time limit is 12 hours
+ * When your request is granted you will be connected to a specific dahu node and you will be able to compute there.
+ * Maximum time limit is 12 hours
 
 
 <details>
@@ -69,19 +69,19 @@ yourscript
  
 </details
 
-Make sure your job script is executable ```chmod +x job.ksh``` and then launch it with ```oarsub job.ksh```
+ * Make sure your job script is executable ```chmod +x job.ksh``` and then launch it with ```oarsub job.ksh```
 
-You can check the status of your job with ```oarstat -u yourlogin``` and kill your job if needed with ```oardel jobid``` with jobid being the first number in the result of oarsat
+ * You can check the status of your job with ```oarstat -u yourlogin``` and kill your job if needed with ```oardel jobid``` with jobid being the first number in the result of oarsat
 
-Maximum time limit on dahu is 2 days
+ * Maximum time limit on dahu is 2 days
  
-If your code is not in the production phase yet, you can ask to test it first on a development queue by adding the option ```-t devel``` to your oarsub command or in your job with a maximum time limit of 30 minutes 
+ * If your code is not in the production phase yet, you can ask to test it first on a development queue by adding the option ```-t devel``` to your oarsub command or in your job with a maximum time limit of 30 minutes 
  
-For more informations about jobs read https://gricad-doc.univ-grenoble-alpes.fr/en/hpc/joblaunch/
+ * For more informations about jobs read https://gricad-doc.univ-grenoble-alpes.fr/en/hpc/joblaunch/
 
 ### See availability of Dahu nodes : 
 
- Command ```chandler``` in the terminal or go to the website : https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/monika for instaneous availablity or https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/drawgantt/drawgantt.php for availability over time (history and forecast)
+ * Command ```chandler``` in the terminal or go to the website : https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/monika for instaneous availablity or https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/drawgantt/drawgantt.php for availability over time (history and forecast)
 
  
 ---
@@ -119,6 +119,71 @@ envs_dirs:
 
 **Note**: You can add as many directories as you want. This just ensures that conda can talk to it.
 
+
+---
+
+## Run the jupyter notebook with conda environment on dahu (or bigfoot)
+
+First, take a look at this tutorial to get familiar: https://gricad-doc.univ-grenoble-alpes.fr/notebook/hpcnb/
+
+Below offers a simpler work structure.
+ 
+**In the First Terminal** - Start the JupyterLab session
+
+1. Log into your server
+
+
+```bash
+ssh dahu
+```
+
+2. Start an interactive session
+
+```bash
+oarsub -I --project data-ocean -l /core=10,walltime=2:00:00 -> it will log automatically on a login node dahuX
+```
+
+3. Activate your conda environment with JupyterLab
+
+```
+conda activate jupyter
+```
+
+4. Start your jupyterlab session
+
+
+```bash
+jupyter notebook --no-browser --port 1234
+```
+
+
+
+**In the second terminal** - we will do the ssh tunneling procedure to view jupyterlab on your local machine.
+
+1. Do the Tunneling
+
+```bash
+ssh -fNL 1234:dahuX:1234  [ -L 8686:dahuX:8686 for the dashboard] dahu.ciment
+```
+
+2. Open `http://localhost:1234/?token=...(see the result of the jupyter notebook command)` on a browser in your laptop.
+
+
+3. When you're done, make sure you close the tunnel you opened.
+
+
+
+```bash
+# get the process-ID number for ssh tunneling
+lsof -i :1234
+# kill that process
+kill -9 PID
+```
+
+
+
+---
+## Extra content
 
 #### Example Environments
 
@@ -253,68 +318,6 @@ dependencies:
 
 
 ---
-
-## Run the jupyter notebook with conda environment (everytime)
-
-First, take a look at this tutorial to get familiar: https://gricad-doc.univ-grenoble-alpes.fr/notebook/hpcnb/
-
-Below offers a simpler work structure.
- 
-**In the First Terminal** - Start the JupyterLab session
-
-1. Log into your server
-
-
-```bash
-ssh f-dahu.ciment
-```
-
-2. Start an interactive session
-
-```bash
-oarsub -I --project data-ocean -l /core=10,walltime=2:00:00 -> it will log automatically on a login node dahuX
-```
-
-3. Activate your conda environment with JupyterLab
-
-```
-conda activate pangeo
-```
-
-4. Start your jupyterlab session
-
-
-```bash
-jupyter notebook/lab
-```
-
-
-**Tip**: It's highly advised to open a session using tmux or screen when running these commands. This will allow you to have things running in the background even if you're not logged into the server.
-
-
-**In the second terminal** - we will do the ssh tunneling procedure to view jupyterlab on your local machine.
-
-1. Do the Tunneling
-
-```bash
-ssh -fNL 8888:dahuX:8888  [ -L 8686:dahuX:8686 for the dashboard] dahu.ciment
-```
-
-2. Open `http://localhost:8888/?token=...(see the result of the jupyter notebook command)` on a browser in your laptop.
-
-
-3. When you're done, make sure you close the tunnel you opened.
-
-
-
-```bash
-# get the process-ID number for ssh tunneling
-lsof -i :portNumber
-# kill that process
-kill -9 PID
-```
-
-
 ---
 ### Launching JupyterLab Using Jobs
 

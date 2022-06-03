@@ -183,7 +183,7 @@ kill -9 PID
 
 
 ---
-## Extra content
+## For advanced users
 
 #### Example Environments
 

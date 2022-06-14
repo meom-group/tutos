@@ -67,7 +67,7 @@
 yourscript
 ```
  
-</details
+</details>
 
  * Make sure your job script is executable ```chmod +x job.ksh``` and then launch it with ```oarsub job.ksh```
 

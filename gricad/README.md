@@ -331,7 +331,12 @@ dependencies:
 
 ![example jupyterlab](../pics/dask-jupyterlab-fleche.png)
 
-   
+ - you can now launch a dask cluster by clicking on NEW :
+
+![example cluster](../pics/dask-cluster.png)
+
+ 
+
 ---
 ### Launching JupyterLab Using Jobs
 

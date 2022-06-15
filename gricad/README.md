@@ -38,7 +38,7 @@
 
 ### Submitting jobs
 
-  * You are actually sitting on login nodes, to do some compuation you will need to request some computing nodes
+  * You are actually sitting on login nodes, to do some computation you will need to request some computing nodes
   * You do that by either launching your script inside a job or ask for interactive access to a computing node :
 
 <details>

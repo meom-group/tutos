@@ -329,6 +329,7 @@ dependencies:
    - ssh -NL 1234:localhost:1234 -L 8787:localhost:8787 alberta@ige-meom-cal1.u-ga.fr
  - launch jupyterlab and the dask menu should now be apparent :
 
+![example jupyterlab](../pics/dask-jupyterlab-fleche.png)
 
    
 ---

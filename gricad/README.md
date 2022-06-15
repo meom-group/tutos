@@ -335,6 +335,18 @@ dependencies:
 
 ![example cluster](../pics/dask-cluster.png)
 
+ - the cluster parameters are automatically set up with parameters matching the cores and memory you asked for when launching the job
+ - drag and drop the cluster into the notebook so that your computation is done with dask :
+
+
+![example cluster](../pics/drag-cluster.png)
+
+ - several parameters can now be monitored, I chose Progress, TAsk Stream; Cluster Memory and Workers in the following example :
+
+
+![example cluster](../pics/dask-dashboard.png)
+
+
  
 
 ---

@@ -185,7 +185,7 @@ kill -9 PID
 ---
 ## For advanced users
 
-#### Example Environments
+### Example Environments
 
 It's advisable to install your conda environments using `.yaml` files. This ensures that they are reproducible and it's also easier to install.
 
@@ -318,6 +318,19 @@ dependencies:
 
 
 ---
+### Use the dask dashboard to monitor your computation
+
+ - download some extra librairies (assuming jupyter and jupyterlab are already there)
+      - conda install -c conda-forge/label/cf202003 nodejs
+      - pip install dask_labextension
+      - jupyter labextension install dask-labextension
+      - jupyter serverextension enable --py --sys-prefix dask_labextension
+ - add an extra forwarding in the tunnel command :
+   - ssh -NL 1234:localhost:1234 -L 8787:localhost:8787 alberta@ige-meom-cal1.u-ga.fr
+ - launch jupyterlab and the dask menu should now be apparent :
+
+
+   
 ---
 ### Launching JupyterLab Using Jobs
 

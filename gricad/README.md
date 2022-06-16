@@ -5,7 +5,7 @@
 
 ### Perseus account
 
-* First go and create a Perseus account https://perseus.ujf-grenoble.fr with your agalan credentials if you are working in Grenoble University, or else create an external account 
+* First go and create a Perseus account https://perseus.univ-grenoble-alpes.fr with your agalan credentials if you are working in Grenoble University, or else create an external account 
 * Once your account is created, you have to join an already existing project (for now MEOM users are all gathered in pr-data-ocean) : log in to perseus, click on join a project and find pr-data-ocean in the list
 * Once you are accepted in the group, you can now proceed to log to the clusters and compute
 

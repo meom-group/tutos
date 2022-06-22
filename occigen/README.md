@@ -16,6 +16,8 @@ I recommend to put all the valuable scripts on your home, the working or tempora
 
 https://www.cines.fr/calcul/organisation-des-espaces-de-donnees/espaces-de-donnees-quotas-disques-restaurations-de-fichiers/
 
+To move files from work to store you use the command wdcp (-h for informations)
+
 ### Computing environment
 
 - `module list`to see what is already loaded and `module avail`to see what's available

@@ -105,7 +105,7 @@ nix-env -i -A netcdf
 nix-env -i -A nco
 nix-env -i -A ncview
 ```
-   * the binaries are now in /home/yourlogin/.nix-profile/bin and accessible from anywhere (your PATH is updated when you source nix appli)
+   * the binaries are now in ```/home/yourlogin/.nix-profile/bin``` and accessible from anywhere (your PATH is updated when you source the nix application)
 
 ---
 ## Using Conda 

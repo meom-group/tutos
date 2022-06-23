@@ -26,6 +26,12 @@
 
 **Note**: the rest of the tuto will not work if you don't follow this procedure !
 
+### Workspaces
+
+ * On each cluster (dahu, bigfoot) you have a personnal worspace : ```/home/yourlogin```
+ * A personnal scratch workspace accessible from both dahu and bigfoot : ```/bettik/PROJECTS/yourproject/yourlogin``` and a shared one : ```/bettik/PROJECTS/yourproject/COMMON/``` (soon a catalog of the data available for all MEOM projects) The quota is between 3 and 5 Tb per user.
+ * same architecture for another scratch workspace called silenus instead of bettik
+
 ---
 ## Compute on dahu
 
@@ -69,13 +75,16 @@ yourscript
  
 </details>
 
- * Make sure your job script is executable ```chmod +x job.ksh``` and then launch it with ```oarsub job.ksh```
+ * Make sure your job script is executable ```chmod +x job.ksh``` and then launch it with ```oarsub /path/to/the/job.ksh``` (you have to provide absolute path or be in the directory and type : ```oarsub ./job.ksh```
 
  * You can check the status of your job with ```oarstat -u yourlogin``` and kill your job if needed with ```oardel jobid``` with jobid being the first number in the result of oarsat
 
  * Maximum time limit on dahu is 2 days
  
  * If your code is not in the production phase yet, you can ask to test it first on a development queue by adding the option ```-t devel``` to your oarsub command or in your job with a maximum time limit of 30 minutes 
+ 
+ * Another useful queue is the fat one (option ```-t fat```and provide access to nodes with 1.5Tb of RAM
+ *  A queue called visu is also available
  
  * For more informations about jobs read https://gricad-doc.univ-grenoble-alpes.fr/en/hpc/joblaunch/
 

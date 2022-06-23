@@ -94,6 +94,20 @@ yourscript
 
  
 ---
+
+## Using NCO tools (+ncdump & ncview)
+
+   * put this line in your .bash_profile : ```source /applis/site/nix.sh```
+   * download the desired package with nix :
+
+```
+nix-env -i -A netcdf
+nix-env -i -A nco
+nix-env -i -A ncview
+```
+   * the binaries are now in /home/yourlogin/.nix-profile/bin and accessible from anywhere (your PATH is updated when you source nix appli)
+
+---
 ## Using Conda 
 
 Conda is already installed. You just need to activate it using the command from the server.

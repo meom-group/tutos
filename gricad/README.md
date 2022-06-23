@@ -172,7 +172,7 @@ jupyter notebook --no-browser --port 1234
 1. Do the Tunneling
 
 ```bash
-ssh -fNL 1234:dahuX:1234  [ -L 8686:dahuX:8686 for the dashboard] dahu.ciment
+ssh -fNL 1234:dahuX:1234  [ -L 8686:dahuX:8686 for the dashboard] dahu
 ```
 
 2. Open `http://localhost:1234/?token=...(see the result of the jupyter notebook command)` on a browser in your laptop.

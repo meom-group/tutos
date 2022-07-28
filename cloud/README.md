@@ -5,4 +5,4 @@ Two 2i2c deployments may be accessible for MEOm team :
   - MEOM cloud : https://meom-ige.2i2c.cloud
 
 Some illustrative notebooks are gathered here showing :
-  - [how to access PANGEO catalog data]()
+  - [how to access PANGEO catalog data](https://github.com/meom-group/tutos/blob/master/cloud/Opening-data-from-PANGEO-catalog.ipynb)

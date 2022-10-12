@@ -9,6 +9,10 @@ If you have an IGE account, please ask Aurélie Albert or Jean-Marc Molines to g
 ## Access and workspaces
 
 Then, you can access the machine with the command : ```ssh -CX yourlogin@ige-meom-cal1.u-ga.fr```
+To prevent you from typing your password each time you want to connect, you can set SSH key :
+  - in your local machine type : ```ssh-keygen``` (unless you already have a key)
+  - it will create a file .ssh/id_rsa.pub
+  - copy it to cal1 via the command : ```ssh-copy-id yourlogin@ige-meom-cal1.u-ga.fr``` and type your password for the last time
 
 You will have access to 2 personnal workspaces : ```/home/yourlogin``` (automatically created) and ```/mnt/meom/workdir/yourlogin``` (create it yourself with mkdir in /mnt/meom/workdir), the first one is limited in space and you should only put scripts on it, the second is like a scratch where your temporary and results files should be stored.
 

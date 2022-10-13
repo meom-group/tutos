@@ -2,7 +2,7 @@
 
 Welcome to MEOM !
 
-Here you can find useful informations about how we make scientific analysis in the MEOM-GROUP.
+Here you can find useful informations about how we make scientific analysis.
 
  - First, we are using mostly Linux and Mac distributions, so a prerequisiste is to know the basics Unix Shell commands, if it is not your case, have a look at this [tutorial](https://swcarpentry.github.io/shell-novice/)
 

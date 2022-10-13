@@ -14,8 +14,8 @@ Here you can find useful informations about how we make scientific analysis.
 
  - Next, you may want to access some remote computers in order to have more ressources than on your personnal laptop or to access some datasets, you have several options :
     - the team server cal1, for small computations or access to MEOM data. Learn how to compute there [here](https://github.com/meom-group/tutos/tree/master/cal1#readme)
-    - the Grenoble meso computing center [GRICAD](https://gricad.univ-grenoble-alpes.fr/); for bigger computations. Lear how to compute there [here](https://github.com/meom-group/tutos/tree/master/gricad#readme)
-    - the national supercomputers located at [IDRIS](http://www.idris.fr/), [CINES](https://www.cines.fr/) or [TGCC](https://www-hpc.cea.fr/fr/complexe/tgcc-JoliotCurie.htm)
+    - the Grenoble meso computing center [GRICAD](https://gricad.univ-grenoble-alpes.fr/) for bigger computations. Learn how to compute there [here](https://github.com/meom-group/tutos/tree/master/gricad#readme)
+    - the national supercomputers located at [IDRIS](http://www.idris.fr/), [CINES](https://www.cines.fr/) or [TGCC](https://www-hpc.cea.fr/fr/complexe/tgcc-JoliotCurie.htm) for even bigger computations
 
 A list of useful softwares and how to learn about them is available [here](https://github.com/meom-group/tutos/blob/master/software.md)
 

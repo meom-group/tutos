@@ -32,7 +32,7 @@ Managing your libraries via an environment allows you to deal with incompatible 
 
 ## Make a requirement file
 
-- You can also create an environment from a yaml file in which you specify all the library you need. This requirement file env.yml must look like :
+- You can also create an environment from a yaml file in which you specify all the libraries you need. This requirement file env.yml must look like :
 
 ```yaml
 name: plots

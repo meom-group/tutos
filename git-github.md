@@ -32,3 +32,26 @@
   - go back to your **my_work** repository on github and copy the SSH address :
 
 ![pic](pics/git-ssh.png)
+
+  - on your local machine (the same you use to generate the SSH key) clone your repository :  ```git clone git@github.com:yourgithublogin/my_work.git```
+  - a new directory has been created, called my_work and inside you can find the files you added to it on github (README.md and/or other files)
+
+
+## Save your work on github
+
+  - on your local machine you will start working adding new files to the my_work repository, some notebooks for instance and now you want to save it on github so that it is backed up or you want to show to someone your scripts
+  - go to your **my_work** repository locally
+  - type these 3 commands :
+
+```
+git add yourscript (or * if you wat to add everything you have added)
+git commit -m 'some comments about your work like : developping a new param for this'
+git push
+```
+  - go to your **my_work** repository on github : github.com/yourgithublogin/my_work
+  - you can see that the files are now also on github and the notebooks' cells content and outputs are rendering like [this one](https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb) for instance
+
+## Synchronize your work on mutliple machines
+
+  - now you know how to synchronize your work between your machine and github, this can be applied to another machine, like cal1 for instance
+  - repeat the steps [Add a ssh key for your machine](#add a ssh key for your machine) and [Clone your project on your machine](#clone your project on your machine) on this new machine

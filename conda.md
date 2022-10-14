@@ -32,7 +32,7 @@ Managing your libraries via an environment allows you to deal with incompatible 
 
 ## Make a requirement file
 
-You can also create an environment from a yaml file in which you specify all the library you need. This requirement file must look like :
+- You can also create an environment from a yaml file in which you specify all the library you need. This requirement file env.yml must look like :
 
 ```yaml
 name: plots
@@ -51,3 +51,9 @@ dependencies:
   - pandas
   - cmocean
 ```
+
+- Then you create the environment with the command : ```conda env create -f env.yml```
+- Now if you want to share your code it is recommended that you share the list of libraries needed to make it run by adding this env.yml file to your python script.
+
+More informations about conda environments can be found [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#)
+

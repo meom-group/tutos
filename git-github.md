@@ -13,7 +13,7 @@
   
 ![pic](pics/ssh-key-github.png)
 
-  - click on add a new key :
+  - click on new SSH key :
 
 ![pic](pics/new-ssh.png)
 

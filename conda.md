@@ -16,7 +16,7 @@ We are going to install [miniconda](https://docs.conda.io/en/latest/miniconda.ht
  -  execute it : ```./Miniconda3-latest-Linux-x86_64.sh```
  -  press ENTER, read and accept the licence (press bar space and type yes), specify the location for miniconda3 to install all the librairies, be careful to indicate a location where the quotas are not very constraint, for instance not on the home of computing servers as they usually accept only a few Gb of memory, on cal1, specify a location in your workdir like : ```/mnt/meom/workdir/yourlogin/miniconda3```
  -  this installation has modified your .bashrc so you need to source it ```source /home/username/.bashrc```, or exit the machine and log in again
- -  you now see the (base) mention at the beginning of the prompt, that means that you are in your base environment, the command ```conda list``` shows you the already installed libraries and the version of it (doing it in 2022, October the 14th it will install the 3.9.12 version of python)
+ -  you now see the ```(base)``` mention at the beginning of the prompt, that means that you are in your base environment, the command ```conda list``` shows you the already installed libraries and the version of it (doing it in 2022, October the 14th it will install the 3.9.12 version of python)
  -  now you can install additional librairies with the command ```conda install library```but we recommend that you create an environment first
 
 ## Create a conda environment

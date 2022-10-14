@@ -23,7 +23,7 @@ We are going to install [miniconda](https://docs.conda.io/en/latest/miniconda.ht
 
 Managing your libraries via an environment allows you to deal with incompatible librairies, incompatible versions of libraries or just to separate the downloading of libraries by project or type of workflows
 
-  - create an environment with a specific version of python and some useful libraries for plotting data in a jupyter notebook : ```conda create --name plots python=3.5 numpy matplotlib cartopy xarray dask netcdf4 ipykernel jupyter pandas``` it will also install all the dependencies needed by those libraries
+  - create an environment with a specific version of python and some useful libraries for plotting data in a jupyter notebook for instance : ```conda create --name plots python=3.5 numpy matplotlib cartopy xarray dask netcdf4 ipykernel jupyter pandas``` it will also install all the dependencies needed by those libraries
   - activate the environment with : ```conda activate plots```, now you have access to all the libraries installed, try ```python -c "import matplotlib"``` for instance to check
   - ```conda list``` will also give you the list of all the libraries for this environment
   - you can install extra libraries in this environment with the command ```conda install```, for instance we are adding the very useful cmocean library for plotting oceanic data : ```conda install -c conda-forge cmocean```, this library is only available in the conda-forge channel so we have to specify it

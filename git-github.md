@@ -4,7 +4,7 @@
  - create an account on [github](https://github.com) or on [GRICAD's gitlab](https://gricad-gitlab.univ-grenoble-alpes.fr/users/sign_in)
  - create a new repository or project, let's call it **my_work** as an example
  - you can add a description in the README.md file when creating the project
- - you can now add files directly on github/gitlab
+ - you can now create new files or upload files directly on github/gitlab
  
  
 ## Add a ssh key for your machine

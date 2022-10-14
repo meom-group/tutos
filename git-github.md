@@ -35,9 +35,10 @@ In order to be able to download and upload files to your github account from a s
 
 ![pic](pics/git-ssh.png)
 
-  - on your local machine (the same you use to generate the SSH key) clone your repository :  ```git clone git@github.com:yourgithublogin/my_work.git```
-  - a new directory has been created, called my_work and inside you can find the files you added to it on github (README.md and/or other files)
-  - you can also find a .git repository where it will store all the information about your git repository (history, branches, etc ...)
+  - on your local machine (the same you use to generate the SSH key) clone your repository :  
+```git clone git@github.com:yourgithublogin/my_work.git```
+  - a new directory has been created, called **my_work** and inside you can find the files you created on github (README.md and/or other files)
+  - you can also find a .git repository where are stored all the information about your git repository (history, branches, etc ...)
 
 
 ## Save your work on github

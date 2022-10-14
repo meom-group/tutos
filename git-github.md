@@ -9,13 +9,18 @@
  
 ## Clone the project on any machine
   - in order to be able to download and upload files to your github account from a specific machine, you have to set up a SSH key as described [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
-  - on github, go to your settings and in the SSH and GPG keys section
+  - on github, go to your settings and in the SSH and GPG keys section :
   
 ![pic](pics/ssh-key-github.png)
 
-- click on add a new key
+  - click on add a new key :
 
 ![pic](pics/new-ssh.png)
 
-- add the ssh key generated on your local machine with ssh-keygen command
+  - generate a ssh key by typing the ```ssh-keygen``` command in your terminal, and press enter to all questions, now you have a ```.ssh/id_rsa.pub```  :
+
+![pic](pics/keygen.png)
+
+  - copy the content of .ssh/id_rsa.pub and paste it in the Key field : 
   
+![pic](pics/key.png)

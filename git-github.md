@@ -51,7 +51,7 @@ git push
   - go to your **my_work** repository on github : github.com/yourgithublogin/my_work
   - you can see that the files are now also on github and the notebooks' cells content and outputs are rendering like [this one](https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb) for instance
 
-## Synchronize your work on mutliple machines
+## Synchronize your work on multiple machines
 
   - now you know how to synchronize your work between your machine and github, this can be applied to another machine, like cal1 for instance
-  - repeat the steps [Add a ssh key for your machine](#add a ssh key for your machine) and [Clone your project on your machine](#clone your project on your machine) on this new machine
+  - repeat the steps [Add a ssh key for your machine](#add-a-ssh-key-for-your machine) and [Clone your project on your machine](#clone-your-project-on-your-machine) on this new machine

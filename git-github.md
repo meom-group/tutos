@@ -1,5 +1,14 @@
 # How to use git and github to back up your work
 
+## Table of contents
+
+1. [Create a project on github](#create-a-project-on-github)
+2. [Add a ssh key for your machine](#add-a-ssh-key-for-your-machine)
+3. [Clone your project on your machine](#clone-your-project-on-your-machine)
+4. [Save your work on github](#save-your-work-on-github)
+5. [Synchronize your work on multiple machines](#synchronize-your-work-on-multiple machines)
+6. [Ressources](#ressources)
+
 ## Create a project on github
  - create an account on [github](https://github.com) or on [GRICAD's gitlab](https://gricad-gitlab.univ-grenoble-alpes.fr/users/sign_in)
  - create a new repository or project, let's call it **my_work** as an example
@@ -66,5 +75,6 @@ Now you know how to synchronize your work between your machine and github, this 
   - work on this new machine and upload your work to github via the steps described in the [Save your work on github](#save-your-work-on-github) section
   - now, if you want to work on the first machine, you need to do a ```git pull``` before adding new files in order to download the changes you've made on the second machine
 
+## Ressources
 
 For more informations on git, check out the [official documentation](https://git-scm.com/book/en/v2), a [cheat sheet](https://training.github.com/) in the language of your choice and a [tutorial](https://swcarpentry.github.io/git-novice/) by software carpentry

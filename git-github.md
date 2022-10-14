@@ -12,3 +12,10 @@
   - on github, go to your settings and in the SSH and GPG keys section
   
 ![pic](pics/ssh-key-github.png)
+
+- click on add a new key
+
+![pic](pics/new-ssh.png)
+
+- add the ssh key generated on your local machine with ssh-keygen command
+  

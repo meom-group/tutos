@@ -44,7 +44,7 @@
   - type these 3 commands :
 
 ```
-git add yourscript (or * if you wat to add everything you have added)
+git add yourscript (or * if you want to upload everything you have added)
 git commit -m 'some comments about your work like : developping a new param for this'
 git push
 ```

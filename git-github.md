@@ -32,7 +32,7 @@ In order to be able to download and upload files to your github account from a s
 
 ![pic](pics/keygen.png)
 
-Note : if your id_rsa.pub does not look like minie, try the command ```ssh-keygen -t rsa```
+Note : if your id_rsa.pub does not look like mine, try the command ```ssh-keygen -t rsa``` instead.
 
   - copy the content of ```.ssh/id_rsa.pub``` and paste it in the **Key** field : 
   

@@ -8,7 +8,9 @@
  
  
 ## Add a ssh key for your machine
-  - in order to be able to download and upload files to your github account from a specific machine, you have to set up a SSH key as described [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+In order to be able to download and upload files to your github account from a specific machine, you have to set up a SSH key check the procedure described [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or follow thses steps :
+
   - on github, go to your settings and in the **SSH and GPG keys section** :
   
 ![pic](pics/ssh-key-github.png)
@@ -40,7 +42,8 @@
 
 ## Save your work on github
 
-  - on your local machine you will start working adding new files to the my_work repository, some notebooks for instance and now you want to save it on github so that it is backed up or you want to show to someone your scripts
+On your local machine you will start working adding new files to the **my_work** repository, some notebooks for instance and now you want to save it on github so that it is backed up and/or you want to show your scripts to someone :
+
   - go to your **my_work** repository locally
   - type these 3 commands :
 
@@ -50,14 +53,17 @@ git commit -m 'some comments about your work like : developping a new param for 
 git push
 ```
   - go to your **my_work** repository on github : github.com/yourgithublogin/my_work
-  - you can see that the files are now also on github and the notebooks' cells content and outputs are rendering like [this one](https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb) for instance
+  - you can see that the files are now also on github and the notebooks' cells content and outputs are rendering, like [this one](https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb) for instance
+
+So you can send the link to your notebook stored on github to anyone who wants to have a look !
 
 ## Synchronize your work on multiple machines
 
-  - now you know how to synchronize your work between your machine and github, this can be applied to another machine, like cal1 for instance
+Now you know how to synchronize your work between your machine and github, this can be applied to another machine, like cal1 for instance :
+
   - repeat the steps [Add a ssh key for your machine](#add-a-ssh-key-for-your-machine) and [Clone your project on your machine](#clone-your-project-on-your-machine) described above on this new machine
-  - work on this new machine and upload your work to github via steps described in [Save your work on github](#save-your-work-on-github) section
-  - if you want to work on the first machine, you need to do a ```git pull``` before adding new files in order to download the changes you've made on the second machine
+  - work on this new machine and upload your work to github via the steps described in the [Save your work on github](#save-your-work-on-github) section
+  - now, if you want to work on the first machine, you need to do a ```git pull``` before adding new files in order to download the changes you've made on the second machine
 
 
 For more informations on git, check out the [official documentation](https://git-scm.com/book/en/v2), a [cheat sheet](https://training.github.com/) in the language of your choice and a [tutorial](https://swcarpentry.github.io/git-novice/) by software carpentry

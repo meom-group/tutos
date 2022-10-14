@@ -6,7 +6,7 @@
 2. [Add a ssh key for your machine](#add-a-ssh-key-for-your-machine)
 3. [Clone your project on your machine](#clone-your-project-on-your-machine)
 4. [Save your work on github](#save-your-work-on-github)
-5. [Synchronize your work on multiple machines](#synchronize-your-work-on-multiple machines)
+5. [Synchronize your work on multiple machines](#synchronize-your-work-on-multiple-machines)
 6. [Ressources](#ressources)
 
 ## Create a project on github

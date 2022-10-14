@@ -15,7 +15,7 @@ In order to be able to download and upload files to your github account from a s
   
 ![pic](pics/ssh-key-github.png)
 
-  - click on **new SSH key** :
+  - click on **New SSH key** :
 
 ![pic](pics/new-ssh.png)
 

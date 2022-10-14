@@ -27,7 +27,7 @@ In order to be able to download and upload files to your github account from a s
   
 ![pic](pics/key.png)
 
-  -  give a title to the key (the name of machine for instance) as you will repeat the operation on every machine you will work on (cal1, dahu, supercomputers, etc ...)
+  -  give a title to the key (the name of the machine for instance) as you will repeat the operation on every machine you will work on (cal1, dahu, supercomputers, etc ...)
 
 ## Clone your project on your machine
 

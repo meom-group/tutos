@@ -54,4 +54,6 @@ git push
 ## Synchronize your work on multiple machines
 
   - now you know how to synchronize your work between your machine and github, this can be applied to another machine, like cal1 for instance
-  - repeat the steps [Add a ssh key for your machine](#add-a-ssh-key-for-your machine) and [Clone your project on your machine](#clone-your-project-on-your-machine) on this new machine
+  - repeat the steps [Add a ssh key for your machine](#add-a-ssh-key-for-your-machine) and [Clone your project on your machine](#clone-your-project-on-your-machine) described above on this new machine
+  - work on this new machine and upload your work to github via steps described in [Save your work on github](#save-your-work-on-github) section
+  - if you want to work on the first machine, you need to do a ```git pull``` before adding new files in order to get the changes you've made on the second machine

@@ -9,7 +9,7 @@
  
 ## Add a ssh key for your machine
 
-In order to be able to download and upload files to your github account from a specific machine, you have to set up a SSH key check the procedure described [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or follow thses steps :
+In order to be able to download and upload files to your github account from a specific machine, you have to set up a SSH key, check the procedure described [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or follow the steps below :
 
   - on github, go to your settings and in the **SSH and GPG keys section** :
   

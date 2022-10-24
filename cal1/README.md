@@ -42,6 +42,7 @@ You can sum up all the infos in the job header into one single line of code :
 srun -n 1 --time=00:10:00 --mem=20000 --account=fortran YOURSCRIPT
 ```
  
+Check the status of your job with the command ```squeue``` (R is for running, W for waiting)
 ### Job submission in a script
 
 Set up a script job.ksh for instance in which the header must have the informations :
@@ -79,4 +80,5 @@ You submit this script with the command ```sbatch job.ksh```
   ``` 
   (replace 1234 by the port given to you at the previous stage)
   - in your local machine, open your browser and look for : localhost:1234 and enter the token or copy paste the adress from the output of the jupyter notebook command
+  - do not forget to close your tunnel when the jupyter session is over, otherwise your computer will still listen to the port, you can check it with the command ```lsof -i :1234``` and kill the corresponding proc if needed
 

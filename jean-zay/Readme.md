@@ -30,3 +30,10 @@ Be careful, switching projects will change the env variables $HOME, $SCRATCH, $W
 see http://www.idris.fr/jean-zay/cpu/jean-zay-cpu-doc_account.html
 
   - to check all your projects consumption : ```idracct```
+  
+## Conda environment
+
+- Conda is already installed on jean-zay, you can activate one of the pre-existing environment via the ```module load python=version``` command (see all the versions available with ```module avail python```)
+
+- You can then create your own environment, that will create a .conda repository in your $HOME, you better move it to your $WORK and make a link, because it will increase in size and inode quite rapidly
+

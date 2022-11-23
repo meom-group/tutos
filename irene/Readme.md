@@ -23,10 +23,10 @@ Password is mandatory, SSH keys exchange is not implemented.
   * When login, we are dropped in $HOME, which is the HOME corresponding to the main group (lab group, *i.e.* `ige`). The `.bashrc` and related 
 files in this HOME are used at initialization of the shell.
   * For a particular project, there is a specific HOME directory, associated to `CCCHOME` environment variable. This latter environment variable
-is set when loading a specific project module called `dfldatadir/<PROJECT>`(<PROJECT> is the project ID, *e.g.* gen12020, presently).  
+is set when loading a specific project module called `dfldatadir/<PROJECT>`(<PROJECT> is the project ID, *e.g.* gen12020, currently).  
 If the module is not loaded, then CCCHOME points to HOME.
 
-Note that it is important to load the project module not only for the HOME but for all the other workspaces, where quota can be an issue. 
+Note that it is important to load the project module not only for the HOME but for all the other workspaces, where quota can be an issue.
 ### WORK :
   * Mid-term personal workspace for big data with back-up.
   * Always associated to a project (after `module load dfldatadir/<PROJECT>`). The path is `$CCCWORKDIR`
@@ -51,9 +51,32 @@ Workflow should be : storage of inputs and results on WORK as long as you need, 
 
 ## The different partitions of irene
 Below the name **irene** there are in fact various computers (partition)  with different architecture. A given project has only access to the 
-partition it has hours granted on. As of Oct. 2022, we have access to the rome partition, each compute node having 128 cores.
+partition it has hours granted on. As of Oct. 2022, we have access to the **rome** partition, each compute node having 128 cores.
 
 ## Computing hours
+  Computing hours are obtained by submitting a scientific/technical proposal to GENCI via the DARI interface. Once approved, users can check the project
+consumption with the `ccc_myproject` command. 
 
-## Conda environment
+## Job submission
+Apart from compilation and short scripts tests, the right way to use irene ressources is through the batch system (SLURM derived). Jobs must be submitted with
+the `ccc_msub <batch_file>` command, using a batch file. The batch file must have a header part with some #MSUB directives like in the following example:
+
+```
+#!/bin/bash
+
+#MSUB -r  name                # Request name                     
+#MSUB -n  128                 # Number of tasks to run            
+#MSUB -N  1                   # Number of nodes to use          
+#MSUB -T 3600                 # Elapsed time limit in seconds   
+#MSUB -o zname.o%I            # Standard output. %I is the job id
+#MSUB -e zname.e%I            # Error output. %I is the job id   
+#MSUB -q rome                 # pqrtition  name                                   
+#MSUB -A gen12020             # Project ID for accounting       
+#MSUB -x                      # exclusve compute node
+### COMMENT :   There are 128 core per node on rome nodes
+
+```
+
+For parallel computing, executable must be launched with the `ccc_mprun` command (a wrapper for slurm `srun`). See details in the `irene.info` documentation.
+
 

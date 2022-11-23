@@ -73,10 +73,14 @@ the `ccc_msub <batch_file>` command, using a batch file. The batch file must hav
 #MSUB -q rome                 # pqrtition  name                                   
 #MSUB -A gen12020             # Project ID for accounting       
 #MSUB -x                      # exclusve compute node
+#MSUB -m store,work,scratch   # list the file system used by the job
 ### COMMENT :   There are 128 core per node on rome nodes
 
 ```
 
 For parallel computing, executable must be launched with the `ccc_mprun` command (a wrapper for slurm `srun`). See details in the `irene.info` documentation.
+
+`ccc_msub` does not allow to pass argument to the batch script, in contrary to `sbatch`. A workaround for this limitation is to use a template script where some
+parameters can be changed usig `sed` for instance. See this [example](restore_occi.sh) for instance.
 
 

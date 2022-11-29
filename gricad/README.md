@@ -44,7 +44,7 @@
 
 ### Submitting jobs
 
-  * You are actually sitting on login nodes, to do some computation you will need to request some computing nodes
+  * You are actually sitting on login nodes (dahu-f), to do some computation you will need to request some computing nodes
   * You do that by either launching your script inside a job or ask for interactive access to a computing node :
 
 <details>
@@ -56,6 +56,7 @@
 
  * When your request is granted you will be connected to a specific dahu node and you will be able to compute there.
  * Maximum time limit is 12 hours
+ * The memory allocated to your request is nb_cores_requested*node_memory/nb_cores_per_node, for instance on a classical dahu node there is a total of 192Gb per node, if you ask for 16 cores you will be granted 96Gb, on a fat node a total of 1.5Tb is available (check node properties with recap.py)
 
 
 <details>
@@ -150,6 +151,14 @@ envs_dirs:
 First, take a look at this tutorial to get familiar: https://gricad-doc.univ-grenoble-alpes.fr/notebook/hpcnb/
 
 Below offers a simpler work structure.
+
+You need to have a conda environment with jupyter installed in it, also make sure you have the lines :
+
+```
+c.NotebookApp.open_browser = False
+c.NotebookApp.ip = '0.0.0.0'
+```
+in your .jupyter/jupyter_notebook_config.py
  
 **In the First Terminal** - Start the JupyterLab session
 

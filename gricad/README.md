@@ -84,7 +84,7 @@ yourscript
  
  * If your code is not in the production phase yet, you can ask to test it first on a development queue by adding the option ```-t devel``` to your oarsub command or in your job with a maximum time limit of 30 minutes 
  
- * Another useful queue is the fat one (option ```-t fat```and provide access to nodes with 1.5Tb of RAM
+ * Another useful queue is the fat one (option ```-t fat```and provide access to nodes with a total of 1.5Tb of RAM per node)
  *  A queue called visu is also available
  
  * For more informations about jobs read https://gricad-doc.univ-grenoble-alpes.fr/en/hpc/joblaunch/
@@ -195,7 +195,7 @@ jupyter notebook --no-browser --port 1234
 1. Do the Tunneling
 
 ```bash
-ssh -fNL 1234:dahuX:1234  [ -L 8686:dahuX:8686 for the dashboard] dahu
+ssh -fNL 1234:dahuX:1234  dahu
 ```
 
 2. Open `http://localhost:1234/?token=...(see the result of the jupyter notebook command)` on a browser in your laptop.

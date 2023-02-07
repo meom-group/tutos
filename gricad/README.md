@@ -20,7 +20,22 @@
  - first ```ssh yourlogin@rotule.univ-grenoble-alpes.fr```  or ```ssh yourlogin@trinity.univ-grenoble-alpes.fr```
  - then ```ssh dahu or ssh bigfoot```
 
-* To avoid doing these steps each time you want to connect, a procedure is described here : https://gricad-doc.univ-grenoble-alpes.fr/hpc/connexion/
+* To avoid doing these steps each time you want to connect, add the following lines to your ```.ssh/config``` :
+
+```bash
+Host *
+  ServerAliveInterval 30
+
+Host *.ciment
+  User <yourlogin>
+  ProxyCommand ssh -q <yourlogin>@access-gricad.univ-grenoble-alpes.fr "nc -w 60 `basename %h .ciment` %p"
+```
+
+  - Now you should be able to connect to dahu directly with ```ssh dahu.ciment```
+  - To connect without typing your password, you can set up a SSH key :
+    - on your local machine create the ssh key : ```ssh-keygen```
+    - copy the public key to the bastions : ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@rotule.u-ga.fr:``` and  ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@trinity.u-ga.fr:``` and to the clusters : ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@dahu.ciment:```
+
 
 * Repeat it on every machine you will need to work on, especially cal1 if you want to transfer data from there for instance
 

@@ -25,7 +25,11 @@
 ```bash
 Host *
   ServerAliveInterval 30
-
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+  ForwardX11 yes
+  TCPKeepAlive yes
+   
 Host *.ciment
   User <yourlogin>
   ProxyCommand ssh -q <yourlogin>@access-gricad.univ-grenoble-alpes.fr "nc -w 60 `basename %h .ciment` %p"

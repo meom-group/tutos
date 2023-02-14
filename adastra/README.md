@@ -16,4 +16,6 @@ Look for a module and dependencies : ```module spider netcdf```
 Aliases and module loading can be defined in a .bash_profile file
 
 
+module load conda/22.9.0
+
 

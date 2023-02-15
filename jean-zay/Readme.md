@@ -1,6 +1,6 @@
 # Some informations regarding the Jean-Zay machine at IDRIS
 
-Most of the informations are gathered [here](http://www.idris.fr/jean-zay)
+Most of the informations are gathered [here](http://www.idris.fr/jean-zay) and a cheat sheet is also [available online](http://www.idris.fr/media/su/idrischeatsheet.pdf)
 
 ## The different workspaces
   

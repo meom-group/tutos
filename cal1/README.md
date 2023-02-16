@@ -77,7 +77,7 @@ You submit this script with the command ```sbatch job.ksh```
  (be careful if port 1234 is not available, another one will be attributed)
   - in another terminal, make a tunnel to cal1 : 
   ```
-  ssh -NL 1234:localhost:1234 alberta@ige-meom-cal1.u-ga.fr
+  ssh -NL 1234:localhost:1234 yourlogin@ige-meom-cal1.u-ga.fr
   ``` 
   (replace 1234 by the port given to you at the previous stage)
   - in your local machine, open your browser and look for : localhost:1234 and enter the token or copy paste the adress from the output of the jupyter notebook command

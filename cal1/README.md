@@ -67,6 +67,7 @@ You submit this script with the command ```sbatch job.ksh```
 
 ### Jupyter notebooks
 
+  - install jupyter in your conda environment :```conda install jupyter```
   - load your conda environment in which jupyter is available (like the one defined [here](https://github.com/meom-group/tutos/blob/master/cal1/2020-03-20-AA-demo-dask-dashboard-xarray-on-cal1.ipynb) )
   - launch jupyter without browser with a job submission command : 
  ```

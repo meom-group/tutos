@@ -18,4 +18,6 @@ Aliases and module loading can be defined in a .bash_profile file
 
 module load conda/22.9.0
 
+To allow X forwarding, log in with ```ssh -X``` or ```-Y``` and do ```ln -s $OWN_HOMEDIR/.Xauthority ~/```
+
 

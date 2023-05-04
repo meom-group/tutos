@@ -20,4 +20,4 @@ module load conda/22.9.0
 
 To allow X forwarding, log in with ```ssh -X``` or ```-Y``` and do ```ln -s $OWN_HOMEDIR/.Xauthority ~/```
 
-
+Ask for HPDA nodes : #SBATCH --constraint=HPDA

@@ -5,6 +5,6 @@
 
 # Gallery
 
-![LS_wind_and_WT_Y.png](Vectors_and_filter.py)
+![](LS_wind_and_WT_Y.png)
 
 

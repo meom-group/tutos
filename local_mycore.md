@@ -3,6 +3,9 @@
 - got to https://mycore.core-cloud.net/ and connect with your janus account (Select CNRS-Personnel des unités)
 - click on your name on the right corner and click on Paramètres
 
+![example cluster](../pics/drag-cluster.png)
+
+
 ![pic1](../pics/mycore1.png)
 
 - download the software adapted to your operating system

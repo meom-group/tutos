@@ -9,11 +9,11 @@
 - download the software adapted to your operating system
 - click on the link in the red box to generate a local password
 
-![pic2](../pics/mycore2.png)
+![pic2](https://github.com/meom-group/tutos/blob/master/pics/mycore2.png)
 
 - click on Envoyer un courriel pour redéfinir mon mot de passe
 
-![pic3](../pics/mycore3.png)
+![pic3](https://github.com/meom-group/tutos/blob/master/pics/mycore3.png)
 
 - you will now receive a link in your UGA mail, click on it and define your password
 - launch the owncloud application you downloaded previously

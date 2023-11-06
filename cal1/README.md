@@ -21,4 +21,4 @@ You can see how much of these spaces are filled with the command ```df -h``` (lo
 
 You can transfer data from your computer to cal1 with the command ```scp myfile yourlogin@ige-meom-cal1.u-ga.fr:/mnt/summer/DATA_MEOM/workdir/yourlogin/where_you_want_it/myfile``` and you can download data from cal1 to your computer with the command : ```scp yourlogin@ige-meom-cal1.u-ga.fr:/mnt/summer/DATA_MEOM/workdir/yourlogin/path_to_your_file/myfile .```
 
-Note that the data stored on /mnt/summer/DATA_MEOM are not backed-up, but you can have access to a daily snapshot of the past 7 days or a monthly snapshot of the past month by looking at ```.snapshot``` anywhere in your workdir, in case of deletion by mistake it can be useful
+Note that the data stored on /mnt/summer/DATA_MEOM are not backed-up, but you can have access to a daily snapshot of the past 7 days or a weekly snapshot of the past month by looking at ```.snapshot``` anywhere in your workdir, in case of deletion by mistake it can be useful

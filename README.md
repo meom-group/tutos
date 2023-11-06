@@ -13,7 +13,7 @@ Here you can find useful informations about how we make scientific analysis.
  - Also a nice way to have the code you write and the plots you produce at the same place, along with some texts, equations and/or pictures is to use [jupyter notebooks](https://jupyter.org/). Learn how to install and use it [here](jupyter.md)
 
  - Next, you may want to access some remote computers in order to have more ressources than on your personnal laptop or to access some datasets, you have several options :
-    - the team server cal1, for small computations or access to MEOM data. Learn how to compute there [here](https://github.com/meom-group/tutos/tree/master/cal1#readme)
+    - the team server cal1 allows you to access MEOM data and is also a gateway to other machines. Learn how to access and use it [here](https://github.com/meom-group/tutos/tree/master/cal1#readme)
     - the Grenoble meso computing center [GRICAD](https://gricad.univ-grenoble-alpes.fr/) for bigger computations. Learn how to compute there [here](https://github.com/meom-group/tutos/tree/master/gricad#readme)
     - the national supercomputers located at [IDRIS](http://www.idris.fr/), [CINES](https://www.cines.fr/) or [TGCC](https://www-hpc.cea.fr/fr/complexe/tgcc-JoliotCurie.htm) for even bigger computations
 

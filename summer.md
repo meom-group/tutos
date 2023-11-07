@@ -27,7 +27,11 @@ Users can share selected data from DATA_MEOM to the outside world via an opendap
 
 - You create a sub-repository in ```/mnt/summer/DATA_MEOM/MEOM-OPENDAP``` with your login as a name, or a meaningful name (name of project or dataset)
 
-- There you make a link with an absolute path to the required data, for instance : ```alberta@ige-meom-cal1:/mnt/summer/DATA_MEOM/MEOM-OPENDAP/eNATL60$ ln -sf /mnt/summer/DATA_MEOM/MODEL_SET/eNATL60/eNATL60-I eNATL60-I```
+- There you make a link with an absolute path to the required data, for instance :
+
+```bash 
+alberta@ige-meom-cal1:/mnt/summer/DATA_MEOM/MEOM-OPENDAP/eNATL60$ ln -sf /mnt/summer/DATA_MEOM/MODEL_SET/eNATL60/eNATL60-I eNATL60-I
+```
 
 - The data stored in ```MEOM-OPENDAP``` are mirrored online at this adress : https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/catalog.html
 

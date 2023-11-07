@@ -16,6 +16,8 @@ Here you can find useful informations about how we make scientific analysis.
     - the team server cal1 allows you to access MEOM data and is also a gateway to other machines. Learn how to access and use it [here](https://github.com/meom-group/tutos/tree/master/cal1#readme)
     - the Grenoble meso computing center [GRICAD](https://gricad.univ-grenoble-alpes.fr/) for bigger computations. Learn how to compute there [here](https://github.com/meom-group/tutos/tree/master/gricad#readme)
     - the national supercomputers located at [IDRIS](http://www.idris.fr/), [CINES](https://www.cines.fr/) or [TGCC](https://www-hpc.cea.fr/fr/complexe/tgcc-JoliotCurie.htm) for even bigger computations
+  
+ - A storage unit is available for all MEOM members and collaborators, you can store your data there, share them with some collaborators or to the outside world, access the same files on different computing machines (IGE-calcul1, GRICAD-dahu/bigfoot). Learn how to access it [here](https://github.com/meom-group/tutos/blob/master/summer.md)
 
 A list of useful softwares and how to learn about them is available [here](https://github.com/meom-group/tutos/blob/master/software.md)
 

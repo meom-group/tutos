@@ -1,6 +1,6 @@
 # MEOM data storage
 
-DATA_MEOM is a [summer](https://summer.univ-grenoble-alpes.fr/) storage unit where MEOM members and collaborators can store their data, share them between each other and to the outside world.
+DATA_MEOM is a [summer](https://summer.univ-grenoble-alpes.fr/) storage unit where MEOM members and collaborators can store their data, access them from different servers, share them between each other and to the outside world.
 
 ## Access
 

@@ -15,7 +15,7 @@ Different workspaces are available, some are personnal, other collaborative :
   - in ```workdir```, each active member or collaborator of MEOM can have a personnal workspace, for instance : ```/mnt/summer/DATA_MEOM/workdir/alberta```
     - you have to create it yourself the first time you connect to DATA_MEOM : ```cd workdir; mkdir mylogin```
     - it is recommended that you put reading rights to everyone but only you for writing and executing : ```chmod -R 744 mylogin```
-    - if you are putting data in your workdir on cal1, make sure that the group associated to it is pr-data-ocean so that it can be accessible from GRICAD also : ```chown -R yourlogin:pr-data-ocean data```
+    - if you are creating your workdir on cal1, make sure that the group associated to it is pr-data-ocean so that it can be accessible from GRICAD also : ```chown -R yourlogin:pr-data-ocean yourlogin```
 
 ![](https://github.com/meom-group/tutos/blob/master/pics/droits-dossiers.png)   
       

@@ -37,6 +37,10 @@ Users can share selected data from DATA_MEOM to the outside world via an opendap
 alberta@ige-meom-cal1:/mnt/summer/DATA_MEOM/MEOM-OPENDAP/eNATL60$ ln -sf /mnt/summer/DATA_MEOM/MODEL_SET/eNATL60/eNATL60-I eNATL60-I
 ```
 
+## Back-up
+
+Note that the data stored on /mnt/summer/DATA_MEOM are not backed-up, but you can have access to a daily snapshot of the past 7 days or a weekly snapshot of the past month by looking at ```.snapshot``` anywhere in your workdir, in case of deletion by mistake it can be useful
+
 - The data stored in ```MEOM-OPENDAP``` are mirrored online at this adress : https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/catalog.html
 
 - Users can share data by giving the link to a particular file or dataset to a collaborator, they can then download by clicking on the link then clicking on the HTTPServer link (it will start the download automatically) or they can download data via wget command, for instance : ```wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/MEOM/eNATL60/eNATL60-I/mask_eNATL60_3.6.nc```

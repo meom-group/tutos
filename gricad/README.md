@@ -86,8 +86,8 @@ Host *.ciment
 
 #OAR -n jobname
 #OAR -l /nodes=2/core=1,walltime=00:01:30
-#OAR --stdout jobname.out%j
-#OAR --stderr jobname.err%j
+#OAR --stdout jobname.out%jobid
+#OAR --stderr jobname.err%jobid
 #OAR --project data-ocean
 
 yourscript

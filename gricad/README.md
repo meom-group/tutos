@@ -167,9 +167,6 @@ envs_dirs:
 
 ## Run the jupyter notebook with conda environment on dahu (or bigfoot)
 
-First, take a look at this tutorial to get familiar: https://gricad-doc.univ-grenoble-alpes.fr/notebook/hpcnb/
-
-Below offers a simpler work structure.
 
 You need to have a conda environment with jupyter installed in it, also make sure you have the lines :
 
@@ -178,6 +175,8 @@ c.NotebookApp.open_browser = False
 c.NotebookApp.ip = '0.0.0.0'
 ```
 in your .jupyter/jupyter_notebook_config.py
+
+If there is no jupyter_notebook_config.py or no .jupyter directory in your home, create it (```cd; mkdir .jupyter```) and put [this file](jupyter_notebook_config.py) in it.
  
 **In the First Terminal** - Start the JupyterLab session
 
@@ -187,6 +186,7 @@ in your .jupyter/jupyter_notebook_config.py
 ```bash
 ssh dahu
 ```
+(same for bigfoot)
 
 2. Start an interactive session
 
@@ -197,7 +197,8 @@ oarsub -I --project data-ocean -l /core=10,walltime=2:00:00 -> it will log autom
 3. Activate your conda environment with JupyterLab
 
 ```
-conda activate jupyter
+source /applis/environments/conda.sh #if it is not yet in your .bashrc
+conda activate jupyter #or the name of your env
 ```
 
 4. Start your jupyterlab session

@@ -56,7 +56,7 @@ Host *.ciment
 
 ### Connection
 
- * Now that you are all set up, you just have to type ```ssh dahu``` 
+ * Now that you are all set up, you just have to type ```ssh dahu.ciment``` 
  * If you need to transfer some data yo can do a simple ```scp mydata dahu:/path/to/data/.```
  * If the data you want to transfer is big, go through the cargo server : ```scp mydata yourlogin@cargo.univ-grenoble-alpes.fr:/path/to/data/.```
 
@@ -184,7 +184,7 @@ If there is no jupyter_notebook_config.py or no .jupyter directory in your home,
 
 
 ```bash
-ssh dahu
+ssh dahu.ciment
 ```
 (same for bigfoot)
 
@@ -215,7 +215,7 @@ jupyter notebook --no-browser --port 1234
 1. Do the Tunneling
 
 ```bash
-ssh -fNL 1234:dahuX:1234  dahu
+ssh -fNL 1234:dahuX:1234  dahu.ciment
 ```
 
 2. Open `http://localhost:1234/?token=...(see the result of the jupyter notebook command)` on a browser in your laptop.

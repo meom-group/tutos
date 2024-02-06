@@ -9,11 +9,6 @@
 * Once your account is created, you have to join an already existing project (for now MEOM users are all gathered in pr-data-ocean) : log in to perseus, click on join a project and find pr-data-ocean in the list
 * Once you are accepted in the group, you can now proceed to log to the clusters and compute
 
-### Documentation and support
-* go through the documentation : https://gricad-doc.univ-grenoble-alpes.fr
-* contact sos-calcul-gricad@univ-grenoble-alpes.fr for any question
-
-
 ### Log in easily
 
 * The connections to the clusters go through a bastion, so if you want to access dahu (for CPU) or bigfoot (for GPU) you first have to connect to rotule or trinity :
@@ -45,6 +40,19 @@ Host *.ciment
 
 **Note**: the rest of the tuto will not work if you don't follow this procedure !
 
+---
+## General informations
+
+### Documentation and support
+* go through the documentation : https://gricad-doc.univ-grenoble-alpes.fr
+* contact sos-calcul-gricad@univ-grenoble-alpes.fr for any question
+
+### Connection
+
+ * Now that you are all set up, you just have to type ```ssh dahu.ciment``` or ```ssh bigfoot.ciment```
+ * If you need to transfer some data you can do a simple ```scp mydata dahu.ciment:/path/to/data/.``` or ```scp mydata bigfoot.ciment:/path/to/data/.```
+ * If the data you want to transfer is big, go through the cargo server : ```scp mydata cargo.ciment:/path/to/data/.```
+
 ### Workspaces
 
  * On each cluster (dahu, bigfoot) you have a personnal worspace : ```/home/yourlogin```
@@ -52,14 +60,7 @@ Host *.ciment
  * same architecture for another scratch workspace called silenus instead of bettik
 
 ---
-## Compute on dahu
-
-### Connection
-
- * Now that you are all set up, you just have to type ```ssh dahu.ciment``` 
- * If you need to transfer some data yo can do a simple ```scp mydata dahu:/path/to/data/.```
- * If the data you want to transfer is big, go through the cargo server : ```scp mydata yourlogin@cargo.univ-grenoble-alpes.fr:/path/to/data/.```
-
+## Compute on dahu/bigfoot
 
 ### Submitting jobs
 

@@ -43,12 +43,12 @@ Host *.ciment
 ## General informations
 
 ### Documentation and support
+
 * go through the documentation : https://gricad-doc.univ-grenoble-alpes.fr
 * contact sos-calcul-gricad@univ-grenoble-alpes.fr for any question
 
-### Connection
+### Data transfer
 
- * Now that you are all set up, you just have to type ```ssh dahu.ciment``` or ```ssh bigfoot.ciment```
  * If you need to transfer some data you can do a simple ```scp mydata dahu.ciment:/path/to/data/.``` or ```scp mydata bigfoot.ciment:/path/to/data/.```
  * If the data you want to transfer is big, go through the cargo server : ```scp mydata cargo.ciment:/path/to/data/.```
 
@@ -63,7 +63,7 @@ Host *.ciment
 
 ### Submitting jobs
 
-  * You are actually sitting on login nodes (dahu-f), to do some computation you will need to request some computing nodes
+  * You are actually sitting on login nodes (dahu-f or bigfoot), to do some computation you will need to request some computing nodes, CPU nodes on dahu, GPU nodes on bigfoot
   * You do that by either launching your script inside a job or ask for interactive access to a computing node :
 
 <details>
@@ -73,7 +73,7 @@ Host *.ciment
  
 </details>
 
- * When your request is granted you will be connected to a specific dahu node and you will be able to compute there.
+ * When your request is granted you will be connected to a specific dahu/bigfoot node and you will be able to compute there.
  * Maximum time limit is 12 hours
  * The memory allocated to your request is nb_cores_requested*node_memory/nb_cores_per_node, for instance on a classical dahu node there is a total of 192Gb per node, if you ask for 16 cores you will be granted 96Gb, on a fat node a total of 1.5Tb is available (check node properties with recap.py)
 
@@ -108,14 +108,15 @@ yourscript
  
  * For more informations about jobs read https://gricad-doc.univ-grenoble-alpes.fr/en/hpc/joblaunch/
 
-### See availability of Dahu nodes : 
+### See availability of dahu/bigfoot nodes : 
 
  * Command ```chandler``` in the terminal or go to the website : https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/monika for instaneous availablity or https://ciment-grid.univ-grenoble-alpes.fr/clusters/dahu/drawgantt/drawgantt.php for availability over time (history and forecast)
-
  
 ---
 
-## Using NCO tools (+ncdump & ncview)
+## Tools and computing environment
+
+### Using NCO tools (+ncdump & ncview)
 
    * put this line in your .bash_profile : ```source /applis/site/nix.sh```
    * download the desired package with nix :
@@ -127,32 +128,25 @@ nix-env -i -A ncview
 ```
    * the binaries are now in ```/home/yourlogin/.nix-profile/bin``` and accessible from anywhere (your PATH is updated when you source the nix application)
 
----
-## Using Conda 
+### Using Conda 
 
-Conda is already installed. You just need to activate it using the command from the server.
+  * Conda is already installed. You just need to activate it using the command from the server.
 
 ```
 source /applis/environments/conda.sh
 ```
 
-### Create Personal Conda Environments
+  * Create Personal Conda Environments
 
 
 **Tip**: It's advisable to create conda environments in your `/bettik/username` directory. The main directory doesn't have a lot of space and you can easily fill up your home directory quota with conda packages (especially for machine learning). So use the `/bettik` directory.
 
-
-1. Install Conda in Home Environment
-
-1. Install an environment in `bettik`
-
-
-Create conda from environment file:
+    * Create conda from environment file:
 ```bash
 conda env create -f environment.yml --prefix=/bettik/user/.conda/envs/env_name
 ```
 
-1. Change the `.condarc` file to include all environment directories.
+    * Change the `.condarc` file to include all environment directories.
 
 ```bash
 envs_dirs:
@@ -165,7 +159,7 @@ envs_dirs:
 
 ---
 
-## Run the jupyter notebook with conda environment on dahu (or bigfoot)
+### Run the jupyter notebook with conda environment on dahu (or bigfoot)
 
 
 You need to have a conda environment with jupyter installed in it, also make sure you have the lines :

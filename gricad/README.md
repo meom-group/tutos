@@ -144,7 +144,7 @@ Add this command to your .bashrc file so conda will be loaded for each session
 conda info --envs
 ```
 
-All the environments stored in /applis/common/miniconda3 are preinstalled and can be loaded directly, for instance : ```conda activate fidle```
+All the environments stored in /applis/common/miniconda3 are preinstalled and can be loaded directly, for instance : ```conda activate fidle``` 
 
   * Create Personal Conda Environments
 
@@ -152,6 +152,7 @@ All the environments stored in /applis/common/miniconda3 are preinstalled and ca
 **Tip**: It's advisable to create conda environments in your `/bettik/username` directory. The main directory doesn't have a lot of space and you can easily fill up your home directory quota with conda packages (especially for machine learning). So use the `/bettik` directory.
 
       * Create conda from environment file, you need to do it with a job as it takes some time to download all the libraries, create_conda_env.sh :
+      
     
 ```bash
 #!/bin/bash

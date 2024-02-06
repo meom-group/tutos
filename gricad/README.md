@@ -30,11 +30,10 @@ Host *.ciment
   ProxyCommand ssh -q <yourlogin>@access-gricad.univ-grenoble-alpes.fr "nc -w 60 `basename %h .ciment` %p"
 ```
 
-  - Now you should be able to connect to dahu directly with ```ssh dahu.ciment```
+  - Now you should be able to connect to dahu directly with ```ssh dahu.ciment``` or bigfoot with ```ssh bigfoot.ciment```
   - To connect without typing your password, you can set up a SSH key :
     - on your local machine create the ssh key : ```ssh-keygen```
-    - copy the public key to the bastions : ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@rotule.u-ga.fr:``` and  ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@trinity.u-ga.fr:``` and to the clusters : ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@dahu.ciment:```
-
+    - copy the public key to the bastions : ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@rotule.u-ga.fr:``` and  ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@trinity.u-ga.fr:``` and to the clusters : ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@dahu.ciment``` and ```ssh-copy-id -i .ssh/id_rsa.pub <yourlogin>@bigfoot.ciment```
 
 * Repeat it on every machine you will need to work on, especially cal1 if you want to transfer data from there for instance
 

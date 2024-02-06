@@ -176,7 +176,9 @@ Launch the job with ```oarsub -S ./create_conda_env.sh``` after adding the execu
 
 Check this [repo](https://github.com/meom-group/phyocean-envs) to find up to date environments suited for oceanography or define your own environment
 
-      * Change the `.condarc` file to include all environment directories :
+
+    * Change the `.condarc` file to include all environment directories :
+
 
 ```bash
 envs_dirs:

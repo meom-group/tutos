@@ -130,23 +130,51 @@ nix-env -i -A ncview
 
 ### Using Conda 
 
-  * Conda is already installed. You just need to activate it using the command from the server.
+  * Conda is already installed, you just need to activate it using the command :
 
 ```
 source /applis/environments/conda.sh
 ```
+
+Add this command to your .bashrc file so conda will be loaded for each session
+
+  * Load existing environment :
+
+```
+conda info --envs
+```
+
+All the environments stored in /applis/common/miniconda3 are preinstalled and can be loaded directly, for instance : ```conda activate fidle```
 
   * Create Personal Conda Environments
 
 
 **Tip**: It's advisable to create conda environments in your `/bettik/username` directory. The main directory doesn't have a lot of space and you can easily fill up your home directory quota with conda packages (especially for machine learning). So use the `/bettik` directory.
 
-    * Create conda from environment file:
+      * Create conda from environment file, you need to do it with a job as it takes some time to download all the libraries, create_conda_env.sh :
+    
 ```bash
-conda env create -f environment.yml --prefix=/bettik/user/.conda/envs/env_name
+#!/bin/bash
+
+#OAR -n nextsimdg
+#OAR -l /nodes=1/core=1,walltime=00:25:00
+#OAR --stdout conda.%jobid%.stdout
+#OAR --stderr conda.%jobid%.stderr
+#OAR --project pr-data-ocean
+#OAR -t devel
+
+# activate conda
+source /applis/environments/conda.sh
+
+# create your nextsimdg environment
+conda env create -n nextsimdg -f environment.yml
 ```
 
-    * Change the `.condarc` file to include all environment directories.
+Launch the job with ```oarsub -S ./create_conda_env.sh``` after adding the executable permission ```oarsub -S ./create_conda_env.sh```
+
+Check this [repo](https://github.com/meom-group/phyocean-envs) to find up to date environments suited for oceanography or define your own environment
+
+      * Change the `.condarc` file to include all environment directories.
 
 ```bash
 envs_dirs:
@@ -154,7 +182,7 @@ envs_dirs:
     - /home/username/.conda/envs
 ```
 
-**Note**: You can add as many directories as you want. This just ensures that conda can talk to it.
+**Note**: You can add as many directories as you want, even from other users. This just ensures that conda can talk to it.
 
 
 ---

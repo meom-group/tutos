@@ -1,0 +1,16 @@
+name: plots
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - xarray
+  - matplotlib
+  - cmocean
+  - jupyter
+  - numpy
+  - cartopy
+  - dask
+
+prefix: /bettik/alberta/.conda/envs/plots

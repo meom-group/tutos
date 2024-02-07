@@ -1,5 +1,13 @@
 # How to compute on GriCad
 
+## Table of contents
+
+1. [First steps](#first-steps)
+2. [General Informations](#general-informations)
+3. [Compute on dahu/bigfoot](#compute-on-dahu/bigfoot)
+4. [Tools and computing environment](#tools-and-computing-environment)
+5. [For advanced users](#for-advanced-users)
+
 --- 
 ## First steps (do it once)
 
@@ -188,8 +196,6 @@ envs_dirs:
 
 **Note**: You can add as many directories as you want, even from other users. This just ensures that conda can talk to it.
 
-
----
 
 ### Run the jupyter notebook with conda environment on dahu (or bigfoot)
 

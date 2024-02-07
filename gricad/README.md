@@ -146,7 +146,7 @@ conda info --envs
 
 All the environments stored in /applis/common/miniconda3 are preinstalled and can be loaded directly, for instance : ```conda activate fidle``` 
 
-  * Create Personal Conda Environments
+### Create Personal Conda Environments
 
 
 **Tip**: It's advisable to create conda environments in your `/bettik/username` directory. The main directory doesn't have a lot of space and you can easily fill up your home directory quota with conda packages (especially for machine learning). So use the `/bettik` directory.
@@ -172,9 +172,9 @@ source /applis/environments/conda.sh
 conda env create -n nextsimdg -f environment.yml
 ```
 
-Launch the job with ```oarsub -S ./create_conda_env.sh``` after adding the executable permission ```oarsub -S ./create_conda_env.sh```
+  * Launch the job with ```oarsub -S ./create_conda_env.sh``` after adding the executable permission ```chmod +x create_conda_env.sh```
 
-Check this [repo](https://github.com/meom-group/phyocean-envs) to find up to date environments suited for oceanography or define your own environment
+  * [Here] is a simple environment for plots and jupyter, check also this [repo](https://github.com/meom-group/phyocean-envs) to find up-to-date environments suited for oceanography
 
 
   * Change the `.condarc` file to include all environment directories :
@@ -194,7 +194,7 @@ envs_dirs:
 ### Run the jupyter notebook with conda environment on dahu (or bigfoot)
 
 
-You need to have a conda environment with jupyter installed in it, also make sure you have the lines :
+You need to have a conda environment with jupyter installed in it (you can load this conda environment : ), also make sure you have the lines :
 
 ```
 c.NotebookApp.open_browser = False

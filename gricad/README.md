@@ -4,7 +4,7 @@
 
 1. [First steps](#first-steps)
 2. [General Informations](#general-informations)
-3. [Compute on dahu/bigfoot](#compute-on-dahu/bigfoot)
+3. [Compute on dahu/bigfoot](#compute-on-dahu-bigfoot)
 4. [Tools and computing environment](#tools-and-computing-environment)
 5. [For advanced users](#for-advanced-users)
 

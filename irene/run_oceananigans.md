@@ -7,7 +7,7 @@ Irene does not have a direct access to internet so the julia environment needed 
 The docker image is stored at ```/ccc/work/cont003/gen12020/gen12020/oceananigans.tar``` so anyone in the gen12020 group should be able to access it.
 
 To run oceananigans interactively, you need :
-  - import the docker image : ```pcocc-rs image import docker-archive:oceananigans.tar oceananigans```
+  - import the docker image : ```pcocc-rs image import docker-archive:/ccc/work/cont003/gen12020/gen12020/oceananigans.tar oceananigans```
   - check if the image is there : ```pcocc-rs image list```, you should get this answer :
 
 ![](docker.png)

@@ -12,4 +12,4 @@ To run oceananigans interactively, you need :
 
 ![](docker.png)
 
-  - run the docker image : ```pcocc-rs run oceananigans```, this should open a julia prompt in which you can run oceananigans following [this tuorial](https://github.com/CliMA/Oceananigans.jl?tab=readme-ov-file#running-your-first-model)
+  - run the docker image : ```pcocc-rs run oceananigans```, this should launch a julia prompt in which you can run oceananigans following [this tuorial](https://github.com/CliMA/Oceananigans.jl?tab=readme-ov-file#running-your-first-model)

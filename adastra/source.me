@@ -1,0 +1,23 @@
+#!/bin/bash
+MY_LIB_PATH=/lus/home/NAT/gda2307/SHARED/intel-nicole
+
+#hdf5-hdf5-1_14_0  netcdf-c-4.9.1  netcdf-fortran-4.6.0  PnetCDF-checkpoint.1.12.3
+
+#- Setting env for HDF5
+export PATH=$MY_LIB_PATH/hdf5-1.14.0/bin:$PATH
+export LD_LIBRARY_PATH=$MY_LIB_PATH/hdf5-1.14.0/lib:$LD_LIBRARY_PATH
+export HDF5_DIR=$MY_LIB_PATH/hdf5-1.14.0
+
+#- Setting env for PnetCDF
+export PATH=$MY_LIB_PATH/pnetcdf-1.12.3/bin:$PATH
+export LD_LIBRARY_PATH=$MY_LIB_PATH/pnetcdf-1.12.3/lib:$LD_LIBRARY_PATH
+
+##- Setting env for netCDF-C
+export PATH=$MY_LIB_PATH/netcdf-c-4.9.0_parallel/bin:$PATH
+export LD_LIBRARY_PATH=$MY_LIB_PATH/netcdf-c-4.9.0_parallel/lib:$LD_LIBRARY_PATH
+export NETCDF_DIR=$MY_LIB_PATH/netcdf-c-4.9.0_parallel
+#
+##- Setting env for netCDF-Fortran
+export PATH=$MY_LIB_PATH/netcdf-fortran-4.6.0_parallel/bin:$PATH
+export NETCDFF_DIR=$MY_LIB_PATH/netcdf-fortran-4.6.0_parallel/
+export LD_LIBRARY_PATH=$MY_LIB_PATH/netcdf-fortran-4.6.0_parallel/lib:$LD_LIBRARY_PATH

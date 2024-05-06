@@ -1,4 +1,6 @@
 # All you need to run NEMO on adastra with intel compiler
+
+ ## The modules
  
  - In the .bashrc :
 
@@ -39,6 +41,9 @@ export NETCDFF_DIR=$MY_LIB_PATH/netcdf-fortran-4.6.0_parallel/
 export LD_LIBRARY_PATH=$MY_LIB_PATH/netcdf-fortran-4.6.0_parallel/lib:$LD_LIBRARY_PATH
 ```
 
+## XIOS
+
+ - get xios : ```svn co http://forge.ipsl.jussieu.fr/ioserver/svn/XIOS/trunk@2430 xios-trunk-2430```
  - The env file for XIOS :
 
 ```bash
@@ -92,6 +97,7 @@ OASIS_LIBDIR=""
 OASIS_LIB=""
 ```
 
+## NEMO
 
  - The arch file for NEMO :
 

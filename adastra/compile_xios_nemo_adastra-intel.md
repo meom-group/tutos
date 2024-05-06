@@ -15,7 +15,7 @@ Check this [tutorial](https://github.com/meom-group/tutos/tree/master/adastra#in
 ```bash
 
 #!/bin/bash
-MY_LIB_PATH=/lus/home/NAT/gda2307/SHARED/intel-nicole
+MY_LIB_PATH=//lus/work/NAT/gda2307/SHARED/intel-nicole
 
 #hdf5-hdf5-1_14_0  netcdf-c-4.9.1  netcdf-fortran-4.6.0  PnetCDF-checkpoint.1.12.3
 

@@ -43,7 +43,7 @@ module unload cray-libsci
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lus/home/softs/intel/oneapi/mpi/2021.6.0/libfabric/lib:/lus/home/softs/intel/oneapi/mpi/2021.6.0/lib/:/lus/home/softs/intel/oneapi/mpi/2021.6.0/lib/release/
 source /lus/home/NAT/gda2307/aalbert/source.me
 ```
-
+with the right path for the source.me
 
 ## XIOS
 

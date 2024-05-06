@@ -109,7 +109,7 @@ OASIS_LIB=""
 %NCDF_HOME           $NETCDF_DIR
 %NCDFF_HOME           $NETCDFF_DIR
 %HDF5_HOME           $HDF5_DIR
-%XIOS_HOME           /lus/work/NAT/gda2307/aalbert/DEV/xios-trunk-2430-intel-hpe
+%XIOS_HOME           /lus/work/NAT/gda2307/aalbert/DEV/xios-trunk-2430
 %OASIS_HOME          /not/defined
 
 %NCDF_INC            -I%NCDFF_HOME/include -I%NCDF_HOME/include -I%HDF5_HOME/include

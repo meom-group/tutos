@@ -4,7 +4,7 @@
 
 There are no default module to load hdf5 and netcdf compiled with intel so you have to do it by hand :
 
-  - this [tar file](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/alberta/catalog.html) contains the libraries you need, put it somewhere on adastra
+  - this [tar file](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/alberta/catalog.html) contains the libraries you need, put it and untar it somewhere on adastra
   - then modify the following source.me script :
 ```bash
 

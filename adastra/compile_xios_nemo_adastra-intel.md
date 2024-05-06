@@ -9,6 +9,8 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lus/home/softs/intel/oneapi/mpi/2021.6.
 source /lus/home/NAT/gda2307/aalbert/source.me
 ```
 
+Check this [tutorial](https://github.com/meom-group/tutos/tree/master/adastra#intel-environment) to know how to make your own source.me and get the corresponding librairies
+
  - The source.me file :
 ```bash
 

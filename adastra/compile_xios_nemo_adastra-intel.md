@@ -1,19 +1,11 @@
 # All you need to run NEMO on adastra with intel compiler
 
  ## The modules
- 
- - In the .bashrc :
 
-```bash
-module load PrgEnv-intel
-module unload cray-libsci
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lus/home/softs/intel/oneapi/mpi/2021.6.0/libfabric/lib:/lus/home/softs/intel/oneapi/mpi/2021.6.0/lib/:/lus/home/softs/intel/oneapi/mpi/2021.6.0/lib/release/
-source /lus/home/NAT/gda2307/aalbert/source.me
-```
+There are no default module to load hdf5 and netcdf compiled with intel so you have to do it by hand :
 
-Check this [tutorial](https://github.com/meom-group/tutos/tree/master/adastra#intel-environment) to know how to make your own source.me and get the corresponding librairies
-
- - The source.me file :
+  - this [tar file](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/alberta/catalog.html) contains the libraries you need, put it somewhere on adastra
+  - then modify the following source.me script :
 ```bash
 
 #!/bin/bash
@@ -40,6 +32,18 @@ export PATH=$MY_LIB_PATH/netcdf-fortran-4.6.0_parallel/bin:$PATH
 export NETCDFF_DIR=$MY_LIB_PATH/netcdf-fortran-4.6.0_parallel/
 export LD_LIBRARY_PATH=$MY_LIB_PATH/netcdf-fortran-4.6.0_parallel/lib:$LD_LIBRARY_PATH
 ```
+
+with your path in MY_LIB_PATH
+
+ - In the .bashrc :
+
+```bash
+module load PrgEnv-intel
+module unload cray-libsci
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lus/home/softs/intel/oneapi/mpi/2021.6.0/libfabric/lib:/lus/home/softs/intel/oneapi/mpi/2021.6.0/lib/:/lus/home/softs/intel/oneapi/mpi/2021.6.0/lib/release/
+source /lus/home/NAT/gda2307/aalbert/source.me
+```
+
 
 ## XIOS
 

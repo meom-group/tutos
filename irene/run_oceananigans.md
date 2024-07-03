@@ -17,7 +17,20 @@ The steps are :
 
   - copy the .julia stored in ```/ccc/work/cont003/gen12020/gen12020/juliadot.tar```in your homedir
 
-## Everytime you wan to use oceananigans
+## Everytime you want to use oceananigans
 
   - In the interactive way : run the docker image with ```pcocc-rs run oceananigans```, this should launch a julia prompt in which you can run oceananigans following [this tutorial](https://github.com/CliMA/Oceananigans.jl?tab=readme-ov-file#running-your-first-model)
-  - with a script : run your hello_world.jl script inside the docker image with ```pcocc-rs run oceananigans "hello_world.jl"```
+  - With a script : run your hello_world.jl script inside the docker image with ```pcocc-rs run oceananigans "hello_world.jl"```
+  - In a job with multiple nodes :
+
+```bash
+#!/bin/bash
+#MSUB -q rome
+#MSUB -Q test
+#MSUB -T 120
+#MSUB -n 2
+#MSUB -c 2
+#MSUB -A <project>
+ccc_mprun -n 2 -c 2 -C oceananigans -- "hello_world.jl"
+```
+

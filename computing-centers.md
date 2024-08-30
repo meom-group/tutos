@@ -1,9 +1,10 @@
-- scp between computing centers : [explanations](https://dci.dci-gitlab.cines.fr/webextranet/data_and_storage/index.html#between-computing-site-ccfr)
+- scp between computing centers : [explanations](https://dci.dci-gitlab.cines.fr/webextranet/data_storage_and_transfers/index.html#between-computing-site-ccfr)
   - ask to svp@cines (the fastest) to be allowed to use CCFR network
   - once they grant you access :
     - connect to adastra
     - connect to login1 ssh login1
-    - do the transfer to jean-zay with : scp data yourloginjz@jean-zay-ccfr.idris.fr:/path/to/data 
+    - do the transfer to jean-zay with : scp data yourloginjz@jean-zay-ccfr.idris.fr:/path/to/data
+    - do the transfer to irene with : scp data yourlogintgcc@irene-fr-ccfr-gw.ccc.cea.fr:/path/to/data
 
 - scp to computing center through a tunnel :
   - in one local terminal : ```ssh -L 1234:adastra.cines.fr:22 alberta@ige-meom-cal1.u-ga.fr cat -```

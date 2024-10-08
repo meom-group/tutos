@@ -2,6 +2,29 @@
 
  ## The modules
 
+### New method
+
+You just have to load these modules in this order :
+
+```bash
+module purge
+module load cpe/23.05
+module load craype-x86-genoa
+module load craype-network-ofi
+module load libfabric/1.15.2.0
+module load PrgEnv-intel/8.4.0
+module load cray-libsci/23.05.1.4
+module load cray-mpich/8.1.26
+module load cray-dsmml/0.2.2
+module load cray-fftw/3.3.10.4
+module load cray-hdf5-parallel/1.12.2.1
+module load cray-netcdf-hdf5parallel/4.9.0.1
+module load craype/2.7.21
+module load gcc/13.2.0
+```
+
+
+### Old method
 There are no default module to load hdf5 and netcdf compiled with intel so you have to do it by hand :
 
   - this [tar file](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/alberta/catalog.html) contains the libraries you need, put it and untar it somewhere on adastra

@@ -10,7 +10,7 @@ Here you can find useful informations about how we make scientific analysis.
  
  - If you are working with python, we recommend that you use [conda](https://docs.conda.io/en/latest/) to manage your librairies via environments. Learn how to do it [here](conda.md)
  
- - Also a nice way to have the code you write and the plots you produce at the same place, along with some texts, equations and/or pictures is to use [jupyter notebooks](https://jupyter.org/). Learn how to install and use it [here](jupyter.md)
+ - Also a nice way to have the code you write and the plots you produce at the same place, along with some texts, equations and/or pictures is to use [jupyter notebooks](https://jupyter.org/). Learn how to install and use it [here](https://docs.jupyter.org/en/latest/)
 
  - Next, you may want to access some remote computers in order to have more ressources than on your personnal laptop or to access some datasets, you have several options :
     - the team server cal1 allows you to access MEOM data and is also a gateway to other machines. Learn how to access and use it [here](https://github.com/meom-group/tutos/tree/master/cal1#readme)

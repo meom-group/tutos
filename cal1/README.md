@@ -10,12 +10,12 @@ It is accessible from anywhere (IGE or your home) at the adress : ```ige-meom-ca
 
 As soon as you have an agalan account (IGE login), you can have an account there (ask [Aurélie](mailto:aurelie.albert@univ-grenoble-alpes.fr) to authorize your login) and you can connect via ssh : ```ssh -CX yourlogin@ige-meom-cal1.u-ga.fr```
 
-It is recommended to implement a ssh key from anywhere you want to connect to it, so that you do not have to type your password everytime :
+It is recommended to implement a ssh key from anywhere you want to connect to it, so that you do not have to type your password everytime (the server can ban you very quickly if you enter a wrong password, in that case contact Aurélie with you IP adress so that you can be unban):
   - in your local machine type : ```ssh-keygen``` (unless you already have a key)
   - it will create a file .ssh/id_rsa.pub
   - copy it to cal1 via the command : ```ssh-copy-id yourlogin@ige-meom-cal1.u-ga.fr``` and type your password for the last time
 
-You will have access to 2 personnal workspaces : ```/home/yourlogin``` (automatically created) and ```/mnt/summer/DATA_MEOM/workdir/yourlogin``` (you have to create it yourself with mkdir in /mnt/summer/DATA_MEOM/workdir), the first one is limited in space and you should only put scripts on it, the second is like a scratch where your temporary and results files should be stored.
+You will have access to 2 personnal workspaces : ```/home/yourlogin``` (automatically created) and ```/mnt/summer/DATA_MEOM/workdir/yourlogin``` (Aurélie will create it when authorizing your login), the first one is limited in space and you should only put scripts on it, the second is like a scratch where your temporary and results files should be stored.
 
 You can see how much of these spaces are filled with the command ```df -h``` (look for /home and /mnt/summer/DATA_MEOM to see how much space is left)
 

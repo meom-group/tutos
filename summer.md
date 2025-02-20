@@ -13,12 +13,7 @@ It is accessible on different servers :
 
 Different workspaces are available, some are personnal, other collaborative :
   - in ```workdir```, each active member or collaborator of MEOM can have a personnal workspace, for instance : ```/mnt/summer/DATA_MEOM/workdir/alberta```
-    - you have to create it yourself the first time you connect to DATA_MEOM : ```cd workdir; mkdir mylogin```
-    - it is recommended that you put reading rights to everyone but only you for writing and executing : ```chmod -R 744 mylogin```
-    - if you are creating your workdir on cal1, make sure that the group associated to it is pr-data-ocean so that it can be accessible from GRICAD also : ```chown -R yourlogin:pr-data-ocean yourlogin```
-
-![](https://github.com/meom-group/tutos/blob/master/pics/droits-dossier.png)   
-      
+    - Aurélie will create it when authorizing your login to cal1 server
   - in ```DATA_SET```, useful datasets are gathered so that anyone can use it : click [here](https://github.com/meom-group/data-tools-inventory/tree/main#data-inventory) to see a catalog of available data
   - in ```MODEL_SET```, useful model outputs, grids and configuration files are gathered so that anyone can use it : click [here](https://github.com/meom-group/data-tools-inventory/tree/main#data-inventory) to see a catalog of it
   - in ```MEOM-OPENDAP```, users can make links to data they want to share via opendap, see [below](https://github.com/meom-group/tutos/blob/master/summer.md#sharing-data-via-opendap) for more informations

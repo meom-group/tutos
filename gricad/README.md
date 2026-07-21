@@ -35,7 +35,7 @@ Host *
    
 Host *.ciment
   User <yourlogin>
-  ProxyCommand ssh -q <yourlogin>@access-gricad.univ-grenoble-alpes.fr "nc -w 60 `basename %h .ciment` %p"
+  ProxyCommand ssh -q <yourlogin>@access-gricad.univ-grenoble-alpes.fr "nc `basename %h .ciment` %p"
 ```
 
   - Now you should be able to connect to dahu directly with ```ssh dahu.ciment``` or bigfoot with ```ssh bigfoot.ciment```

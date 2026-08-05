@@ -57,6 +57,11 @@ partition it has hours granted on. As of Oct. 2022, we have access to the **rome
   Computing hours are obtained by submitting a scientific/technical proposal to GENCI via the DARI interface. Once approved, users can check the project
 consumption with the `ccc_myproject` command. 
 
+## Choose the group
+
+You can see the different groups you belong to with : ```groups```
+Some commands will need to specify the group with : ```sg gen12020 "command"```
+
 ## Job submission
 Apart from compilation and short scripts tests, the right way to use irene ressources is through the batch system (SLURM derived). Jobs must be submitted with
 the `ccc_msub <batch_file>` command, using a batch file. The batch file must have a header part with some #MSUB directives like in the following example:

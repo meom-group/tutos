@@ -60,6 +60,7 @@ consumption with the `ccc_myproject` command.
 ## Choose the group
 
 You can see the different groups you belong to with : ```groups```
+
 Some commands will need to specify the group with : ```sg gen12020 "command"```
 
 ## Job submission

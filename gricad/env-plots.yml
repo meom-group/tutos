@@ -12,5 +12,6 @@ dependencies:
   - numpy
   - cartopy
   - dask
+  - basemap
 
-prefix: /bettik/alberta/.conda/envs/plots
+prefix: /bettik/USERNAME/.conda/envs/plots

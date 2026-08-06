@@ -159,6 +159,8 @@ All the environments stored in /applis/common/miniconda3 are preinstalled and ca
 
 **Tip**: It's advisable to create conda environments in your `/bettik/username` directory. The main directory doesn't have a lot of space and you can easily fill up your home directory quota with conda packages (especially for machine learning). So use the `/bettik` directory.
 
+  * You first need to decide what to include in your environment. [Here](https://github.com/meom-group/tutos/blob/master/gricad/env-plots.yml) is a simple environment for plots and jupyter, check also this [repo](https://github.com/meom-group/phyocean-envs) to find up-to-date environments suited for oceanography. Create you environment file `environment.yml` inspired from these examples.
+
 
   * Create conda from environment file, you need to do it with a job as it takes some time to download all the libraries, create_conda_env.sh :
       
@@ -176,14 +178,13 @@ All the environments stored in /applis/common/miniconda3 are preinstalled and ca
 # activate conda
 source /applis/environments/conda.sh
 
-# create your nextsimdg environment
-conda env create -n nextsimdg -f environment.yml
+# create your "plots" environment
+conda env create -n plots -f environment.yml
 ```
 
-  * Launch the job with ```oarsub -S ./create_conda_env.sh``` after adding the executable permission ```chmod +x create_conda_env.sh```
+In the example above, the name of your environment will be `plots`
 
-  * [Here] is a simple environment for plots and jupyter, check also this [repo](https://github.com/meom-group/phyocean-envs) to find up-to-date environments suited for oceanography
-
+  * Change the permission of this file with ```chmod +x create_conda_env.sh``` and launch the job with ```oarsub -S ./create_conda_env.sh``` . (You may need to connect to dahu-oar3 before submitting a devel job)
 
   * Change the `.condarc` file to include all environment directories :
 
